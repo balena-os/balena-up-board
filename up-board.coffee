@@ -41,9 +41,9 @@ module.exports =
 	yocto:
 		machine: 'up-board'
 		image: 'resin-image-flasher'
-		fstype: 'resin-sdcard'
+		fstype: 'resinos-img'
 		version: 'yocto-krogoth'
-		deployArtifact: 'resin-image-flasher-up-board.resin-sdcard'
+		deployArtifact: 'resin-image-flasher-up-board.resinos-img'
 		compressed: true
 
 	configuration:
