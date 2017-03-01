@@ -16,7 +16,7 @@ postProvisioningInstructions = [
 
 module.exports =
 	version: 1
-	slug: 'upboard'
+	slug: 'up-board'
 	name: 'UP board'
 	arch: 'amd64'
 	state: 'experimental'
