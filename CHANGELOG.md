@@ -1,6 +1,7 @@
 Change log
 -----------
 
+* Fix partition labels from last meta-resin update [Andrei]
 * Change slug to up-board [Andrei]
 
 # v2.0.0-beta13.rev1 - 2017-02-27
