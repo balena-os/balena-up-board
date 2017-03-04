@@ -1,6 +1,8 @@
 Change log
 -----------
 
+# v2.0.0-beta13.rev3 - 2017-03-03
+
 * Fix flasher images [Andrei]
 
 # v2.0.0-beta13.rev2 - 2017-02-28
