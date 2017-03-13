@@ -1,6 +1,8 @@
 Change log
 -----------
 
+* Integrate the older initramfs with the new initramfs framework [Florin]
+
 # v2.0.0-beta13.rev3 - 2017-03-03
 
 * Fix flasher images [Andrei]
