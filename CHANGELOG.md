@@ -1,6 +1,8 @@
 Change log
 -----------
 
+# v2.0.0-rc2.rev1 - 2017-03-14
+
 * Switch to the kernel with the initramfs bundled in [Florin]
 * Integrate the older initramfs with the new initramfs framework [Florin]
 
