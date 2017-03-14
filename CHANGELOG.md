@@ -1,6 +1,9 @@
 Change log
 -----------
 
+* Switch to the kernel with the initramfs bundled in [Florin]
+* Integrate the older initramfs with the new initramfs framework [Florin]
+
 # v2.0.0-beta13.rev3 - 2017-03-03
 
 * Fix flasher images [Andrei]
