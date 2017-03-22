@@ -1,6 +1,8 @@
 Change log
 -----------
 
+* Do not show kernel boot messages on the display for production images [Florin]
+
 # v2.0.0-rc4.rev1 - 2017-03-20
 
 * Bump meta-resin to v2.0.0-rc4 [Andrei]
