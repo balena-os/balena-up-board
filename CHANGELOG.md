@@ -1,6 +1,7 @@
 Change log
 -----------
 
+* Update the .coffee getting started links [Florin]
 * Update the resin-yocto-scripts submodule [Florin]
 
 # v2.0.4+rev1 - 2017-05-22
