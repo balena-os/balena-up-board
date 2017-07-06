@@ -1,6 +1,7 @@
 Change log
 -----------
 
+* Update the resin-yocto-scripts submodule to HEAD of master [Florin]
 * Update the .coffee getting started links [Florin]
 * Update the resin-yocto-scripts submodule [Florin]
 
