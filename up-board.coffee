@@ -43,7 +43,8 @@ module.exports =
 		image: 'resin-image-flasher'
 		fstype: 'resinos-img'
 		version: 'yocto-krogoth'
-		deployArtifact: 'resin-image-flasher-up-board.resinos-img'
+		deployArtifact: 'resin-image-up-board.resinos-img'
+		deployFlasherArtifact: 'resin-image-flasher-up-board.resinos-img'
 		compressed: true
 
 	configuration:
