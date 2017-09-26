@@ -19,3 +19,6 @@
 [submodule "layers/meta-up-board"]
 	path = layers/meta-up-board
 	url = https://github.com/emutex/meta-up-board.git
+[submodule "layers/meta-rust"]
+	path = layers/meta-rust
+	url = https://github.com/meta-rust/meta-rust.git
