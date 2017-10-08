@@ -1,6 +1,10 @@
 Change log
 -----------
 
+# v2.7.6+rev1
+## (2017-11-08)
+
+* Update the meta-resin submodule to version v2.7.6 [Florin]
 * Install in the rootfs the 99-resin-grub hostapp hook needed for GRUB to switch the root partition when doing host OS updates [Florin]
 * Promote board to released from experimental [Florin]
 * Update the resin-yocto-scripts submodule to c4db082fd2d5a3b4857035264c1e726962d7b826 (on master branch) [Florin]
