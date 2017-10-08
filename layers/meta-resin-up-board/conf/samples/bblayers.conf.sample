@@ -18,7 +18,6 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-resin/meta-resin-krogoth \
     ${TOPDIR}/../layers/meta-resin-up-board \
     ${TOPDIR}/../layers/meta-rust \
-    ${TOPDIR}/../layers/oe-meta-go \
     "
 
 BBLAYERS_NON_REMOVABLE ?= " \
