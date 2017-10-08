@@ -1,6 +1,7 @@
 Change log
 -----------
 
+* Update the resin-yocto-scripts submodule to c4db082fd2d5a3b4857035264c1e726962d7b826 (on master branch) [Florin]
 * Update to Pyro [Florin]
 * Update meta-rust to morty [Will]
 * Include meta-rust layer [Will]
