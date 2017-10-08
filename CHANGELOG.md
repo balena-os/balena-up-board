@@ -1,6 +1,7 @@
 Change log
 -----------
 
+* Promote board to released from experimental [Florin]
 * Update the resin-yocto-scripts submodule to c4db082fd2d5a3b4857035264c1e726962d7b826 (on master branch) [Florin]
 * Update to Pyro [Florin]
 * Update meta-rust to morty [Will]
