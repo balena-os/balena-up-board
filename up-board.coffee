@@ -19,7 +19,7 @@ module.exports =
 	slug: 'up-board'
 	name: 'UP board'
 	arch: 'amd64'
-	state: 'experimental'
+	state: 'released'
 
 	stateInstructions:
 		postProvisioning: postProvisioningInstructions
