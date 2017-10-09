@@ -19,7 +19,7 @@ module.exports =
 	slug: 'up-board'
 	name: 'UP board'
 	arch: 'amd64'
-	state: 'experimental'
+	state: 'released'
 
 	stateInstructions:
 		postProvisioning: postProvisioningInstructions
@@ -42,7 +42,7 @@ module.exports =
 		machine: 'up-board'
 		image: 'resin-image-flasher'
 		fstype: 'resinos-img'
-		version: 'yocto-krogoth'
+		version: 'yocto-pyro'
 		deployArtifact: 'resin-image-flasher-up-board.resinos-img'
 		compressed: true
 
