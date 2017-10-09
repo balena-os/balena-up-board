@@ -11,6 +11,6 @@ NOHDD_up-board = "1"
 # Customize resinos-img
 RESIN_IMAGE_BOOTLOADER_up-board = "grub-efi"
 RESIN_BOOT_PARTITION_FILES_up-board = " \
-    bootx64.efi:/EFI/BOOT/ \
+    grub-efi-bootx64.efi:/EFI/BOOT/bootx64.efi \
     bzImage${KERNEL_INITRAMFS}-up-board.bin:/vmlinuz \
     "
