@@ -1,6 +1,8 @@
 Change log
 -----------
 
+* Update meta-up-board to current pyro HEAD [Andrei]
+
 # v2.9.6+rev1
 ## (2018-01-14)
 
