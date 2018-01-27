@@ -1,6 +1,10 @@
 Change log
 -----------
 
+# v2.9.7+rev1
+## (2018-01-27)
+
+* Update the meta-resin submodule to version v2.9.7 [Florin]
 * Update meta-up-board to current pyro HEAD [Andrei]
 
 # v2.9.6+rev1
