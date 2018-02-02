@@ -1,6 +1,7 @@
 Change log
 -----------
 
+* Update the resin-yocto-scripts submodule to b95f9387738afac72a58ca787c1224e8331b5fb1 (on master branch) [Florin]
 * Add entry for the disabling of random MAC address generation when scanning for a WiFi connection [Florin]
 
 # v2.9.7+rev1
