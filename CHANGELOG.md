@@ -1,6 +1,8 @@
 Change log
 -----------
 
+* Add entry for the disabling of random MAC address generation when scanning for a WiFi connection [Florin]
+
 # v2.9.7+rev1
 ## (2018-01-27)
 
