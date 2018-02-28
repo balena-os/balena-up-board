@@ -1,6 +1,8 @@
 Change log
 -----------
 
+* Add brcmfmac43430 WiFi firmware from UP website in rootfs image (needed for UP Core board) [Sebastian]
+
 # v2.9.7+rev2
 ## (2018-02-02)
 
