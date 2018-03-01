@@ -42,7 +42,7 @@ module.exports =
 		machine: 'up-board'
 		image: 'resin-image-flasher'
 		fstype: 'resinos-img'
-		version: 'yocto-pyro'
+		version: 'yocto-rocko'
 		deployArtifact: 'resin-image-flasher-up-board.resinos-img'
 		compressed: true
 
