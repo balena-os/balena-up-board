@@ -1,6 +1,8 @@
 Change log
 -----------
 
+* Use kernel version 4.14 to allow audio over HDMI [Florin]
+
 # v2.12.7+rev1
 ## (2018-05-04)
 
