@@ -1,6 +1,10 @@
 Change log
 -----------
 
+# v2.13.3+rev1
+## (2018-07-05)
+
+* Update the meta-resin submodule to version v2.13.3 [Florin]
 * Update the resin-yocto-scripts submodule to 6eddcc9a637e00dbca94815f9af0f2b7bf61eb88 (on master branch) [Florin]
 * Use kernel version 4.14 to allow audio over HDMI [Florin]
 
