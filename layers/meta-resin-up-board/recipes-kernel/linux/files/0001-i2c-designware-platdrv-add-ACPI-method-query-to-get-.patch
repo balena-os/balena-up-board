@@ -1,0 +1,117 @@
+From 3f92a19ac360113c9bc25a1295b0b2bb806fa5e5 Mon Sep 17 00:00:00 2001
+From: Nicola Lunghi <nicola.lunghi@emutex.com>
+Date: Thu, 17 Aug 2017 18:44:59 +0100
+Subject: [PATCH 01/10] i2c: designware-platdrv: add ACPI method query to get
+ default bus speed
+
+Integrate the following patches by Dan to detect i2c speed from acpi method:
+
+ - i2c: designware-platdrv: add ACPI method query to get default bus speed
+
+   On some platforms, the I2C bus speed mode for some ports needs to differ from the default 400kHz speed set by this driver.
+   This change allows the speed to be specified per port by the BIOS through an ACPI method named "FREQ".
+
+   Signed-off-by: Dan O'Donovan <dan@emutex.com>
+
+ - i2c: designware-platdrv: fix errors in 'FREQ' ACPI method handling
+
+   Incorrect mechanism was used to retrieve value from FREQ ACPI.
+   Also, moved sanity check on clk_freq value to cover all code paths that may set this value.
+
+   Signed-off-by: Dan O'Donovan <dan@emutex.com>
+
+Signed-off-by: Nicola Lunghi <nicola.lunghi@emutex.com>
+
+Upstream-Status: Pending
+Signed-off-by: Florin Sarbu <florin@resin.io>
+---
+ drivers/i2c/busses/i2c-designware-platdrv.c | 38 ++++++++++++++++++++++++++---
+ 1 file changed, 35 insertions(+), 3 deletions(-)
+
+diff --git a/drivers/i2c/busses/i2c-designware-platdrv.c b/drivers/i2c/busses/i2c-designware-platdrv.c
+index 0e65b97..66304b7 100644
+--- a/drivers/i2c/busses/i2c-designware-platdrv.c
++++ b/drivers/i2c/busses/i2c-designware-platdrv.c
+@@ -45,6 +45,10 @@
+ 
+ #include "i2c-designware-core.h"
+ 
++static unsigned int baudrate;
++module_param(baudrate, uint, 0660);
++MODULE_PARM_DESC(baudrate, "The I2C baudrate");
++
+ static u32 i2c_dw_get_clk_rate_khz(struct dw_i2c_dev *dev)
+ {
+ 	return clk_get_rate(dev->clk)/1000;
+@@ -92,7 +96,20 @@ static void dw_i2c_acpi_params(struct platform_device *pdev, char method[],
+ 	kfree(buf.pointer);
+ }
+ 
+-static int dw_i2c_acpi_configure(struct platform_device *pdev)
++static void dw_i2c_acpi_freq_param(struct platform_device *pdev, u32 *freq)
++{
++       acpi_handle handle = ACPI_HANDLE(&pdev->dev);
++       unsigned long long tmp;
++
++       if (ACPI_FAILURE(acpi_evaluate_integer(handle, "FREQ", NULL, &tmp)))
++               return;
++
++       *freq = (u32)tmp;
++       dev_dbg(&pdev->dev, "%u Hz bus speed specified by 'FREQ' ACPI method\n",
++               *freq);
++}
++
++static int dw_i2c_acpi_configure(struct platform_device *pdev, u32 *freq)
+ {
+ 	struct dw_i2c_dev *dev = platform_get_drvdata(pdev);
+ 	u32 ss_ht = 0, fp_ht = 0, hs_ht = 0, fs_ht = 0;
+@@ -130,6 +147,9 @@ static int dw_i2c_acpi_configure(struct platform_device *pdev)
+ 		break;
+ 	}
+ 
++	/* Try to get default speed mode from an ACPI method if it exists */
++	dw_i2c_acpi_freq_param(pdev, freq);
++
+ 	id = acpi_match_device(pdev->dev.driver->acpi_match_table, &pdev->dev);
+ 	if (id && id->driver_data)
+ 		dev->flags |= (u32)id->driver_data;
+@@ -166,7 +186,7 @@ static const struct acpi_device_id dw_i2c_acpi_match[] = {
+ };
+ MODULE_DEVICE_TABLE(acpi, dw_i2c_acpi_match);
+ #else
+-static inline int dw_i2c_acpi_configure(struct platform_device *pdev)
++static inline int dw_i2c_acpi_configure(struct platform_device *pdev, u32 *freq)
+ {
+ 	return -ENODEV;
+ }
+@@ -320,7 +340,16 @@ static int dw_i2c_plat_probe(struct platform_device *pdev)
+ 		dev->clk_freq = 400000;
+ 
+ 	if (has_acpi_companion(&pdev->dev))
+-		dw_i2c_acpi_configure(pdev);
++		dw_i2c_acpi_configure(pdev, &dev->clk_freq);
++
++	if (baudrate) {
++		dev_warn(&pdev->dev,
++			"I2C Frequency set to by module parameter:"
++			"old frequency=%u new frequency=%u\n",
++			dev->clk_freq,
++			baudrate);
++		dev->clk_freq = baudrate;
++	}
+ 
+ 	/*
+ 	 * Only standard mode at 100kHz, fast mode at 400kHz,
+@@ -384,6 +413,9 @@ static int dw_i2c_plat_probe(struct platform_device *pdev)
+ exit_probe:
+ 	if (!dev->pm_disabled)
+ 		pm_runtime_disable(&pdev->dev);
++	dev_info(&pdev->dev,
++		"I2C_DESIGNWARE %d Controller at 0x%08lx (irq %d) (baudrate %d)",
++		pdev->id_auto, (unsigned long) mem->start, irq, dev->clk_freq);
+ exit_reset:
+ 	if (!IS_ERR_OR_NULL(dev->rst))
+ 		reset_control_assert(dev->rst);
+-- 
+2.7.4
+
