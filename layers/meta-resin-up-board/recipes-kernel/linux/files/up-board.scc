@@ -1,0 +1,4 @@
+kconf hardware up-board.cfg
+
+kconf hardware up-board-user-config.cfg
+include up-board-user-patches.scc
