@@ -12,3 +12,9 @@ FILES_${PN}-bcm43430_append = "\
 do_install_append() {
     cp ${WORKDIR}/brcmfmac43430-sdio.* ${D}${nonarch_base_libdir}/firmware/brcm/
 }
+
+PACKAGES =+ "${PN}-iwlwifi-3160"
+
+FILES_${PN}-iwlwifi-3160 = " \
+    /lib/firmware/iwlwifi-3160-17.ucode \
+"
