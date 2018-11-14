@@ -1,4 +1,18 @@
 - commits:
+    - subject: Fix HDMI audio
+      hash: d2b3ebfd60cfbcf0db4ae6f945c61c790bffe766
+      body: |
+        When having CONFIG_SND_HDA_INTEL as builtin, we get the following error:
+        kernel: hdaudio hdaudioC0D2: Unable to bind the codec
+      footer:
+        Changelog-entry: Fix HDMI audio
+        changelog-entry: Fix HDMI audio
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.26.0+rev2
+  date: 2018-11-14T17:30:40.118Z
+- commits:
     - subject: Update the meta-resin submodule from v2.14.0 to v2.26.0
       hash: 78b580960fafd24f0a91667eaa325c2867d57620
       body: |
