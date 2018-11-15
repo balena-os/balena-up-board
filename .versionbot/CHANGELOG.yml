@@ -1,4 +1,18 @@
 - commits:
+    - subject: Remove kernel version 4.14 and keep using version 4.9.56 from the BSP
+      hash: 874a811d08eb1cb3d13d45ba0681ee02acfca99e
+      body: |
+        We got HDMI sound working with the BSP kernel version so let's remove
+        the one we updated to and keep using version 4.9.56 form the BSP.
+      footer:
+        Changelog-entry: Remove kernel version 4.14 and keep using version 4.9.56 from the BSP
+        changelog-entry: Remove kernel version 4.14 and keep using version 4.9.56 from the BSP
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.26.0+rev3
+  date: 2018-11-15T16:02:36.341Z
+- commits:
     - subject: Fix HDMI audio
       hash: d2b3ebfd60cfbcf0db4ae6f945c61c790bffe766
       body: |

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.26.0+rev3
+## (2018-11-15)
+
+* Remove kernel version 4.14 and keep using version 4.9.56 from the BSP [Florin Sarbu]
+
 # v2.26.0+rev2
 ## (2018-11-14)
 
