@@ -1,9 +1,0 @@
-define KMACHINE up-board
-
-define KARCH x86_64
-
-include ktypes/standard/standard.scc nopatch
-define KTYPE standard/base
-branch up-board
-
-include up-board.scc
