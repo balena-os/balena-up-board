@@ -1,4 +1,16 @@
 - commits:
+    - subject: Switch from resin-yocto-scripts to balena-yocto-scripts
+      hash: 97fccb594012fa669753e1e005144ae49dc70c63
+      body: ''
+      footer:
+        Changelog-entry: Switch from resin-yocto-scripts to balena-yocto-scripts
+        changelog-entry: Switch from resin-yocto-scripts to balena-yocto-scripts
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.26.0+rev4
+  date: 2018-12-17T21:08:36.404Z
+- commits:
     - subject: Remove kernel version 4.14 and keep using version 4.9.56 from the BSP
       hash: 874a811d08eb1cb3d13d45ba0681ee02acfca99e
       body: |
