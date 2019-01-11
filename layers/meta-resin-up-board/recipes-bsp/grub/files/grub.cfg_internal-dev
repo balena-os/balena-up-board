@@ -4,5 +4,5 @@ default=boot
 timeout=3
 
 menuentry 'boot'{
-linux /vmlinuz root=LABEL=resin-rootA rootwait processor.max_cstate=1
+linux /vmlinuz root=LABEL=resin-rootA rootwait processor.max_cstate=1 i915.enable_rc6=0
 }
