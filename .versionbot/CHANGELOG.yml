@@ -1,4 +1,18 @@
 - commits:
+    - subject: 'grub: Add option for graphics improvement'
+      hash: a49152c84c93d01086ee1a907100fcda63586a82
+      body: |
+        This patch adds the "i915.enable_rc6=0" option in grub
+        to reduce graphics glitches/flickering
+      footer:
+        Changelog-entry: 'grub: Add option for graphics improvement'
+        changelog-entry: 'grub: Add option for graphics improvement'
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+  version: 2.29.0+rev2
+  date: 2019-01-11T11:35:35.557Z
+- commits:
     - subject: Update meta-resin from v2.26.0 to v2.29.0
       hash: f400c614049ef094997fca45a5ba149e7697b9c9
       body: |

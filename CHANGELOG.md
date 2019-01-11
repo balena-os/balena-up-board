@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.29.0+rev2
+## (2019-01-11)
+
+* grub: Add option for graphics improvement [Sebastian Panceac]
+
 # v2.29.0+rev1
 ## (2019-01-04)
 
