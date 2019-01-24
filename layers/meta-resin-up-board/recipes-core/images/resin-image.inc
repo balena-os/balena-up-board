@@ -14,3 +14,7 @@ RESIN_BOOT_PARTITION_FILES_up-board = " \
     grub-efi-bootx64.efi:/EFI/BOOT/bootx64.efi \
     bzImage${KERNEL_INITRAMFS}-up-board.bin:/vmlinuz \
     "
+
+IMAGE_INSTALL_append = " \
+    ampak-bt \
+"
