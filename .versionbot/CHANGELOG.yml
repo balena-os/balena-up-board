@@ -1,4 +1,32 @@
 - commits:
+    - subject: 'ampak-bt: Add BT firmware and systemd service'
+      hash: bf0ad71a23df12889c59bb2f55e1b2cf338196ef
+      body: |
+        We add the firmware and systemd service for Ampak AP6214A
+        (based on Broadcom chip) to enable BT functionality.
+
+        Brought from:
+        http://ubilinux.org/ubilinux/pool/main/f/firmware-ampak-ap6214a/
+      footer:
+        Changelog-entry: 'ampak-bt: Add BT firmware and systemd service'
+        changelog-entry: 'ampak-bt: Add BT firmware and systemd service'
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+    - subject: Update meta-resin from v2.29.0 to v2.29.2
+      hash: c87f3cb2a08574a6c17d8648c4e4444628a27c8e
+      body: |
+        Update meta-resin from 2.29.0 to 2.29.2
+      footer:
+        Changelog-entry: Update meta-resin from v2.29.0 to v2.29.2
+        changelog-entry: Update meta-resin from v2.29.0 to v2.29.2
+        Signed-off-by: Sebastian Panceac <sebastian@balena.io>
+        signed-off-by: Sebastian Panceac <sebastian@balena.io>
+      author: Sebastian Panceac
+      nested: []
+  version: 2.29.2+rev1
+  date: 2019-01-24T10:31:34.935Z
+- commits:
     - subject: 'grub: Add option for graphics improvement'
       hash: a49152c84c93d01086ee1a907100fcda63586a82
       body: |

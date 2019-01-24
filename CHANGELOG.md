@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.29.2+rev1
+## (2019-01-24)
+
+* ampak-bt: Add BT firmware and systemd service [Sebastian Panceac]
+* Update meta-resin from v2.29.0 to v2.29.2 [Sebastian Panceac]
+
 # v2.29.0+rev2
 ## (2019-01-11)
 
