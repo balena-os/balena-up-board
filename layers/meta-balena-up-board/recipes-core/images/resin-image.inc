@@ -1,18 +1,18 @@
 #
-# up-board
+# Up boards (up-board, up-core, up-squared)
 #
 
-IMAGE_FSTYPES_append_up-board = " resinos-img"
+IMAGE_FSTYPES_append = " resinos-img"
 
 # Do not support live USB stick
-NOISO_up-board = "1"
-NOHDD_up-board = "1"
+NOISO = "1"
+NOHDD = "1"
 
 # Customize resinos-img
-RESIN_IMAGE_BOOTLOADER_up-board = "grub-efi"
-RESIN_BOOT_PARTITION_FILES_up-board = " \
+RESIN_IMAGE_BOOTLOADER = "grub-efi"
+RESIN_BOOT_PARTITION_FILES = " \
     grub-efi-bootx64.efi:/EFI/BOOT/bootx64.efi \
-    bzImage${KERNEL_INITRAMFS}-up-board.bin:/vmlinuz \
+    bzImage${KERNEL_INITRAMFS}-${MACHINE}.bin:/vmlinuz \
     "
 
 IMAGE_INSTALL_append = " \
