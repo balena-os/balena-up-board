@@ -15,14 +15,7 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-intel \
     ${TOPDIR}/../layers/meta-up-board \
     ${TOPDIR}/../layers/meta-balena/meta-resin-common \
-    ${TOPDIR}/../layers/meta-balena/meta-resin-pyro \
+    ${TOPDIR}/../layers/meta-balena/meta-resin-sumo \
     ${TOPDIR}/../layers/meta-balena-up-board \
     ${TOPDIR}/../layers/meta-rust \
-    "
-
-BBLAYERS_NON_REMOVABLE ?= " \
-    ${TOPDIR}/../layers/poky/meta \
-    ${TOPDIR}/../layers/poky/meta-poky \
-    ${TOPDIR}/../layers/meta-balena/meta-resin-common \
-    ${TOPDIR}/../layers/meta-balena/meta-resin-pyro \
     "
