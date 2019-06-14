@@ -1,5 +1,7 @@
 # Supported machines
 #MACHINE ?= "up-board"
+#MACHINE ?= "up-core"
+#MACHINE ?= "up-squared"
 
 # More info meta-resin/README.md
 #TARGET_REPOSITORY ?= ""
