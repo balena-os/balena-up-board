@@ -5,3 +5,5 @@ This repository enables building resin.io for UP board machines.
 
 ## Supported machines
 * up-board
+* up-core
+* up-squared

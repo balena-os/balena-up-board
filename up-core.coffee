@@ -16,8 +16,8 @@ postProvisioningInstructions = [
 
 module.exports =
 	version: 1
-	slug: 'up-board'
-	name: 'UP Board'
+	slug: 'up-core'
+	name: 'UP Core'
 	arch: 'amd64'
 	state: 'released'
 
@@ -32,18 +32,18 @@ module.exports =
 	].concat(postProvisioningInstructions)
 
 	gettingStartedLink:
-		windows: 'https://docs.resin.io/up-board/nodejs/getting-started/#adding-your-first-device'
-		osx: 'https://docs.resin.io/up-board/nodejs/getting-started/#adding-your-first-device'
-		linux: 'https://docs.resin.io/up-board/nodejs/getting-started/#adding-your-first-device'
+		windows: 'https://docs.resin.io/up-core/nodejs/getting-started/#adding-your-first-device'
+		osx: 'https://docs.resin.io/up-core/nodejs/getting-started/#adding-your-first-device'
+		linux: 'https://docs.resin.io/up-core/nodejs/getting-started/#adding-your-first-device'
 
 	supportsBlink: true
 
 	yocto:
-		machine: 'up-board'
+		machine: 'up-core'
 		image: 'resin-image-flasher'
 		fstype: 'resinos-img'
 		version: 'yocto-sumo'
-		deployArtifact: 'resin-image-flasher-up-board.resinos-img'
+		deployArtifact: 'resin-image-flasher-up-core.resinos-img'
 		compressed: true
 
 	configuration:
