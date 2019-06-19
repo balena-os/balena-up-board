@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.38.0+rev2
+## (2019-06-19)
+
+* Remove ampak-bt since the sumo branch BSP has now a similar package [Florin Sarbu]
+
 # v2.38.0+rev1
 ## (2019-06-18)
 

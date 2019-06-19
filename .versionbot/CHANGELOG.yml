@@ -1,4 +1,19 @@
 - commits:
+    - subject: Remove ampak-bt since the sumo branch BSP has now a similar package
+      hash: 56f491b067a29e61cffbe9e2ecc0dc63475f94c7
+      body: |
+        With the switch to sumo, the BSP has defined a bluetooth package for
+        for Up Core and Up Core Plus (ampak-firmware_1.2.bb) which should be
+        used instead of the one we have in our layers.
+      footer:
+        Changelog-entry: Remove ampak-bt since the sumo branch BSP has now a similar package
+        changelog-entry: Remove ampak-bt since the sumo branch BSP has now a similar package
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.38.0+rev2
+  date: 2019-06-19T09:13:03.447Z
+- commits:
     - subject: Update the meta-balena submodule from v2.33.0 to v2.38.0
       hash: fc15a75be84c2bf33ad4301b96ce51e16ccb7c33
       body: |
