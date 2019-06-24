@@ -18,3 +18,8 @@ PACKAGES =+ "${PN}-iwlwifi-3160"
 FILES_${PN}-iwlwifi-3160 = " \
     /lib/firmware/iwlwifi-3160-17.ucode \
 "
+
+PACKAGES =+ "${PN}-ath10k-qca6174"
+FILES_${PN}-ath10k-qca6174 = " \
+    /lib/firmware/ath10k/QCA6174/* \
+"
