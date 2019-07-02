@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.38.1+rev2
+## (2019-06-24)
+
+* Add icons for up-core, up-core-plus, up-squared [Florin Sarbu]
+
 # v2.38.1+rev1
 ## (2019-06-24)
 

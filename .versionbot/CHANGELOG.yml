@@ -1,4 +1,16 @@
 - commits:
+    - subject: 'Add icons for up-core, up-core-plus, up-squared'
+      hash: 906f61ee08da4f7ed76eaed2742f5653b265cf0d
+      body: ''
+      footer:
+        Changelog-entry: 'Add icons for up-core, up-core-plus, up-squared'
+        changelog-entry: 'Add icons for up-core, up-core-plus, up-squared'
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.38.1+rev2
+  date: 2019-06-24T10:53:25.609Z
+- commits:
     - subject: Update the meta-balena submodule from v2.38.0 to v2.38.1
       hash: d87579033163b69c58093f657fc07d8735b5057b
       body: |
