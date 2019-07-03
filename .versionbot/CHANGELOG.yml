@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update the BSP layer to latest sumo branch
+      hash: 8761dead5608ab77e5aabd1e908339096bdde405
+      body: ''
+      footer:
+        Changelog-entry: Update the BSP layer to latest sumo branch
+        changelog-entry: Update the BSP layer to latest sumo branch
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+    - subject: Add WiFi and BT firmware to the up-board image
+      hash: bcda2224e525dd504d9d0d10c46c3be5d8f5ac96
+      body: |
+        It was decided that going forward we will be using 1 image
+        (up-board) for all the Up boards so let's include the wifi and
+        bluetooth firmware in this generic image to be used for the Up
+        boards that have these capabilities.
+      footer:
+        Changelog-entry: Add WiFi and BT firmware to the up-board image
+        changelog-entry: Add WiFi and BT firmware to the up-board image
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.38.2+rev2
+  date: 2019-07-03T05:01:55.314Z
+- commits:
     - subject: 'linux-yocto: Add support for USB_SERIAL_CH341 as module'
       hash: f0fcd911199619727b0588608f248e13bdc30d4f
       body: ''

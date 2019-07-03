@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.38.2+rev2
+## (2019-07-03)
+
+* Update the BSP layer to latest sumo branch [Florin Sarbu]
+* Add WiFi and BT firmware to the up-board image [Florin Sarbu]
+
 # v2.38.2+rev1
 ## (2019-07-02)
 
