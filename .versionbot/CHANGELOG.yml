@@ -1,4 +1,39 @@
 - commits:
+    - subject: Update the balena-yocto-scripts submodule to v1.3.2
+      hash: 444b263cb173defa7e6e77d3ebb05b1a89abab00
+      body: ''
+      footer:
+        Changelog-entry: Update the balena-yocto-scripts submodule to v1.3.2
+        changelog-entry: Update the balena-yocto-scripts submodule to v1.3.2
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+    - subject: Update meta-balena from v2.38.2 to v2.38.3
+      hash: 2745f42f86e9d8811ba4277b4a0377329365bd90
+      body: |
+        Update meta-balena from 2.38.2 to 2.38.3
+      footer:
+        Changelog-entry: Update meta-balena from v2.38.2 to v2.38.3
+        changelog-entry: Update meta-balena from v2.38.2 to v2.38.3
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested:
+        - commits:
+            - subject: 'resin-proxy-config: fix up incorrect bash subshell command'
+              hash: 0c8de756c22f635b2ef499848b724f1350f555b0
+              body: ''
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Matthew McGinn <matthew@balena.io>
+                signed-off-by: Matthew McGinn <matthew@balena.io>
+              author: Matthew McGinn
+          version: meta-balena-2.38.3
+          date: 2019-07-10T08:16:25.713Z
+  version: 2.38.3+rev1
+  date: 2019-07-15T08:52:04.380Z
+- commits:
     - subject: Update the BSP layer to latest sumo branch
       hash: 8761dead5608ab77e5aabd1e908339096bdde405
       body: ''
