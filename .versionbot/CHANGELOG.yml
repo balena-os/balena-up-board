@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update balena-yocto-scripts to v1.5.2
+      hash: 5320b2e9ed856960a63cf32959e547ecaccfe41f
+      body: ''
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to v1.5.2
+        changelog-entry: Update balena-yocto-scripts to v1.5.2
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.44.0+rev2
+  date: 2019-11-19T10:37:34.266Z
+- commits:
     - subject: Add ACPI SSTDs to rootfs
       hash: c0c1c304f3be5c78bb42ef951187ae57f8ac07a6
       body: |
