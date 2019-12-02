@@ -1,6 +1,13 @@
 Change log
 -----------
 
+# v2.45.1+rev2
+## (2019-11-29)
+
+* Add grubenv and remove kernel from the boot partition [Florin Sarbu]
+* Restructure grub configs and allow for host OS rollbacks [Florin Sarbu]
+* Pin the Up Board kernel to version 4.14.76 [Florin Sarbu]
+
 # v2.45.1+rev1
 ## (2019-11-23)
 

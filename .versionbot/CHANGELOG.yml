@@ -1,4 +1,46 @@
 - commits:
+    - subject: Add grubenv and remove kernel from the boot partition
+      hash: bae5c9380544548eeeb7e7e4b602d8f3b2d2a497
+      body: |
+        We can load the kernel from the root partition so let's not deploy
+        it to the boot partition as we won't load it from there anymore.
+        We also add the grubenv to the boot partition so we can use the
+        bootcount mechanism needed for rollbacks.
+      footer:
+        Changelog-entry: Add grubenv and remove kernel from the boot partition
+        changelog-entry: Add grubenv and remove kernel from the boot partition
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+    - subject: Restructure grub configs and allow for host OS rollbacks
+      hash: 04b1cb872a873a452dcd6985cfb3f4d3523d534f
+      body: |
+        We make use of templating for the internal grub config and also
+        introduce bootcount for being used for host OS rollbacks.
+      footer:
+        Changelog-entry: Restructure grub configs and allow for host OS rollbacks
+        changelog-entry: Restructure grub configs and allow for host OS rollbacks
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+    - subject: Pin the Up Board kernel to version 4.14.76
+      hash: f7724b1cca887a3efb3420f7b1d94a8a0fa50d91
+      body: |
+        The BSP has this set to AUTOREV for Up Board. Because we
+        currently use the Up Board image for all the Up boards,
+        we get the autorev'ed kernel on the Up Core also and that
+        newer kernel does not play nice with the wifi chip on the
+        Up Core. So we pin the Up Board kernel to version 4.14.76
+        (the same kernel version the BSP has for the Up Core machine)
+      footer:
+        Changelog-entry: Pin the Up Board kernel to version 4.14.76
+        changelog-entry: Pin the Up Board kernel to version 4.14.76
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.45.1+rev2
+  date: 2019-11-29T16:12:34.336Z
+- commits:
     - subject: Update meta-balena from v2.44.0 to v2.45.1
       hash: 868db6e8aec3d4aee466668a0aa5b2e6a354488d
       body: |
