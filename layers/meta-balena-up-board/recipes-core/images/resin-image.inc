@@ -12,7 +12,7 @@ NOHDD = "1"
 RESIN_IMAGE_BOOTLOADER = "grub-efi"
 RESIN_BOOT_PARTITION_FILES = " \
     grub-efi-bootx64.efi:/EFI/BOOT/bootx64.efi \
-    bzImage${KERNEL_INITRAMFS}-${MACHINE}.bin:/vmlinuz \
+    grubenv:/EFI/BOOT/grubenv \
     "
 
 # add to rootfs the firmware for Ampak AP6214a and AP6355 Wireless/Bluetooth
