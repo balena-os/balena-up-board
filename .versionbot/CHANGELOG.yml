@@ -1,4 +1,36 @@
 - commits:
+    - subject: Add hook to remove kernel from boot partition after a HUP
+      hash: 2b8ebd032240e6c6eef272e93d34be759ce575c2
+      body: |
+        The kernel in the root partition in the /boot folder is now used to
+        boot resinOS. After a HUP, there will be a redundant vmlinuz file
+        left in the boot partition.
+
+        This hooks tests for its presence and removes the redundant file.
+
+        This commit is taken from Zubair's commit in balena-intel:
+        https://github.com/balena-os/balena-intel/commit/5063e070
+      footer:
+        Changelog-entry: Add hook to remove kernel from boot partition after a HUP
+        changelog-entry: Add hook to remove kernel from boot partition after a HUP
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+    - subject: Deploy the grub config to the boot partition
+      hash: 443a6e030e26efc3120ee21415095cd38d7b8264
+      body: |
+        We need to have the grub config in the boot partition so that
+        after a host OS update we pick any updates might have been done
+        to grub.cfg.
+      footer:
+        Changelog-entry: Deploy the grub config to the boot partition
+        changelog-entry: Deploy the grub config to the boot partition
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.45.1+rev3
+  date: 2019-12-03T05:56:27.457Z
+- commits:
     - subject: Add grubenv and remove kernel from the boot partition
       hash: bae5c9380544548eeeb7e7e4b602d8f3b2d2a497
       body: |

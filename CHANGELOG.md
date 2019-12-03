@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.45.1+rev3
+## (2019-12-03)
+
+* Add hook to remove kernel from boot partition after a HUP [Florin Sarbu]
+* Deploy the grub config to the boot partition [Florin Sarbu]
+
 # v2.45.1+rev2
 ## (2019-11-29)
 
