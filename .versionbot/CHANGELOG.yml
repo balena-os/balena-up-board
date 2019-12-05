@@ -1,4 +1,18 @@
 - commits:
+    - subject: 'Revert "random: fix crng_ready() test" to fix balena delay start issue'
+      hash: dd5aa222cdc34c2feb11f7766545c4887fe9105b
+      body: |
+        The introduction of this patch caused balena to start with a delay
+        because not enough entropy is gathered by the time balena starts.
+      footer:
+        Changelog-entry: 'Revert "random: fix crng_ready() test" to fix balena delay start issue'
+        changelog-entry: 'Revert "random: fix crng_ready() test" to fix balena delay start issue'
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+  version: 2.45.1+rev4
+  date: 2019-12-05T07:01:28.882Z
+- commits:
     - subject: Add hook to remove kernel from boot partition after a HUP
       hash: 2b8ebd032240e6c6eef272e93d34be759ce575c2
       body: |

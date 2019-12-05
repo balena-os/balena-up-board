@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.45.1+rev4
+## (2019-12-05)
+
+* Revert "random: fix crng_ready() test" to fix balena delay start issue [Florin Sarbu]
+
 # v2.45.1+rev3
 ## (2019-12-03)
 
