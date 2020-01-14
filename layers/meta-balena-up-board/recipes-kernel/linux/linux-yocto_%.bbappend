@@ -22,11 +22,16 @@ RESIN_CONFIGS_DEPS[ath10k_pci] = " \
 # requested by customer
 RESIN_CONFIGS_append = " ch341"
 RESIN_CONFIGS[ch341] = " \
-	CONFIG_USB_SERIAL_CH341=m \
+    CONFIG_USB_SERIAL_CH341=m \
 "
 
 # required for enabling ACPI SSDTs
 RESIN_CONFIGS_append = " acpi_configfs"
 RESIN_CONFIGS[acpi_configfs] = " \
 	CONFIG_ACPI_CONFIGFS=m \
+"
+
+RESIN_CONFIGS_append = " uinput"
+RESIN_CONFIGS[uinput] = " \
+    CONFIG_INPUT_UINPUT=m \
 "
