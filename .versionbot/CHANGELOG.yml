@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update meta-rust to include 1.36
+      hash: 51a76f720de6e5dde223a99ef799545a3fd2d6ba
+      body: ''
+      footer:
+        Changelog-entry: Update meta-rust to include 1.36
+        changelog-entry: Update meta-rust to include 1.36
+        Signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+        signed-off-by: Zubair Lutfullah Kakakhel <zubair@balena.io>
+      author: Zubair Lutfullah Kakakhel
+  version: 2.45.1+rev5
+  date: 2020-02-11T12:40:34.434Z
+- commits:
     - subject: 'Revert "random: fix crng_ready() test" to fix balena delay start issue'
       hash: dd5aa222cdc34c2feb11f7766545c4887fe9105b
       body: |
