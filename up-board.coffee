@@ -20,6 +20,7 @@ module.exports =
 	name: 'UP Board'
 	arch: 'amd64'
 	state: 'released'
+	private: false
 
 	stateInstructions:
 		postProvisioning: postProvisioningInstructions
