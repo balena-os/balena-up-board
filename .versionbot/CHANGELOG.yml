@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update links to getting started guide from resin.io to balena.io
+      hash: 3829db7e0c13afbb16a5560d253056821a5dc670
+      body: ''
+      footer:
+        Changelog-entry: Update links to getting started guide from resin.io to balena.io
+        changelog-entry: Update links to getting started guide from resin.io to balena.io
+        Signed-off-by: Gareth Davies <gareth@balena.io>
+        signed-off-by: Gareth Davies <gareth@balena.io>
+      author: Gareth Davies
+  version: 2.47.0+rev3
+  date: 2020-05-14T10:26:18.779Z
+- commits:
     - subject: Set private to false in .coffee files for the public device types
       hash: 6f276529980b797ef07d009750e3e7ca573438c6
       body: ''
