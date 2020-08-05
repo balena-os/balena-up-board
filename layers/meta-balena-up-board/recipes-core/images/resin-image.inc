@@ -12,6 +12,7 @@ NOHDD = "1"
 RESIN_IMAGE_BOOTLOADER = "grub-efi"
 RESIN_BOOT_PARTITION_FILES = " \
     grub-efi-bootx64.efi:/EFI/BOOT/bootx64.efi \
+    grub/x86_64-efi:/EFI/BOOT/x86_64-efi/ \
     grubenv:/EFI/BOOT/grubenv \
     "
 
