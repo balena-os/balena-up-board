@@ -1,0 +1,83 @@
+From 8f9a1d0ed632d12d4888e83ce0589f68c4f0c5fe Mon Sep 17 00:00:00 2001
+From: Vicentiu Galanopulo <vicentiu@balena.io>
+Date: Wed, 19 Aug 2020 12:11:47 +0200
+Subject: [PATCH] Revert "gpiolib: allow gpio irqchip to map irqs dynamically"
+
+This reverts commit dc749a09ea5e413564115dee742c3bc958248707.
+
+We revert this because we get
+[ 58.380237] BUG: unable to handle kernel NULL pointer dereference at 0000000000000018
+[ 58.380264] IP: irq_chip_set_type_parent+0x9/0x30
+
+when adding in /sys edge-triggered interrupts
+
+Upstream-Status: Inappropriate [configuration]
+Signed-off-by: Vicentiu Galanopulo <vicentiu@balena.io>
+---
+ drivers/gpio/gpiolib.c | 29 +++++++++++++++++++++++------
+ 1 file changed, 23 insertions(+), 6 deletions(-)
+
+diff --git a/drivers/gpio/gpiolib.c b/drivers/gpio/gpiolib.c
+index 7d5de4e..4f59299 100644
+--- a/drivers/gpio/gpiolib.c
++++ b/drivers/gpio/gpiolib.c
+@@ -1635,9 +1635,6 @@ static int gpiochip_irq_map(struct irq_domain *d, unsigned int irq,
+ {
+ 	struct gpio_chip *chip = d->host_data;
+ 
+-	if (!gpiochip_irqchip_irq_valid(chip, hwirq))
+-		return -ENXIO;
+-
+ 	irq_set_chip_data(irq, chip);
+ 	/*
+ 	 * This lock class tells lockdep that GPIO irqs are in a different
+@@ -1704,9 +1701,7 @@ static void gpiochip_irq_relres(struct irq_data *d)
+ 
+ static int gpiochip_to_irq(struct gpio_chip *chip, unsigned offset)
+ {
+-	if (!gpiochip_irqchip_irq_valid(chip, offset))
+-		return -ENXIO;
+-	return irq_create_mapping(chip->irqdomain, offset);
++	return irq_find_mapping(chip->irqdomain, offset);
+ }
+ 
+ /**
+@@ -1782,6 +1777,9 @@ int gpiochip_irqchip_add_key(struct gpio_chip *gpiochip,
+ 			     struct lock_class_key *lock_key)
+ {
+ 	struct device_node *of_node;
++	bool irq_base_set = false;
++	unsigned int offset;
++	unsigned irq_base = 0;
+ 
+ 	if (!gpiochip || !irqchip)
+ 		return -EINVAL;
+@@ -1838,6 +1836,25 @@ int gpiochip_irqchip_add_key(struct gpio_chip *gpiochip,
+ 		irqchip->irq_release_resources = gpiochip_irq_relres;
+ 	}
+ 
++	/*
++	 * Prepare the mapping since the irqchip shall be orthogonal to
++	 * any gpiochip calls. If the first_irq was zero, this is
++	 * necessary to allocate descriptors for all IRQs.
++	 */
++	for (offset = 0; offset < gpiochip->ngpio; offset++) {
++		if (!gpiochip_irqchip_irq_valid(gpiochip, offset))
++			continue;
++		irq_base = irq_create_mapping(gpiochip->irqdomain, offset);
++		if (!irq_base_set) {
++			/*
++			 * Store the base into the gpiochip to be used when
++			 * unmapping the irqs.
++			 */
++			gpiochip->irq_base = irq_base;
++			irq_base_set = true;
++		}
++	}
++
+ 	acpi_gpiochip_request_interrupts(gpiochip);
+ 
+ 	return 0;
+-- 
+2.7.4
+

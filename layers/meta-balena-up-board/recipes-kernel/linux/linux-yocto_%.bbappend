@@ -2,7 +2,9 @@ inherit kernel-resin
 
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
-SRC_URI += "file://0001-Revert-random-fix-crng_ready-test.patch"
+SRC_URI += "file://0001-Revert-random-fix-crng_ready-test.patch \
+	    file://0002-Revert-gpiolib-allow-gpio-irqchip-to-map-irqs-dynami.patch \
+"
 
 # HDMI audio support requested by customer
 RESIN_CONFIGS_append = " hdmi_sound"
