@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.50.0+rev2
+## (2020-08-19)
+
+* Revert "gpiolib: allow gpio irqchip to map irqs dynamically" [Vicentiu Galanopulo]
+
 # v2.50.0+rev1
 ## (2020-05-15)
 

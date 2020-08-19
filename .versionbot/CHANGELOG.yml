@@ -1,4 +1,20 @@
 - commits:
+    - subject: 'Revert "gpiolib: allow gpio irqchip to map irqs dynamically"'
+      hash: d3d0636b3ac28f19cce9621fa34a8037db46f9cf
+      body: |
+        Revert commit dc749a09ea5e413564115dee742c3bc958248707 because of
+        BUG unable to handle kernel NULL pointer dereference at 0000000000000018
+        IP irq_chip_set_type_parent+0x9/0x30
+      footer:
+        Changelog-entry: 'Revert "gpiolib: allow gpio irqchip to map irqs dynamically"'
+        changelog-entry: 'Revert "gpiolib: allow gpio irqchip to map irqs dynamically"'
+        Signed-off-by: Vicentiu Galanopulo <vicentiu@balena.io>
+        signed-off-by: Vicentiu Galanopulo <vicentiu@balena.io>
+      author: Vicentiu Galanopulo
+      nested: []
+  version: 2.50.0+rev2
+  date: 2020-08-19T10:55:44.633Z
+- commits:
     - subject: Update balena-yocto-scripts to v1.7.1
       hash: 6caae19b44c455a9541482d07f32513d65c2946c
       body: ''
