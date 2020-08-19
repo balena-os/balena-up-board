@@ -1,4 +1,28 @@
 - commits:
+    - subject: Grub selects root device from the same drive as boot device
+      hash: 38aa26632d66c2b62767f8deb72b9482c02e1988
+      body: |
+        This commit parses all partitions in the boot media looking for the
+        corresponding resin-root label and passes its UUID to the kernel command
+        line.
+
+        This guarantees the system will always boot from the same drive as grub
+        is booting from.
+
+        Note that the maximum number of partitions is will search for is 10.
+
+        Copy commit 03e40ee8296a32cb8db45b2d806cba20f25e2cc2 from
+        balena-intel
+      footer:
+        Changelog-entry: Grub selects root device from the same drive as boot device
+        changelog-entry: Grub selects root device from the same drive as boot device
+        Signed-off-by: Vicentiu Galanopulo <vicentiu@balena.io>
+        signed-off-by: Vicentiu Galanopulo <vicentiu@balena.io>
+      author: Vicentiu Galanopulo
+      nested: []
+  version: 2.50.0+rev3
+  date: 2020-08-19T13:48:50.434Z
+- commits:
     - subject: 'Revert "gpiolib: allow gpio irqchip to map irqs dynamically"'
       hash: d3d0636b3ac28f19cce9621fa34a8037db46f9cf
       body: |

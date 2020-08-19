@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.50.0+rev3
+## (2020-08-19)
+
+* Grub selects root device from the same drive as boot device [Vicentiu Galanopulo]
+
 # v2.50.0+rev2
 ## (2020-08-19)
 
