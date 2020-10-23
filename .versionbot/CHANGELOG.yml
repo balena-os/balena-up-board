@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update to warrior-21.0.2
+      hash: 16ff37d7b70bee067b24c189dca928ee5d39b4e9
+      body: |
+        We update all layers to warrior except for the BSP layer which does not
+        have a valid warrior branch.
+      footer:
+        Changelog-entry: Update to warrior-21.0.2
+        changelog-entry: Update to warrior-21.0.2
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.54.2+rev2
+  date: 2020-10-23T08:32:15.139Z
+- commits:
     - subject: Update meta-balena from v2.50.0 to v2.54.2
       hash: 8be704310ee32f6cb79682777928a1b1f2d9fe91
       body: |

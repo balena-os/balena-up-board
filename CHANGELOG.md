@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.54.2+rev2
+## (2020-10-23)
+
+* Update to warrior-21.0.2 [Florin Sarbu]
+
 # v2.54.2+rev1
 ## (2020-08-19)
 
