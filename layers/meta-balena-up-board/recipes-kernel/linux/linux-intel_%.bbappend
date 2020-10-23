@@ -4,6 +4,7 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
 SRC_URI += "file://0001-Revert-random-fix-crng_ready-test.patch \
 	    file://0002-Revert-gpiolib-allow-gpio-irqchip-to-map-irqs-dynami.patch \
+	    file://0003-Revert-gpiolib-drop-irq_base-field-from-gpio_chip-st.patch \
 "
 
 # HDMI audio support requested by customer

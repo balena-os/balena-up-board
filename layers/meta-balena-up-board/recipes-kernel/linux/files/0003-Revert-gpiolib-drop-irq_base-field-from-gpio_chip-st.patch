@@ -1,0 +1,33 @@
+From 07c735be3938864eeac015d4f0b89e5ace2faf87 Mon Sep 17 00:00:00 2001
+From: Florin Sarbu <florin@balena.io>
+Date: Fri, 23 Oct 2020 09:40:22 +0200
+Subject: [PATCH] Revert "gpiolib: drop irq_base field from gpio_chip struct"
+
+This reverts commit f628ba9e22e0fa32ac6270a0d696fe1509889540.
+
+Since we reverted dc749a09ea5e413564115dee742c3bc958248707 in patch
+0002-Revert-gpiolib-allow-gpio-irqchip-to-map-irqs-dynami.patch we also need
+to revert f628ba9e22e0fa32ac6270a0d696fe1509889540 so that the kernel can be
+compiled with the "gpiolib: allow gpio irqchip to map irqs dynamically" revert.
+
+Upstream-Status: Inappropriate [configuration]
+Signed-off-by: Florin Sarbu <florin@balena.io>
+---
+ include/linux/gpio/driver.h | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/include/linux/gpio/driver.h b/include/linux/gpio/driver.h
+index a4d5eb3..6832f3e 100644
+--- a/include/linux/gpio/driver.h
++++ b/include/linux/gpio/driver.h
+@@ -230,6 +230,7 @@ static inline struct gpio_irq_chip *to_gpio_irq_chip(struct irq_chip *chip)
+  * is calculated by subtracting @base from the gpio number.
+  */
+ struct gpio_chip {
++	unsigned int		irq_base;
+ 	const char		*label;
+ 	struct gpio_device	*gpiodev;
+ 	struct device		*parent;
+-- 
+2.7.4
+

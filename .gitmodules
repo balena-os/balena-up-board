@@ -13,9 +13,9 @@
 [submodule "layers/meta-intel"]
 	path = layers/meta-intel
 	url = https://git.yoctoproject.org/git/meta-intel
-[submodule "layers/meta-up-board"]
-	path = layers/meta-up-board
-	url = https://github.com/emutex/meta-up-board.git
 [submodule "layers/meta-rust"]
 	path = layers/meta-rust
 	url = https://github.com/meta-rust/meta-rust.git
+[submodule "layers/meta-up-board"]
+	path = layers/meta-up-board
+	url = https://github.com/AaeonCM/meta-up-board.git
