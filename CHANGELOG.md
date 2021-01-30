@@ -1,6 +1,117 @@
 Change log
 -----------
 
+# v2.68.1+rev1
+## (2021-01-30)
+
+* Remove TI wifi firmware to shrink rootfs size so host OS update can work [Florin Sarbu]
+* Update balena-yocto-scripts to v1.9.0 [Florin Sarbu]
+
+<details>
+<summary> Update meta-balena from v2.64.0 to v2.68.1 [Florin Sarbu] </summary>
+
+> ## meta-balena-2.68.1
+> ### (2021-01-29)
+> 
+> * Fix task ordering for the iwlwifi_firmware_clean task [Florin Sarbu]
+> 
+> ## meta-balena-2.68.0
+> ### (2021-01-29)
+> 
+> * Update NetworkManager to 1.28.0 [Zahari Petkov]
+> 
+> ## meta-balena-2.67.6
+> ### (2021-01-28)
+> 
+> * docs: mention balenaRootCA as a config.json parameter [Matthew McGinn]
+> 
+> ## meta-balena-2.67.5
+> ### (2021-01-27)
+> 
+> * replace busybox ps with procps [klutchell] [Kyle Harding]
+> 
+> ## meta-balena-2.67.4
+> ### (2021-01-27)
+> 
+> * Update aufs4 and aufs5 kernel patches [Florin Sarbu]
+> 
+> ## meta-balena-2.67.3
+> ### (2021-01-15)
+> 
+> * kernel-headers-test: Install python dependency [Alexandru Costache]
+> 
+> ## meta-balena-2.67.2
+> ### (2021-01-14)
+> 
+> * Fix pppd timeout when launched by NetworkManager [Zahari Petkov]
+> 
+> ## meta-balena-2.67.1
+> ### (2021-01-13)
+> 
+> * resin-device-register: Fix post provisioning state not reported [Alexandru Costache]
+> 
+> ## meta-balena-2.67.0
+> ### (2021-01-12)
+> 
+> * Update balena-supervisor from v12.2.11 to v12.3.0 [Felipe Lalanne]
+> 
+> ## meta-balena-2.66.3
+> ### (2021-01-12)
+> 
+> * Respect custom CA in supervisor [Michal Toman]
+> 
+> ## meta-balena-2.66.2
+> ### (2021-01-11)
+> 
+> * README: Rename resin-logo to balena-logo. [Alex Gonzalez]
+> 
+> ## meta-balena-2.66.1
+> ### (2021-01-04)
+> 
+> * kernel-devsrc: use upstream recipe starting with dunfell [Kyle Harding]
+> * gen_mod_headers: add missing arch headers to tools [Kyle Harding]
+> 
+> ## meta-balena-2.66.0
+> ### (2020-12-18)
+> 
+> * chrony: bump to version 4.0 [Mark Corbin]
+> 
+> ## meta-balena-2.65.1
+> ### (2020-12-17)
+> 
+> * u-boot: Add required configuration for BalenaOS environment [Alex Gonzalez]
+> 
+> ## meta-balena-2.65.0
+> ### (2020-12-14)
+> 
+> * Update balena-supervisor from v12.1.1 to v12.2.11 [Miguel Casqueira]
+> 
+> ## meta-balena-2.64.4
+> ### (2020-12-14)
+> 
+> * Add IPV6 multicast routing capability [Alex Gonzalez]
+> 
+> ## meta-balena-2.64.3
+> ### (2020-12-11)
+> 
+> * Revert "resin-data.mount: Remove default dependencies" [Alex Gonzalez]
+> * hostapp-update-hooks: Add supervisor database fix [Alex Gonzalez]
+> * resin-supervisor: Make sure the database directory exists [Alex Gonzalez]
+> * Correct the data partition mountpoint [Alex Gonzalez]
+> 
+> ## meta-balena-2.64.2
+> ### (2020-12-10)
+> 
+> * meta-balena-common: kernel-resin: enable task-accounting by default [Joseph Kogut]
+> * meta-balena-common: kernel-resin: create task-accounting config [Joseph Kogut]
+> 
+> ## meta-balena-2.64.1
+> ### (2020-12-09)
+> 
+> * Update codeowners [Alex Gonzalez]
+> 
+</details>
+
 # v2.64.0+rev1
 ## (2020-12-08)
 
