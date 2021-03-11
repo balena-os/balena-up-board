@@ -1,7 +1,7 @@
-include resin-image.inc
+include balena-image.inc
 
 IMAGE_INSTALL_append += " acpi-tables"
 
-RESIN_BOOT_PARTITION_FILES_append = " \
+BALENA_BOOT_PARTITION_FILES_append = " \
     grub.cfg_internal:/EFI/BOOT/grub.cfg \
 "
