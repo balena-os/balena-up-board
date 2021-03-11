@@ -41,10 +41,10 @@ module.exports =
 
 	yocto:
 		machine: 'up-board'
-		image: 'resin-image-flasher'
-		fstype: 'resinos-img'
+		image: 'balena-image-flasher'
+		fstype: 'balenaos-img'
 		version: 'yocto-warrior'
-		deployArtifact: 'resin-image-flasher-up-board.resinos-img'
+		deployArtifact: 'balena-image-flasher-up-board.balenaos-img'
 		compressed: true
 
 	configuration:
