@@ -43,7 +43,7 @@ module.exports =
 		machine: 'up-board'
 		image: 'balena-image-flasher'
 		fstype: 'balenaos-img'
-		version: 'yocto-warrior'
+		version: 'yocto-dunfell'
 		deployArtifact: 'balena-image-flasher-up-board.balenaos-img'
 		compressed: true
 

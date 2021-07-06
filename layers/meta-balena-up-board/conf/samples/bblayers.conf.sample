@@ -15,7 +15,7 @@ BBLAYERS ?= " \
     ${TOPDIR}/../layers/meta-intel \
     ${TOPDIR}/../layers/meta-up-board \
     ${TOPDIR}/../layers/meta-balena/meta-balena-common \
-    ${TOPDIR}/../layers/meta-balena/meta-balena-warrior \
+    ${TOPDIR}/../layers/meta-balena/meta-balena-dunfell \
     ${TOPDIR}/../layers/meta-balena-up-board \
     ${TOPDIR}/../layers/meta-rust \
     "
