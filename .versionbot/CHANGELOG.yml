@@ -1,4 +1,28 @@
 - commits:
+    - subject: Remove extra wifi firmwares to shrink rootfs size
+      hash: 7ba73d866e591cc6793c4033a388a7e7891c2e34
+      body: |
+        At this point the rootfs is about the max size and
+        can't accept the firmware update in meta-balena PR 2240:
+            recipe balena-image-1.0-r0: task do_image_size_check: Failed
+        Until hostapp extensions work is done, let's make some space here
+        by removing some extra wifi firmware.
+
+        The list of packages that we remove here is borrowed from
+        the balena-intel repository.
+
+        If meta-balena PR 2240 isn't merged until hostext,
+        this PR can be reverted.
+      footer:
+        Changelog-entry: Remove extra wifi firmwares to shrink rootfs size
+        changelog-entry: Remove extra wifi firmwares to shrink rootfs size
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 2.80.10+rev2
+  date: 2021-07-21T10:45:57.760Z
+- commits:
     - subject: Update meta-balena from v2.79.7 to v2.80.10
       hash: ebaad636828998897967bed5d558dc33fd70b625
       body: |

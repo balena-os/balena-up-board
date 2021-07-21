@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.80.10+rev2
+## (2021-07-21)
+
+* Remove extra wifi firmwares to shrink rootfs size [Alexandru Costache]
+
 # v2.80.10+rev1
 ## (2021-07-05)
 
