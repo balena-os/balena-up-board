@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.80.10+rev2
+## (2021-07-20)
+
+* Remove unnecessary GRUB modules [Joseph Kogut]
+
 # v2.80.10+rev1
 ## (2021-07-05)
 

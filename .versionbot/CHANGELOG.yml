@@ -1,4 +1,21 @@
 - commits:
+    - subject: Remove unnecessary GRUB modules
+      hash: a414dfb7f8b6e849ef51d8e070387d3374867e7a
+      body: |
+        The bootloader has all necessary modules built into the EFI image. Free
+        up some space by removing unnecessary GRUB modules.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Remove unnecessary GRUB modules
+        changelog-entry: Remove unnecessary GRUB modules
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+  version: 2.80.10+rev2
+  date: 2021-07-20T23:54:52.028Z
+- commits:
     - subject: Update meta-balena from v2.79.7 to v2.80.10
       hash: ebaad636828998897967bed5d558dc33fd70b625
       body: |
