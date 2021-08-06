@@ -1,4 +1,19 @@
 - commits:
+    - subject: Install only required i915 firmware
+      hash: d2fd9f58b5c19fe7cc0a7dc7d598b97079146c95
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Install only required i915 firmware
+        changelog-entry: Install only required i915 firmware
+        Signed-off-by: Joseph Kogut <joseph@balena.io>
+        signed-off-by: Joseph Kogut <joseph@balena.io>
+      author: Joseph Kogut
+      nested: []
+  version: 2.80.10+rev3
+  date: 2021-07-27T22:32:53.148Z
+- commits:
     - subject: Remove unnecessary GRUB modules
       hash: a414dfb7f8b6e849ef51d8e070387d3374867e7a
       body: |

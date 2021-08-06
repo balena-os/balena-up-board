@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.80.10+rev3
+## (2021-07-27)
+
+* Install only required i915 firmware [Joseph Kogut]
+
 # v2.80.10+rev2
 ## (2021-07-20)
 
