@@ -1,4 +1,27 @@
 - commits:
+    - subject: >-
+        Include the aufs kernel module for devices that have been using aufs
+        prior to the overlayfs migration
+      hash: 1b913caa4cab8e48c331f6923cb0f5801990c836
+      body: |
+        We now have automatic migration from aufs to overlayfs. For the hostOS
+        containers, the migration will be done only after another HUP so for
+        making things still work after the first HUP we need to keep including
+        the aufs kernel driver.
+      footer:
+        Changelog-entry: >-
+          Include the aufs kernel module for devices that have been using aufs
+          prior to the overlayfs migration
+        changelog-entry: >-
+          Include the aufs kernel module for devices that have been using aufs
+          prior to the overlayfs migration
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.88.21+rev1
+  date: 2022-01-18T12:41:57.318Z
+- commits:
     - subject: Update meta-balena from v2.88.19 to v2.88.21
       hash: fd9b9bc1ea34be7d9314bf38e7e60a8090c9e094
       body: |
