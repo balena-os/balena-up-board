@@ -31,3 +31,10 @@ BALENA_CONFIGS_append = " acpi_configfs"
 BALENA_CONFIGS[acpi_configfs] = " \
 	CONFIG_ACPI_CONFIGFS=m \
 "
+
+# This device type has been using the aufs storage driver,
+# and during a HUP the storage in the inactive sysroot will
+# still be aufs, so we need to include the aufs driver going
+# further for it, as per the internal thread:
+# https://www.flowdock.com/app/rulemotion/resin-devices/threads/K2TQiSUfNDqBT5Ih6cciNI2d9QJ
+BALENA_CONFIGS_append_up-board = " aufs"
