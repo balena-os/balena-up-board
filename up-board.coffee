@@ -20,7 +20,6 @@ module.exports =
 	name: 'UP Board'
 	arch: 'amd64'
 	state: 'released'
-	private: false
 
 	stateInstructions:
 		postProvisioning: postProvisioningInstructions
@@ -36,8 +35,6 @@ module.exports =
 		windows: 'https://www.balena.io/docs/learn/getting-started/up-board/nodejs/'
 		osx: 'https://www.balena.io/docs/learn/getting-started/up-board/nodejs/'
 		linux: 'https://www.balena.io/docs/learn/getting-started/up-board/nodejs/'
-
-	supportsBlink: true
 
 	yocto:
 		machine: 'up-board'
