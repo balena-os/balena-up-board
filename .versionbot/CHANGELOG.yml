@@ -1,4 +1,19 @@
 - commits:
+    - subject: Enable firmware compression to increase available rootfs space
+      hash: 06941b5c9ebe9c9441e21c60fd202f970bb90b44
+      body: |
+        We need to increase the available rootfs space
+      footer:
+        Changelog-entry: Enable firmware compression to increase available rootfs space
+        changelog-entry: Enable firmware compression to increase available rootfs space
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.89.14+rev1
+  title: "'meta-balena-up-board:layer: Enable firmware compression'"
+  date: 2022-02-07T08:22:08.228Z
+- commits:
     - subject: Update meta-balena from v2.89.5 to v2.89.14
       hash: ad0539d6b47b890a2215c9938608dafee760601e
       body: |

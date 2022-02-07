@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.89.14+rev1
+## (2022-02-07)
+
+* Enable firmware compression to increase available rootfs space [Florin Sarbu]
+
 # v2.89.14
 ## (2022-02-04)
 
