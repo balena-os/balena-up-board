@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to 96599b31001fc8f7e4eac7fc650a12d43ca39d21
+      hash: 5c3ff45e7f3346132673b44ad764f3fcde836fba
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 96599b31001fc8f7e4eac7fc650a12d43ca39d21
+        changelog-entry: Update layers/meta-balena to 96599b31001fc8f7e4eac7fc650a12d43ca39d21
+      author: Renovate Bot
+      nested:
+        - commits:
+            - subject: "contributing-device-support.md: Enhance device contribution guide"
+              hash: e5d87b1ffa4cd86d4b133ba241f52fb820833cfb
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-2.98.21
+          title: "'contributing-device-support.md: Enhance device contribution guide'"
+          date: 2022-05-11T04:48:12.298Z
+  version: 2.98.21
+  title: "'Update layers/meta-balena digest to 96599b3'"
+  date: 2022-05-11T06:13:06.406Z
+- commits:
     - subject: Update layers/meta-balena to c98cda89f0be6c168599a2a155ec42a148d0a6cc
       hash: 738396a6a0853388fc03cde9444e38deb88de403
       body: Update layers/meta-balena
