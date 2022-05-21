@@ -19,3 +19,6 @@
 [submodule "layers/meta-up-board"]
 	path = layers/meta-up-board
 	url = https://github.com/AaeonCM/meta-up-board.git
+[submodule "contracts"]
+	path = contracts
+	url = https://github.com/balena-io/contracts.git
