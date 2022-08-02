@@ -1,4 +1,31 @@
 - commits:
+    - subject: Remove final argument from build and deploy workflow
+      hash: 7b5e2f0762248b36971508cf337df7e0e13c073c
+      body: |
+        The final argument is now filled up dynamically.
+      footer:
+        Changelog-entry: Remove final argument from build and deploy workflow
+        changelog-entry: Remove final argument from build and deploy workflow
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+    - subject: Update build and deploy workflow to v0.0.9
+      hash: 3c3ea03fc220b8fe4c4c1e34bdeecf4ebd83c189
+      body: |
+        This update will deploy as final when automation tests have been passed
+        for the previous merge commit.
+      footer:
+        Changelog-entry: Update build and deploy workflow to v0.0.9
+        changelog-entry: Update build and deploy workflow to v0.0.9
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.98.42+rev2
+  title: "'build_and_deploy: update to v0.0.9'"
+  date: 2022-08-01T11:34:39.641Z
+- commits:
     - subject: Update build and deploy workflow to support ESR tags
       hash: 1c4180962239a3d77fcb5aa9c9b8de5f96c700b6
       body: |
