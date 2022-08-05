@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v2.101.2
+## (2022-08-05)
+
+
+<details>
+<summary> Update layers/meta-balena to 3c505918b2cbf72f607a3ccc65cc3853fd3a636e [renovate[bot]] </summary>
+
+> ## meta-balena-2.101.2
+> ### (2022-08-05)
+> 
+> * DRY the HUP smoke tests [Leandro Motta Barros]
+> * Check volume contents over HUPs [Leandro Motta Barros]
+> 
+> ## meta-balena-2.101.1
+> ### (2022-08-01)
+> 
+> * os-config: Update os-config from v1.2.1 to v1.2.10 [Zahari Petkov]
+> 
+</details>
+
 # v2.101.0+rev3
 ## (2022-08-03)
 
