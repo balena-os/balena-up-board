@@ -1,4 +1,20 @@
 - commits:
+    - subject: Modify layer ordering
+      hash: 6dc71e21233ee5f746f78f4e635fc514774d1238
+      body: |
+        Yocto classes and conf files ignore layer priorities and are parsed
+        in order instead.
+      footer:
+        Changelog-entry: Modify layer ordering
+        changelog-entry: Modify layer ordering
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.101.6+rev1
+  title: "'bblayers: Modify layer ordering'"
+  date: 2022-08-16T14:16:27.283Z
+- commits:
     - subject: Update layers/meta-balena to 7dfa6d2abc3795d47a8a6cdb30bc540ee110e7ee
       hash: 271c0bd15ba4243d1fda0cc2f5593b5cdf68477c
       body: Update layers/meta-balena
