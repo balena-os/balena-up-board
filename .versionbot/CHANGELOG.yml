@@ -1,4 +1,52 @@
 - commits:
+    - subject: Update layers/meta-balena to 2f207a3dbc3f142d4d1e0b9fdbd6136bcfb40dac
+      hash: 96b7486bca23b4386ca94ef74774f61f6e2adb3a
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 2f207a3dbc3f142d4d1e0b9fdbd6136bcfb40dac
+        changelog-entry: Update layers/meta-balena to 2f207a3dbc3f142d4d1e0b9fdbd6136bcfb40dac
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: only do hdmi test if has capture device"
+              hash: 7dbe61633da64fd2c6372a817a954e0d1db24556
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.103.1
+          title: "'tests: os: only do hdmi test if testbot has capture device'"
+          date: 2022-09-13T10:17:51.672Z
+    - subject: Update layers/meta-balena to d9b45ab299777f08e8384a1e4b29c7ee4ef7822c
+      hash: 9af98748c87f4b296b7a3b05cf5a53c098f8418e
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to d9b45ab299777f08e8384a1e4b29c7ee4ef7822c
+        changelog-entry: Update layers/meta-balena to d9b45ab299777f08e8384a1e4b29c7ee4ef7822c
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "tests: os: only do hdmi test if has capture device"
+              hash: 7dbe61633da64fd2c6372a817a954e0d1db24556
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.103.1
+          title: "'tests: os: only do hdmi test if testbot has capture device'"
+          date: 2022-09-13T10:17:51.672Z
+  version: 2.103.1
+  title: "'Update layers/meta-balena digest to 2f207a3'"
+  date: 2022-09-14T12:55:55.345Z
+- commits:
     - subject: Update layers/meta-balena to 6e63144eb5d665dc51958e0aa791256c48cc0522
       hash: 1706e16d358ee17ca3cb3b112d5e67f65bc32c5f
       body: Update layers/meta-balena

@@ -1,6 +1,31 @@
 Change log
 -----------
 
+# v2.103.1
+## (2022-09-14)
+
+
+<details>
+<summary> Update layers/meta-balena to 2f207a3dbc3f142d4d1e0b9fdbd6136bcfb40dac [renovate[bot]] </summary>
+
+> ## meta-balena-2.103.1
+> ### (2022-09-13)
+> 
+> * tests: os: only do hdmi test if has capture device [rcooke-warwick]
+> 
+</details>
+
+
+<details>
+<summary> Update layers/meta-balena to d9b45ab299777f08e8384a1e4b29c7ee4ef7822c [renovate[bot]] </summary>
+
+> ## meta-balena-2.103.1
+> ### (2022-09-13)
+> 
+> * tests: os: only do hdmi test if has capture device [rcooke-warwick]
+> 
+</details>
+
 # v2.102.6
 ## (2022-09-08)
 
