@@ -1,4 +1,66 @@
 - commits:
+    - subject: Update layers/meta-balena to 6fe97ecc67ba4dc83fb5ff21d801e9062d4179d4
+      hash: 12747a89667f2bbbf6278d38c8beacc19a310810
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 6fe97ecc67ba4dc83fb5ff21d801e9062d4179d4
+        changelog-entry: Update layers/meta-balena to 6fe97ecc67ba4dc83fb5ff21d801e9062d4179d4
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "meta-resin-sumo: libical: Fix build QA error"
+              hash: a34583a3f5cbac25502ac9ad62f0d0073eb96511
+              body: >
+                Address the following build error:
+
+                ```
+
+                ERROR: libical-2.0.0-r0 do_package: QA Issue: libical: Files/directories were installed but not shipped in any package:
+
+                /usr/lib/cmake
+
+                /usr/lib/cmake/LibIcal
+
+                /usr/lib/cmake/LibIcal/LibIcalTargets.cmake
+
+                /usr/lib/cmake/LibIcal/LibIcalConfig.cmake
+
+                /usr/lib/cmake/LibIcal/LibIcalConfigVersion.cmake
+
+                /usr/lib/cmake/LibIcal/LibIcalTargets-noconfig.cmake
+
+                ```
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.105.20
+          title: ""
+          date: 2022-10-26T14:42:10.358Z
+        - commits:
+            - subject: "meta-resin-sumo: keep tpm2-tools in 5.0"
+              hash: 6c0596989bd182f26da1255ccfa7a55e45a0194e
+              body: >
+                Newer versions fail on the configuration step with:
+
+                Requested 'libcrypto >= 1.1.0' but version of OpenSSL-libcrypto is 1.0.2o
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.105.19
+          title: ""
+          date: 2022-10-26T01:25:34.955Z
+  version: 2.105.20
+  title: ""
+  date: 2022-10-26T19:44:31.606Z
+- commits:
     - subject: Update layers/meta-balena to ad75f015f985b1dff097568475d80c05924bfdae
       hash: bc91f22d299d711d5d369ce024b296fe21d2a5ff
       body: Update layers/meta-balena

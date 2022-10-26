@@ -1,6 +1,25 @@
 Change log
 -----------
 
+# v2.105.20
+## (2022-10-26)
+
+
+<details>
+<summary> Update layers/meta-balena to 6fe97ecc67ba4dc83fb5ff21d801e9062d4179d4 [renovate[bot]] </summary>
+
+> ## meta-balena-2.105.20
+> ### (2022-10-26)
+> 
+> * meta-resin-sumo: libical: Fix build QA error [Alex Gonzalez]
+> 
+> ## meta-balena-2.105.19
+> ### (2022-10-26)
+> 
+> * meta-resin-sumo: keep tpm2-tools in 5.0 [Alex Gonzalez]
+> 
+</details>
+
 # v2.105.18
 ## (2022-10-26)
 
