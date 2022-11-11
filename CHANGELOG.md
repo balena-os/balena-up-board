@@ -1,6 +1,20 @@
 Change log
 -----------
 
+# v2.106.3
+## (2022-11-11)
+
+
+<details>
+<summary> Update layers/meta-balena to 78f01e464e2d1003d276539dfba87def9c91a16b [renovate[bot]] </summary>
+
+> ## meta-balena-2.106.3
+> ### (2022-11-11)
+> 
+> * common: kernel-devsrc: fix pseudo abort [Joseph Kogut]
+> 
+</details>
+
 # v2.106.2
 ## (2022-11-11)
 
