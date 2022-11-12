@@ -1,4 +1,74 @@
 - commits:
+    - subject: Update layers/meta-balena to 5f789c7e57c7be71b8e333ac7127a809d2161935
+      hash: dee0032e99a014a5768f08c2a82ea3a6149da8e1
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 5f789c7e57c7be71b8e333ac7127a809d2161935
+        changelog-entry: Update layers/meta-balena to 5f789c7e57c7be71b8e333ac7127a809d2161935
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "ssh-auth: setConfig: run synchronously"
+              hash: 5534839614a5221068d25fb703658b780d6c7463
+              body: >
+                Most tests expects a specific device configuration so having the setting
+
+                run asynchronously leads to unexpected failures.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "cloud: ssh-auth: use custom path for custom key"
+              hash: 6c83fd02383baf7b6932858a3e88ae207cbecc3b
+              body: >
+                Right now it overwrites the key created by the cloud suite to connect
+
+                to the proxy.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-config-vars: Set permissions for cache file"
+              hash: 3406f9a45a5a97542972c442f1c8a8e3e80a7d37
+              body: >
+                The sshd daemon is configured to fetch keys from the API for local
+
+                user connections. The script that fetches the keys, cloud-public-sshkeys,
+
+                sources balena-config-vars and is run as an exclusive non-root user.
+
+
+                Let's set the correct permissions for this file to allow not to break
+
+                the above.
+
+
+                Also, add a test to check that the SSH authentication with user
+
+                registered keys does not break again.
+
+
+                Fixes #2785
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.106.4
+          title: ""
+          date: 2022-11-12T15:47:45.326Z
+  version: 2.106.4
+  title: ""
+  date: 2022-11-12T18:28:08.328Z
+- commits:
     - subject: Update balena-yocto-scripts to 3fbd0884bd7d599664587d0ab25fea22d77323ba
       hash: c5b2c9ead169e03363d4c2fe8d4bb28121cb9b54
       body: Update balena-yocto-scripts
