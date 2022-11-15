@@ -1,4 +1,59 @@
 - commits:
+    - subject: Update layers/meta-balena to 0bcd2db1e6e5bf04ad2882028aa26cbab0ee49ea
+      hash: 01cb960655cab8c566901c7d4d5fcf2ec190dee0
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 0bcd2db1e6e5bf04ad2882028aa26cbab0ee49ea
+        changelog-entry: Update layers/meta-balena to 0bcd2db1e6e5bf04ad2882028aa26cbab0ee49ea
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: Update balena-os/balena-supervisor to v14.3.3
+              hash: f2d3858900aa8a092331c38a590a63525fbb2a57
+              body: Update balena-supervisor
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: renovate[bot]
+              nested: []
+          version: meta-balena-2.106.6
+          title: ""
+          date: 2022-11-15T05:36:48.415Z
+        - commits:
+            - subject: "openvpn: fix a race condition that leaves system with no running
+                supervisor"
+              hash: fd788120e5915820e75240e548760fd107cc0580
+              body: >
+                The `os-config` application stops the supervisor before fetching openvpn
+
+                configuration and starting the `openvpn` service unit.
+
+
+                As the `openvpn` service units stops `os-config`, it might not get to
+
+                restart the supervisor.
+
+
+                This commit checks that `os-config` is not already active before
+
+                starting it.
+
+
+                Fixes #2855
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.106.5
+          title: ""
+          date: 2022-11-14T09:32:57.346Z
+  version: 2.106.6
+  title: ""
+  date: 2022-11-15T08:37:37.476Z
+- commits:
     - subject: Update layers/meta-balena to 5f789c7e57c7be71b8e333ac7127a809d2161935
       hash: dee0032e99a014a5768f08c2a82ea3a6149da8e1
       body: Update layers/meta-balena
