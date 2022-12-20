@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to b65d5bd372587d4aaabba526d34f67c3f63ea90b
+      hash: 178992902330b144827be225d32e1aba1fbc6333
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to b65d5bd372587d4aaabba526d34f67c3f63ea90b
+        changelog-entry: Update contracts to b65d5bd372587d4aaabba526d34f67c3f63ea90b
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "hw.device-type: Add Owasys owa5X device"
+              hash: d92fb422d14da698061c53422ae7bfb4fdd64b03
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+                signed-off-by: Alvaro Guzman <alvaro.guzman@owasys.com>
+              author: Alvaro Guzman
+          version: contracts-2.0.35
+          title: ""
+          date: 2022-12-20T11:53:50.722Z
+  version: 2.107.8+rev7
+  title: ""
+  date: 2022-12-20T14:25:42.340Z
+- commits:
     - subject: Update contracts to b6bdc537c9f9d224301152a0291682172320bf6a
       hash: b2c85b1a1c19ed8a7c7e311e293f61d50b2cdf6c
       body: Update contracts
