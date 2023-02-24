@@ -18,9 +18,6 @@
 	path = layers/meta-intel
 	url = https://git.yoctoproject.org/git/meta-intel
 	branch = dunfell
-[submodule "layers/meta-rust"]
-	path = layers/meta-rust
-	url = https://github.com/meta-rust/meta-rust.git
 [submodule "layers/meta-up-board"]
 	path = layers/meta-up-board
 	# switch to the new BSP repo as been advised by AAEON
