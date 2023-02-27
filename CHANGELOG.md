@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v2.112.14+rev1
+## (2023-02-27)
+
+* trigger deploy builds on multi-digit revisions too [Alex Gonzalez]
+
 # v2.112.14
 ## (2023-02-22)
 
