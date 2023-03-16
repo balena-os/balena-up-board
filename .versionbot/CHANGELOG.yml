@@ -1,4 +1,18 @@
 - commits:
+    - subject: Prevent duplicate CI workflow executions
+      hash: ba5c21c89951a0097e61c44a2a8d0f1b21fcb180
+      body: ""
+      footer:
+        Changelog-entry: Prevent duplicate CI workflow executions
+        changelog-entry: Prevent duplicate CI workflow executions
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 2.112.14+rev2
+  title: ""
+  date: 2023-03-16T18:43:25.347Z
+- commits:
     - subject: trigger deploy builds on multi-digit revisions too
       hash: 0e89c9fd2ae0fdb586dca840adf209fa9a7745dc
       body: >
