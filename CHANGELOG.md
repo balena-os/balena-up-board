@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v2.113.31+rev2
+## (2023-04-04)
+
+
+<details>
+<summary> Update contracts to a7fa4ca620414f2a2742210c5f97e0c207fa660b [Renovate Bot] </summary>
+
+> ## contracts-2.0.56
+> ### (2023-04-04)
+> 
+> * jetson-orin-nx-xavier-nx-devkit: Add contract for device type [Alexandru Costache]
+> 
+
+</details>
+
 # v2.113.31+rev1
 ## (2023-03-30)
 
