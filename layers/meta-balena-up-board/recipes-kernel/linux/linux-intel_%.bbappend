@@ -2,9 +2,6 @@ inherit kernel-resin
 
 FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
-SRC_URI += "file://0001-Revert-random-fix-crng_ready-test.patch \
-"
-
 # HDMI audio support requested by customer
 BALENA_CONFIGS:append = " hdmi_sound"
 BALENA_CONFIGS[hdmi_sound] = " \
