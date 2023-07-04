@@ -23,7 +23,8 @@
 	url = https://github.com/meta-rust/meta-rust.git
 [submodule "layers/meta-up-board"]
 	path = layers/meta-up-board
-	url = https://github.com/AaeonCM/meta-up-board.git
+	# switch to the new BSP repo as been advised by AAEON
+	url = https://github.com/up-division/meta-up-board.git
 [submodule "contracts"]
 	path = contracts
 	url = https://github.com/balena-io/contracts.git
