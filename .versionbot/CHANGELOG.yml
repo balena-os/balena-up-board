@@ -1,4 +1,42 @@
 - commits:
+    - subject: Update layers/meta-balena to 4a4b8ff5a7447c4eb4a0cd9a0caddc542384142b
+      hash: 4361cf08c8d0a98ddd31ce57dd8e119497d1bf7e
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 4a4b8ff5a7447c4eb4a0cd9a0caddc542384142b
+        changelog-entry: Update layers/meta-balena to 4a4b8ff5a7447c4eb4a0cd9a0caddc542384142b
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "initrdscripts: make initramfs-module-cryptsetup pull libgcc in"
+              hash: 046a17ec1494fe15da45e3accb1de562ff7e976e
+              body: >
+                cryptsetup lazily depends on libgcc. With libgcc missing,
+                certain
+
+                operations, especially luksOpen will fail with
+
+                `libgcc_s.so.1 must be installed for pthread_exit to work`
+
+                which panics the kernel and triggers a reboot loop indistinguishable
+
+                from a "device has been tampered with" state on regular builds
+
+                with no console output.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-3.0.10
+          title: ""
+          date: 2023-07-14T11:06:57.107Z
+  version: 3.0.10
+  title: ""
+  date: 2023-07-14T13:24:57.406Z
+- commits:
     - subject: Update layers/meta-balena to cd6d6ef437a25ada9a03029367e3b6f36c2b4f6d
       hash: 59dc0bfdeed319bd93d00ab772cd1d1faf61d43c
       body: Update layers/meta-balena
