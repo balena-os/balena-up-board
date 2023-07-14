@@ -1,4 +1,35 @@
 - commits:
+    - subject: Update layers/meta-balena to 146e74b5bc28ae5ed734835a4d5a71cb974f51c6
+      hash: 1d3ec71c4c3a1711550e4474255eb95463a82dc0
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 146e74b5bc28ae5ed734835a4d5a71cb974f51c6
+        changelog-entry: Update layers/meta-balena to 146e74b5bc28ae5ed734835a4d5a71cb974f51c6
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: ".github/workflows: Replace GitHub PAT with ephemeral app tokens"
+              hash: d62f8a2d4450b588147c3065e1437af741185418
+              body: |
+                GitHub App installation tokens are short-lived and do not
+                need to be rotated the same way PATs do.
+
+                The default app ID and installation ID correspond to
+                flowzone-bot[app] installed in the balena-os Org.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-3.0.11
+          title: ""
+          date: 2023-07-14T12:47:33.615Z
+  version: 3.0.11
+  title: ""
+  date: 2023-07-14T15:38:14.388Z
+- commits:
     - subject: Update layers/meta-balena to 4a4b8ff5a7447c4eb4a0cd9a0caddc542384142b
       hash: 4361cf08c8d0a98ddd31ce57dd8e119497d1bf7e
       body: Update layers/meta-balena
