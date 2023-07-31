@@ -1,5 +1,5 @@
 #
-# Up boards (up-board, up-core, up-core-plus, up-squared)
+# Up boards (up-board, up-core, up-core-plus, up-squared use the same image)
 #
 
 IMAGE_FSTYPES_append = " balenaos-img"
