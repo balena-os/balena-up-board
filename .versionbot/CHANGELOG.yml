@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update layers/meta-balena to ea2f9c49095dcc6cfb2ad7289780a7b84f32d031
+      hash: c8fe6db5ea37563b2c8d566ced16fbc8ff60465f
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to ea2f9c49095dcc6cfb2ad7289780a7b84f32d031
+        changelog-entry: Update layers/meta-balena to ea2f9c49095dcc6cfb2ad7289780a7b84f32d031
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests: allow for multiple worker fleets"
+              hash: 7797aa081ab0a5339eea6e2fd326947d9e6ec6f1
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-4.1.9
+          title: ""
+          date: 2023-11-24T15:52:04.744Z
+  version: 4.1.9
+  title: ""
+  date: 2023-11-24T18:52:54.335Z
+- commits:
     - subject: Update contracts to 9a8805526c0fbe4aa1477f32b23c3d0e3647792a
       hash: 28cd8ca51335d8ac12910d64dd21d93f28907840
       body: Update contracts
