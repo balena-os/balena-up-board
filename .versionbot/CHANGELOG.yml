@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update layers/meta-balena to 91ad9aa182cc5feadf430fea151dc117898919ed
+      hash: 3b23682af20f302c0e8b7cd2d3185e1fff48d6c4
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 91ad9aa182cc5feadf430fea151dc117898919ed
+        changelog-entry: Update layers/meta-balena to 91ad9aa182cc5feadf430fea151dc117898919ed
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update actions/setup-python action to v5
+              hash: 964061a70249cd4dabc99ae98083be5f1e650bc3
+              body: |
+                Update actions/setup-python from v4 to v5
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested: []
+          version: meta-balena-5.0.7
+          title: ""
+          date: 2023-12-06T16:38:31.017Z
+  version: 5.0.7
+  title: ""
+  date: 2023-12-06T18:38:45.665Z
+- commits:
     - subject: Update layers/meta-balena to 3617c776ed31ef47429bb266d4276d63f19a2d58
       hash: e5e76001f56be9b65aab79c574c2c85cb4aa3d09
       body: Update layers/meta-balena
