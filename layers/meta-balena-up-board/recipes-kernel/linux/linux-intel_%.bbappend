@@ -38,3 +38,8 @@ BALENA_CONFIGS[acpi_configfs] = " \
 # further for it, as per the internal thread:
 # https://www.flowdock.com/app/rulemotion/resin-devices/threads/K2TQiSUfNDqBT5Ih6cciNI2d9QJ
 BALENA_CONFIGS_append_up-board = " aufs"
+
+BALENA_CONFIGS_append = " optimize-size"
+BALENA_CONFIGS[optimize-size] = " \
+    CONFIG_CC_OPTIMIZE_FOR_SIZE=y \
+"
