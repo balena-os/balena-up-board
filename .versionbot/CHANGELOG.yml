@@ -1,4 +1,18 @@
 - commits:
+    - subject: "conf/layer: Enable size optimization"
+      hash: 255d53812d37dedbc3a148b3a45c335c7abf196a
+      body: ""
+      footer:
+        Changelog-entry: "conf/layer: Enable size optimization"
+        changelog-entry: "conf/layer: Enable size optimization"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 5.1.21+rev1
+  title: ""
+  date: 2024-02-02T16:11:31.949Z
+- commits:
     - subject: Update layers/meta-balena to 282df4bf06581eb6224ecd0eadfc53c0ec078907
       hash: 0494219a2db9dd5cf5e0044f81b5ea287ab33045
       body: Update layers/meta-balena

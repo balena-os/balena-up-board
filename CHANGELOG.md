@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v5.1.21+rev1
+## (2024-02-02)
+
+* conf/layer: Enable size optimization [Alexandru Costache]
+
 # v5.1.21
 ## (2024-02-01)
 
