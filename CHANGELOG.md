@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v5.1.23
+## (2024-02-05)
+
+
+<details>
+<summary> Update layers/meta-balena to aa6c72f952fa9f9a7428e0bf445b98a5023f8a60 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.1.23
+> ### (2024-02-05)
+> 
+> * tests: cloud: disable dut internet after flashing [rcooke-warwick]
+> 
+> ## meta-balena-5.1.22
+> ### (2024-02-02)
+> 
+> * balena-rollback/rollback-health: Allow old OS hooks to access efivars [Alexandru Costache]
+> 
+
+</details>
+
 # v5.1.21+rev1
 ## (2024-02-02)
 
