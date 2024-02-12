@@ -1,6 +1,68 @@
 Change log
 -----------
 
+# v5.1.29
+## (2024-02-12)
+
+
+<details>
+<summary> Update layers/meta-balena to 679f15cf90432172438f84e8f99fc4db2c6150f1 [Self-hosted Renovate Bot] </summary>
+
+> ## meta-balena-5.1.29
+> ### (2024-02-12)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to f6a3391 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### leviathan-2.29.54
+>> #### (2024-02-12)
+>> 
+>> * Update core/contracts digest to 4f7dba1 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.29.53
+>> #### (2024-02-12)
+>> 
+>> * Update Lock file maintenance [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.29.52
+>> #### (2024-02-08)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.34 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.29.51
+>> #### (2024-02-06)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.33 [Self-hosted Renovate Bot]
+>> 
+>> ### leviathan-2.29.50
+>> #### (2024-02-06)
+>> 
+>> * patch: Add config.js validator [Vipul Gupta (@vipulgupta2048)]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-5.1.28
+> ### (2024-02-11)
+> 
+> 
+> <details>
+> <summary> Update balena-engine to v20.10.43 [Self-hosted Renovate Bot] </summary>
+> 
+>> ### balena-engine-20.10.43
+>> #### (2024-02-06)
+>> 
+>> * Update runc component to v1.1.12 from balena-runc repo [Ken Bannister]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v5.1.27
 ## (2024-02-10)
 
