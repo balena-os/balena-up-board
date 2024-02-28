@@ -1,4 +1,822 @@
 - commits:
+    - subject: Update layers/meta-balena to 086ba32588bb45247bc4785eafcb6540115bbf2e
+      hash: c42695ba2cc1c7105d466a6bd9a96646f65805c8
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 086ba32588bb45247bc4785eafcb6540115bbf2e
+        changelog-entry: Update layers/meta-balena to 086ba32588bb45247bc4785eafcb6540115bbf2e
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update balena-supervisor to v16
+              hash: 2fe4e273e180d68a6eb756ce046352dc6a818f44
+              body: |
+                Update balena-supervisor from 15.3.1 to 16.1.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Add support for repeated overlays
+                      hash: bda1bac04c708ea0c35318604f926c035ff0883b
+                      body: >
+                        RPI firmware configuration allows repeating overlays to
+                        define
+
+                        configurations on multiple devices. For instance, for configuring
+
+                        multiple `ads` devices, `config.txt` needs to be setup this way
+
+
+                        ```
+
+                        dtoverlay=ads1115,addr=0x48
+
+                        dtoverlay=ads1115,addr=0x49
+
+                        ```
+
+
+                        Before this change, the supervisor would interpret both lines as
+
+                        belonging to the same overlay, preventing users from configuring multiple
+
+                        devices, and leading to a loop when trying to apply configurations with
+
+                        repeated overlays coming from the cloud side.
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-16.1.0
+                  title: ""
+                  date: 2024-02-27T19:30:49.055Z
+                - commits:
+                    - subject: Fix support for rsync deltas
+                      hash: 24e222045ac511cd4fbb3be66e57eb678a29d854
+                      body: >
+                        Rsync (v2) deltas have been broken since [Supervisor
+                        v14](https://github.com/balena-os/balena-supervisor/commit/460c3ba0aab31d18a02e3f5dda1838691768c494).
+                        While considered legacy,
+
+                        they are still used by a few customers with devices running OS < 2.47.1.
+
+                        This should fix v2 delta support for those devices until we can
+
+                        completely remove rsync deltas from the supervisor
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-16.0.4
+                  title: ""
+                  date: 2024-02-27T15:06:23.251Z
+                - commits:
+                    - subject: Patch default dtparam handling in config.txt
+                      hash: 3fd035c5bdc88993af66c5f2bc3a6300c44f4ed4
+                      body: >
+                        This commit completes the list of default / board-wide
+                        dtparams
+
+                        to include some `baudrate` and `vc` i2c params.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Christina Ying Wang <christina@balena.io>
+                        signed-off-by: Christina Ying Wang <christina@balena.io>
+                      author: Christina Ying Wang
+                      nested: []
+                  version: balena-supervisor-16.0.3
+                  title: ""
+                  date: 2024-02-21T21:03:18.619Z
+                - commits:
+                    - subject: Patch config.txt backend to return array configs correctly
+                      hash: e22253ce6ebc40e865b5bc26844901026f04ec4e
+                      body: >
+                        Previously, getBootConfig() of the config.txt backend
+                        was omitting
+
+                        array configurations such as gpio settings, thus resulting in the SV
+
+                        mistakenly assuming that boot config had not been applied, since gpio
+
+                        would not be in current config.txt config but would be in target config.
+
+                        This resulted in SV entering an infinite loop of attempting to apply the
+
+                        gpio config when it wasn't necessary.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Christina Ying Wang <christina@balena.io>
+                        signed-off-by: Christina Ying Wang <christina@balena.io>
+                      author: Christina Ying Wang
+                      nested: []
+                  version: balena-supervisor-16.0.2
+                  title: ""
+                  date: 2024-02-17T02:44:51.708Z
+                - commits:
+                    - subject: Update balena-io/deploy-to-balena-action to v2.0.27
+                      hash: ac12d9a50c1569229ff97459b7306cd5f7f4faad
+                      body: Update balena-io/deploy-to-balena-action
+                      footer:
+                        Changelog-entry: Update balena-io/deploy-to-balena-action to v2.0.27
+                        changelog-entry: Update balena-io/deploy-to-balena-action to v2.0.27
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: balena-supervisor-16.0.1
+                  title: ""
+                  date: 2024-02-12T19:56:17.362Z
+                - commits:
+                    - subject: Add special case for base DTO params on RPI config
+                      hash: 6e6a796da5ecc846248eae4c8495bc626964c038
+                      body: >
+                        While ordering is important in the RPI firmware
+                        configuration file (config.txt),
+
+                        some dt params are by default considered part of the base dt overlay
+
+                        if they are not used by other overlays.
+
+                        Unfortunately the [list of dtparams](https://github.com/raspberrypi/firmware/blob/master/boot/overlays/README#L133)
+
+                        is too long to add all of them as exceptions, but we can add the params
+
+                        used in the default config.txt provided in OS images, to avoid reboots
+
+                        when updating to this new supervisor and correctly parsing the
+
+                        provisioning config.txt as variables.
+
+
+                        While this addition handles most common scenarios, there is still a
+
+                        chance a user may have use other base overlay dt params in the initial
+
+                        config, in which case those will be interpreted according to the
+
+                        relative ordering
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Felipe Lalanne
+                      nested: []
+                    - subject: Fix processing of dtoverlay/dtparams on config.txt
+                      hash: 9546a1a3b1b919649dc401b63f0ff0dedad918b0
+                      body: >
+                        DT overlays and DT params need to be consumed in the
+                        order that they
+
+                        appear on the file. DT params apply to the last dtoverlay defined on the
+
+                        file, or to the base overlay.
+
+
+                        This commit updates config.txt parsing to consider this ordering, and it
+
+                        also ensures global dtparams are written first so they cannot be
+
+                        overriden by later overlays.
+
+
+                        Because of the more strict parsing method, it is possible that existing
+
+                        HOST_CONFIG vars do not match the interpretation of the parser. If
+
+                        that's the case, the supervisor will re-apply the target state which
+
+                        will cause the device to reboot.
+                      footer:
+                        Change-type: major
+                        change-type: major
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-16.0.0
+                  title: ""
+                  date: 2024-02-08T21:45:41.648Z
+          version: meta-balena-5.1.42
+          title: ""
+          date: 2024-02-28T00:23:42.396Z
+        - commits:
+            - subject: "tests: hup: use secondary antenna for revpi4"
+              hash: d353a984983e58ca187a678b03bf5420672940a5
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+            - subject: "tests: cloud : use secondary antenna for revpi4"
+              hash: 1bbf59431281805b88303dce2747922c0a78eb97
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+            - subject: "tests: os: use secondary antenna for revpi4"
+              hash: 67f34c93af43420199e729956d8b47d5e32a0601
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-5.1.41
+          title: ""
+          date: 2024-02-27T12:56:34.503Z
+        - commits:
+            - subject: Update tests/leviathan digest to d71ce8f
+              hash: 813e7442dad72eb0dc8994a1ff09b4cc3f1e717a
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: ad extra autokit setup information, and basic troubleshooting
+                      hash: 8245d549f586330a1805ea4ad998622f735c347b
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Ryan Cooke <ryan@balena.io>
+                        signed-off-by: Ryan Cooke <ryan@balena.io>
+                      author: rcooke-warwick
+                      nested: []
+                  version: leviathan-2.29.62
+                  title: ""
+                  date: 2024-02-26T11:59:24.765Z
+          version: meta-balena-5.1.40
+          title: ""
+          date: 2024-02-26T17:53:35.831Z
+        - commits:
+            - subject: Update tests/leviathan digest to ef8cbac
+              hash: fbef3a28eeddce84e055ddeb50e4b36c564b7a3c
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update Lock file maintenance
+                      hash: c8c6536316c5e96b0bbb59a9eb10fa0fe62fb9c8
+                      body: |
+                        Update
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: leviathan-2.29.61
+                  title: ""
+                  date: 2024-02-26T02:35:53.616Z
+                - commits:
+                    - subject: Update Lock file maintenance
+                      hash: 79b98f494241bda4121ad477a2de87296e7d44fb
+                      body: |
+                        Update
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: leviathan-2.29.60
+                  title: ""
+                  date: 2024-02-26T00:46:26.338Z
+          version: meta-balena-5.1.39
+          title: ""
+          date: 2024-02-26T07:52:12.767Z
+        - commits:
+            - subject: "balena-rollback: adapt to secure boot support"
+              hash: 3f5f5c71288551569522c321fb5f808706ce93c0
+              body: >
+                Make sure the rollback scripts know to use the non-encrypted
+                boot
+
+                partition to update A/B variables.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "hostapp-update-hooks: Adapt resin-uboot hook to secure boot"
+              hash: 727559886b6ebc6a0cbea6226826e454ff0ba023
+              body: >
+                This is required for devices that use u-boot in their secure
+                boot
+
+                trust chain.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "classes: u-boot: use global secure boot kernel command line instead of
+                hardcoding"
+              hash: 7457aec1b3efa2a5bf350c7046f165bcf2e08c3d
+              body: >
+                Use the new OS_KERNEL_SECUREBOOT_CMDLINE global variable instead
+                of
+
+                hardcoding the values for the secure boot command line.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "grub: use global secure boot kernel command line instead of
+                hardcoding"
+              hash: af66b4184899c4c909979a065d57e178278569ec
+              body: >
+                Use the new OS_KERNEL_SECUREBOOT_CMDLINE global variable instead
+                of
+
+                hardcoding the values for the secure boot command line.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "conf: distro: define kernel command line for secure boot"
+              hash: 2b5aa3f348c92e0ff4f83db6d8e4002f3c84bb3d
+              body: |
+                This can then be used in both grub and u-boot.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "resindataexpander: encrypted partitions will auto-expand on unlock"
+              hash: 4e7ff432425672068f7b7430e416239a6b987fc0
+              body: >
+                Calling `cryptsetup resize` on LUKS2 actually prompts for a
+                password
+
+                and it is not needed as the partition will auto-expand on unlock.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "initrdscripts: migrate: replace hardcoded kernel image names"
+              hash: 66083abb5bee31c9efd230c69cae322021f85c63
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "resin-mounts: generalize secure boot mounts"
+              hash: 522800093a2271b8814b78a3eb25b09d0a125441
+              body: >
+                Use the global BALENA_NONENC_BOOT_LABEL to define the name of
+                the
+
+                non-encrypted boot partition to mount.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "initrdscripts: abroot: Use the global label for non-encrypted boot
+                partitions"
+              hash: 69093e694e806bd91fa3f275a075adabe587ef35
+              body: |
+                Avoid having to redefine this in individual recipes.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "initrdscripts: allow for cryptsetup to support different secure boot
+                implementations"
+              hash: 3d932c8a8034fa0bafa6651f3b381823a3e738ff
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "os-helpers-fs: add shared wait4udev function"
+              hash: 10b435b81e49f24943ca89d6624199ecf82a3195
+              body: |
+                This allows to share this function between the different device
+                integration cryptsetup implementations.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-image-flasher: fix appended variable with a leading space"
+              hash: a7c9dd924bb754d49fe57f8c262592f707fc076b
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-config-vars: customize for secure boot support"
+              hash: d55ed33746e8ebeeee524f556ce0fb7cc9d1dad7
+              body: >
+                Specify defaults for both the encrypted and non-encrypted boot
+                mount
+
+                points. On a non-secure boot system these will be set the same.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "os-helpers: add dummy os-helpers-sb"
+              hash: 8ca3bd996b78360b669417a4efd4e31b64ac1084
+              body: >
+                This helper file is to be overwritten by device integration
+                layers
+
+                to provide hostOS update customizations for secure boot devices that
+
+                split the boot partition into encrypted and non-encrypted.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "resin-init-flasher: allow flasher image use in devices without
+                internal storage"
+              hash: b0dc10609d9a6333cb43f137b73a88798c59b86a
+              body: >
+                The flasher image is now able to self-install when launched from
+                an
+
+                external storage. This is useful for use cases where an installation
+
+                steps that re-partitions/encrypts disk is required for example.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "resin-init-flasher: flag non-encrypted boot partition as bootable"
+              hash: 60377c9a3073698ede0722ba6773a0bf223d881f
+              body: >
+                Non-EFI systems need this to identify the boot partition and it
+                won't
+
+                affect EFI systems.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "resin-init-flasher: replace hardcoded kernel image names"
+              hash: 6c60a5270af3936ec68a21cddf77ff4d330343fe
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "resin-init-flasher: split secureboot and disk encryption interfaces"
+              hash: e85a14f22d50745e495bac0b431e942afad79b78
+              body: >
+                Provide hooks in the flasher script to call out to device
+                specific
+
+                secureboot and disk encryption interfaces.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "distro: balena-os: define the boot labels as global"
+              hash: 4254f27f6cd00282710929b314017222a22bb0cd
+              body: >
+                This allows to use the same values in several recipes without
+                having to
+
+                re-define them.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "distro: balena-os: Specify full GO version"
+              hash: 2506468771bffb84c3c507f8e50427b10177a8de
+              body: |
+                This avoids building warnings.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-5.1.38
+          title: ""
+          date: 2024-02-23T12:41:11.397Z
+        - commits:
+            - subject: "tests/device-tree: Minor spelling fixes"
+              hash: 928fa031f794d09ce603795acc224fcb61e855d9
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru
+              nested: []
+            - subject: "test/device-tree: Send vcdbg to DUT"
+              hash: aab7e1390f9f1181a47905328ef5fba1b5e509f6
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+            - subject: "patch: Add vcdbg binary to tests"
+              hash: db56a276b23ba900bbbb1b4944a6a8fd4ca2f55f
+              body: ""
+              footer:
+                Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+              author: Vipul Gupta (@vipulgupta2048)
+              nested: []
+          version: meta-balena-5.1.37
+          title: ""
+          date: 2024-02-22T20:38:47.969Z
+        - commits:
+            - subject: "tests: hup: test breadcrumbs after rollback services"
+              hash: dde3e48743fc32349d1a1a33cfdf9b061c804e04
+              body: >
+                During HUP, rollback-health-breadcrumb and
+                rollback-altboot-breadcrumb
+
+                are created in the state partition to trigger rollback-health and
+
+                rollback-altboot respectively on the next boot. After these services
+
+                complete, they will remove these breadcrumbs.
+
+
+                Make the broken init fallback tests wait for these services to become
+
+                inactive before testing the state of the breadcrumbs. Otherwise, a race
+
+                condition can make these tests fail. Most notably on slower systems,
+
+                such as emulated generic-aarch64.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-5.1.36
+          title: ""
+          date: 2024-02-21T16:31:08.117Z
+        - commits:
+            - subject: Update tests/leviathan digest to 95a9d72
+              hash: 16d56c258da245227711868d61df9b49b29842cb
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update Lock file maintenance
+                      hash: 491d5df14d6197c1acae3542d4e950869e710309
+                      body: |
+                        Update
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: leviathan-2.29.59
+                  title: ""
+                  date: 2024-02-19T00:47:50.443Z
+                - commits:
+                    - subject: Update core/contracts digest to 0c54ce2
+                      hash: bfb9b6bd67bf8bfe6a337ebcb439aa7f3852fb5c
+                      body: |
+                        Update core/contracts
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: leviathan-2.29.58
+                  title: ""
+                  date: 2024-02-14T12:19:16.753Z
+          version: meta-balena-5.1.35
+          title: ""
+          date: 2024-02-19T05:22:59.235Z
+        - commits:
+            - subject: "resin-init-flasher: add jq dependency"
+              hash: 87aa01801d193a893f10367ba71b9cc824bf7e69
+              body: >
+                Without this dependency, the call to `jq` does not happen and
+                the check
+
+                for INTERNAL_DEVICE_KERNEL is not performed.
+
+
+                Several devices that define internal storage but do not define
+
+                INTERNAL_DEVICE_KERNEL will now fail and need to be fixed.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-5.1.34
+          title: ""
+          date: 2024-02-14T23:11:49.455Z
+        - commits:
+            - subject: "tests: cloud: if no existing release, create generic fleet"
+              hash: 5b63019d327a1b8ebe1871fd6bc85b0790f40f81
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-5.1.33
+          title: ""
+          date: 2024-02-14T07:31:35.324Z
+        - commits:
+            - subject: Update tests/leviathan digest to 4b9de7e
+              hash: b4f6a28c7c7f0f9636417b5e06c16a8ddc3ce2e9
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: "patch: Authenticate the validator before validation"
+                      hash: 03ef1b01b99d921fe99b834001de26d4c760f3b8
+                      body: ""
+                      footer:
+                        Signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                        signed-off-by: Vipul Gupta (@vipulgupta2048) <vipulgupta2048@gmail.com>
+                      author: Vipul Gupta (@vipulgupta2048)
+                      nested: []
+                  version: leviathan-2.29.57
+                  title: ""
+                  date: 2024-02-13T10:45:34.666Z
+          version: meta-balena-5.1.32
+          title: ""
+          date: 2024-02-13T16:01:45.214Z
+        - commits:
+            - subject: Update tests/leviathan digest to 00ee51c
+              hash: e19942dc9ca040d48f3b8e2ab36a03bb31f4bc74
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update balena-os/leviathan-worker to v2.9.36
+                      hash: 0b7b82ac9044c230b2384c67e2a2f1000e018991
+                      body: |
+                        Update balena-os/leviathan-worker from 2.9.35 to 2.9.36
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: leviathan-2.29.56
+                  title: ""
+                  date: 2024-02-12T17:06:43.126Z
+                - commits:
+                    - subject: Update balena-os/leviathan-worker to v2.9.35
+                      hash: 52a3095506b23f4024e79e887675f3b45b4db945
+                      body: |
+                        Update balena-os/leviathan-worker from 2.9.34 to 2.9.35
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: leviathan-2.29.55
+                  title: ""
+                  date: 2024-02-12T14:57:32.329Z
+          version: meta-balena-5.1.31
+          title: ""
+          date: 2024-02-13T02:11:21.643Z
+        - commits:
+            - subject: "balena-image-bootloader-initramfs.bb: Add fsck module"
+              hash: 4b1bc7244ab21a9952ea7569c0c0e1bc9a11e2e0
+              body: >
+                The balena bootloader initramfs contains the rootfs module and
+                that
+
+                will get the rootfs mounted but not checked first for errors. This is
+
+                problematic because at first boot with network connectivity available,
+
+                time will sync but the rootfs will still have the last mount time in
+
+                1970. If at that point the rootfs gets corrupted then at next boot
+
+                the rootfs' initramfs module from balena-bootloader will try to mount
+
+                the rootfs without checking it first and then after that the filesystem
+
+                check triggered by the fsck module from the actual kernel initramfs will
+
+                fail like this:
+
+
+                [init][INFO] Running filesystem checks on partition resin-rootA (/dev/disk/by-state/resin-rootA)
+
+                resin-rootA contains a file system with errors, check forced.
+
+                resin-rootA: Inodes that were part of a corrupted orphan linked list found.
+
+
+                resin-rootA: UNEXPECTED INCONSISTENCY; RUN fsck MANUALLY.
+                        (i.e., without -a or -p options)
+
+                This commit will add the fsck module to balena bootloader's initramfs
+
+                which will trigger filesystem checks before the rootfs module runs.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-5.1.30
+          title: ""
+          date: 2024-02-12T19:58:46.698Z
+  version: 5.1.42
+  title: ""
+  date: 2024-02-28T06:59:38.677Z
+- commits:
     - subject: Update balena-yocto-scripts to 0cb57aede8dea798c14ddfc6546525b920504970
       hash: 894e3f4fd01b59a539037cd1e5e22f0c49c210c8
       body: Update balena-yocto-scripts
