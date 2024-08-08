@@ -1,1 +1,1 @@
-MACHINE_SPECIFIC_EXTRA_CMDLINE_up-board = "i915.enable_rc6=0 "
+MACHINE_SPECIFIC_EXTRA_CMDLINE:up-board = "i915.enable_rc6=0 "
