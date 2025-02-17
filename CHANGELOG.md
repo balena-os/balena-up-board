@@ -1,6 +1,84 @@
 Change log
 -----------
 
+# v6.3.0+rev3
+## (2025-02-17)
+
+
+<details>
+<summary> Update balena-yocto-scripts to c071a7173ca278c851954cbbad15f17d831d12b0 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.30.30
+> ### (2025-02-17)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.29
+> ### (2025-02-15)
+> 
+> * Update actions/create-github-app-token action to v1.11.5 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.28
+> ### (2025-02-11)
+> 
+> * Update aws-actions/configure-aws-credentials action to v4.1.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.27
+> ### (2025-02-06)
+> 
+> * Update balena-os/leviathan action to v2.31.89 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.26
+> ### (2025-02-06)
+> 
+> * Update actions/create-github-app-token action to v1.11.3 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.25
+> ### (2025-02-06)
+> 
+> * generate-oscontracts: remove sw.os-image selector [Ryan Cooke]
+> 
+> ## balena-yocto-scripts-1.30.24
+> ### (2025-02-03)
+> 
+> * Update Lock file maintenance [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.23
+> ### (2025-02-01)
+> 
+> * Update actions/create-github-app-token action to v1.11.2 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.22
+> ### (2025-01-28)
+> 
+> * Update balena-os/leviathan action to v2.31.87 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.21
+> ### (2025-01-27)
+> 
+> * Update aws-actions/configure-aws-credentials action to v4.0.3 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.20
+> ### (2025-01-26)
+> 
+> * Update balena-os/leviathan action to v2.31.86 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.19
+> ### (2025-01-24)
+> 
+> * Update balena-os/leviathan action to v2.31.85 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.18
+> ### (2025-01-23)
+> 
+> * barys: allow to specify custom templates paths directly [Alex Gonzalez]
+> * generate-conf-notes: simplify arguments [Alex Gonzalez]
+> * barys: do not build duplicated machines [Alex Gonzalez]
+> * workflows: yocto-build-deploy: distinguish machine from slug [Alex Gonzalez]
+> 
+
+</details>
+
 # v6.3.0+rev2
 ## (2025-01-22)
 
