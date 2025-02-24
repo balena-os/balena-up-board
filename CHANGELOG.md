@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v6.3.22
+## (2025-02-24)
+
+
+<details>
+<summary> Update layers/meta-balena to 5dfed54ec4ffcfb78d1af5a53a8cb8d7e569a806 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.3.22
+> ### (2025-02-24)
+> 
+> * kernel-devsrc.bb: Use recipe from Poky for 6.12+ kernels [Florin Sarbu]
+> 
+> ## meta-balena-6.3.21
+> ### (2025-02-21)
+> 
+> * kernel-balena.bbclass: Add aufs patches for 6.12 kernels [Florin Sarbu]
+> 
+
+</details>
+
 # v6.3.20
 ## (2025-02-19)
 
