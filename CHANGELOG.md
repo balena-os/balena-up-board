@@ -1,6 +1,31 @@
 Change log
 -----------
 
+# v6.3.22+rev1
+## (2025-02-25)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 2620a0faf744cb9561c6e0b402c913c19b251ff6 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.30.33
+> ### (2025-02-24)
+> 
+> * Remove legacy yocto NFS cache host setup [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.30.32
+> ### (2025-02-21)
+> 
+> * Update actions/upload-artifact action to v4.6.1 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.31
+> ### (2025-02-21)
+> 
+> * barys: build unique machine-image combinations [Alex Gonzalez]
+> 
+
+</details>
+
 # v6.3.22
 ## (2025-02-24)
 
