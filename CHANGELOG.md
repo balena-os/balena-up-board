@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.3.22+rev2
+## (2025-03-03)
+
+* Update poky submodule to kirkstone-4.0.25 [Florin Sarbu]
+
 # v6.3.22+rev1
 ## (2025-02-25)
 

@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update poky submodule to kirkstone-4.0.25
+      hash: 288dfdfad5e5a2dc4e3e7d6351ecf2e9aab68759
+      body: ""
+      footer:
+        Changelog-entry: Update poky submodule to kirkstone-4.0.25
+        changelog-entry: Update poky submodule to kirkstone-4.0.25
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.3.22+rev2
+  title: ""
+  date: 2025-03-03T13:01:15.285Z
+- commits:
     - subject: Update balena-yocto-scripts to 2620a0faf744cb9561c6e0b402c913c19b251ff6
       hash: 9b4cbbc2e80416fb4518b4710033e40821b6e114
       body: Update balena-yocto-scripts
