@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.3.22+rev3
+## (2025-03-04)
+
+* Update .gitmodules with submodule branch information for kirkstone [Florin Sarbu]
+
 # v6.3.22+rev2
 ## (2025-03-03)
 

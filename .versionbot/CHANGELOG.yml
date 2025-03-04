@@ -1,4 +1,18 @@
 - commits:
+    - subject: Update .gitmodules with submodule branch information for kirkstone
+      hash: 6877560775139adad21324021dce3949eef2197e
+      body: ""
+      footer:
+        Changelog-entry: Update .gitmodules with submodule branch information for kirkstone
+        changelog-entry: Update .gitmodules with submodule branch information for kirkstone
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.3.22+rev3
+  title: ""
+  date: 2025-03-04T07:47:40.363Z
+- commits:
     - subject: Update poky submodule to kirkstone-4.0.25
       hash: 288dfdfad5e5a2dc4e3e7d6351ecf2e9aab68759
       body: ""
