@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update layers/meta-intel to dc0948200594dacece4da91f4c501e9a9fb0394f
+      hash: d526ae1202b6ac56a374c023520204a02b53eb38
+      body: Update layers/meta-intel
+      footer:
+        Changelog-entry: Update layers/meta-intel to dc0948200594dacece4da91f4c501e9a9fb0394f
+        changelog-entry: Update layers/meta-intel to dc0948200594dacece4da91f4c501e9a9fb0394f
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.3.22+rev5
+  title: ""
+  date: 2025-03-05T12:03:36.557Z
+- commits:
     - subject: Update balena-yocto-scripts to bc16afdc0d32e3e4f94cb2a44ae3610cc8c2fdbb
       hash: 25559f96836b884771ef547ffff7087ea578af0b
       body: Update balena-yocto-scripts

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.3.22+rev5
+## (2025-03-05)
+
+* Update layers/meta-intel to dc0948200594dacece4da91f4c501e9a9fb0394f [balena-renovate[bot]]
+
 # v6.3.22+rev4
 ## (2025-03-05)
 
