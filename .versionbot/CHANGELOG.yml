@@ -1,4 +1,315 @@
 - commits:
+    - subject: Update balena-yocto-scripts to bc16afdc0d32e3e4f94cb2a44ae3610cc8c2fdbb
+      hash: 25559f96836b884771ef547ffff7087ea578af0b
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to bc16afdc0d32e3e4f94cb2a44ae3610cc8c2fdbb
+        changelog-entry: Update balena-yocto-scripts to bc16afdc0d32e3e4f94cb2a44ae3610cc8c2fdbb
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update aws/aws-cli to v2.24.17
+              hash: cfdd8dd512cf3416b7a7ad5da87928c7b8cfda93
+              body: |
+                Update aws/aws-cli from 2.24.16 to 2.24.17
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.14
+          title: ""
+          date: 2025-03-04T23:03:35.356Z
+        - commits:
+            - subject: Add signing environment to All Jobs context
+              hash: 592bf3a1261009519b101577c64258306e932f34
+              body: |
+                This is one of the unique identifiers for merge requirements.
+              footer:
+                CHange-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.31.13
+          title: ""
+          date: 2025-03-04T12:49:02.985Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.24.16
+              hash: c3a58167929e76227947323638f92190a26f5c53
+              body: |
+                Update aws/aws-cli from 2.24.15 to 2.24.16
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.12
+          title: ""
+          date: 2025-03-03T23:01:36.452Z
+        - commits:
+            - subject: Update product-os/review-commit-action action to v0.2.0
+              hash: 946ce45bf57dde1c3d390e566f34732d42f349c2
+              body: |
+                Update product-os/review-commit-action from 0.1.12 to 0.2.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.11
+          title: ""
+          date: 2025-03-03T17:15:01.189Z
+        - commits:
+            - subject: Update aws-actions/configure-aws-credentials action to v4.1.0
+              hash: 8d02327368ce46acefed4700d14997911733cfae
+              body: |
+                Update aws-actions/configure-aws-credentials from 4.0.2 to 4.1.0
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.10
+          title: ""
+          date: 2025-03-03T13:56:03.329Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.24.15
+              hash: 71aac05bdce98091f944087adca0d2cd016648c4
+              body: |
+                Update aws/aws-cli from 2.22.35 to 2.24.15
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.9
+          title: ""
+          date: 2025-03-03T07:06:27.347Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v20.2.9
+              hash: 693c64e1420835ba1011b69cf5510520234cba6e
+              body: |
+                Update balena-io/balena-cli from 20.2.1 to 20.2.9
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.8
+          title: ""
+          date: 2025-03-03T05:04:00.350Z
+        - commits:
+            - subject: Update actions/create-github-app-token action to v1.11.6
+              hash: 5f6444ac8bbd03863aadd4dd4c49212c3459afda
+              body: |
+                Update actions/create-github-app-token from 1.11.5 to 1.11.6
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.7
+          title: ""
+          date: 2025-03-03T03:29:26.127Z
+        - commits:
+            - subject: Update aws/aws-cli to v2.22.35
+              hash: 2e4d3d84fcb817ae8785daf031a0cf2a53547eac
+              body: |
+                Update aws/aws-cli from 2.22.10 to 2.22.35
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.6
+          title: ""
+          date: 2025-03-03T01:25:53.061Z
+        - commits:
+            - subject: Update actions/download-artifact digest to cc20338
+              hash: 51b419e62a8ba96522301cfba231c8c1c27c3b3e
+              body: |
+                Update actions/download-artifact
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.5
+          title: ""
+          date: 2025-03-02T23:18:57.438Z
+        - commits:
+            - subject: Unpack all artifacts for S3 upload
+              hash: 805891c5b292134fdab8e42c1d75f382b422bc1e
+              body: >
+                We need most of the files from the root of the artifacts
+
+                directory for the S3 upload, not just the files in the image
+                directory.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.31.4
+          title: ""
+          date: 2025-03-02T21:53:20.251Z
+        - commits:
+            - subject: Rename build environment to signing environment
+              hash: 3e545cbea7641d1f7cf9e7e12265be09a4cb5a50
+              body: |
+                This better aligns with the purpose.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Do not allow changing the S3 deploy environment
+              hash: a4aea6f919ff6e82d173defd0f31dbdd3b915f84
+              body: |
+                The AWS environment is always tied to the balenaCloud deploy
+                environment so exposing this to the device workflows is only
+                potential for issues, and no benefit.
+
+                For the time being, the deploy environment will contain
+                both the AWS and BC vars and secrets.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.31.3
+          title: ""
+          date: 2025-02-28T19:02:20.368Z
+        - commits:
+            - subject: Unset the new environment inputs until they have been deployed
+              hash: 5ee032a311e915b27420eb261d06f6d6555b9c8d
+              body: |
+                By setting defaults here we are overriding values that may
+                have been set at the device level via deploy-environment.
+
+                For now leave them blank until we have rolled out the new
+                environments to all the repositories.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.31.2
+          title: ""
+          date: 2025-02-27T20:42:14.925Z
+        - commits:
+            - subject: Update Pin dependencies
+              hash: 9ad66c325cd50213bd128ed684684b8ad13f335d
+              body: |
+                Update actions/github-script
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.31.1
+          title: ""
+          date: 2025-02-27T18:02:39.719Z
+        - commits:
+            - subject: Remove balena API key from yocto build step
+              hash: 4beb0be8adddcf2dcac6e04f38a25b7e72ab7b05
+              body: >
+                This key was only used to fetch the supervisor image name from
+                the API,
+
+                but that endpoint does not need auth as the supervisor images
+                are public.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: Separate build jobs by environments
+              hash: c91dc23ff49f1c7f07206709b5a4cda77fa7c26c
+              body: >
+                This allows more granular control over which environments are
+                used
+
+                for which steps, and avoids requiring a single environment to
+                define
+
+                how to build, sign, and publish.
+
+
+                This is better for security as it allows each job to only have
+
+                the secrets it needs, and not all secrets for all steps.
+
+
+                We retain backwards compatibility by falling back to the
+                original
+
+                monolith environment input for now.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.31.0
+          title: ""
+          date: 2025-02-27T14:28:24.783Z
+        - commits:
+            - subject: Update product-os/review-commit-action action to v0.1.12
+              hash: 42105754eb5dfd53b4535d76f70122a796ff26f6
+              body: |
+                Update product-os/review-commit-action from 0.1.11 to 0.1.12
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.36
+          title: ""
+          date: 2025-02-26T03:12:54.670Z
+        - commits:
+            - subject: Update balena-os/leviathan action to v2.31.90
+              hash: 795fff76a07637937692262d557d252b4d9072dd
+              body: |
+                Update balena-os/leviathan from 2.31.89 to 2.31.90
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.35
+          title: ""
+          date: 2025-02-26T02:24:03.285Z
+        - commits:
+            - subject: Update product-os/review-commit-action action to v0.1.11
+              hash: 9a175c1e8d4e95ab7a17a8dbe495da529d956ee3
+              body: |
+                Update product-os/review-commit-action from 0.1.7 to 0.1.11
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.30.34
+          title: ""
+          date: 2025-02-25T22:51:33.890Z
+  version: 6.3.22+rev4
+  title: ""
+  date: 2025-03-05T06:33:28.573Z
+- commits:
     - subject: Update .gitmodules with submodule branch information for kirkstone
       hash: 6877560775139adad21324021dce3949eef2197e
       body: ""

@@ -1,6 +1,108 @@
 Change log
 -----------
 
+# v6.3.22+rev4
+## (2025-03-05)
+
+
+<details>
+<summary> Update balena-yocto-scripts to bc16afdc0d32e3e4f94cb2a44ae3610cc8c2fdbb [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.31.14
+> ### (2025-03-04)
+> 
+> * Update aws/aws-cli to v2.24.17 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.13
+> ### (2025-03-04)
+> 
+> * Add signing environment to All Jobs context [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.31.12
+> ### (2025-03-03)
+> 
+> * Update aws/aws-cli to v2.24.16 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.11
+> ### (2025-03-03)
+> 
+> * Update product-os/review-commit-action action to v0.2.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.10
+> ### (2025-03-03)
+> 
+> * Update aws-actions/configure-aws-credentials action to v4.1.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.9
+> ### (2025-03-03)
+> 
+> * Update aws/aws-cli to v2.24.15 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.8
+> ### (2025-03-03)
+> 
+> * Update balena-io/balena-cli to v20.2.9 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.7
+> ### (2025-03-03)
+> 
+> * Update actions/create-github-app-token action to v1.11.6 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.6
+> ### (2025-03-03)
+> 
+> * Update aws/aws-cli to v2.22.35 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.5
+> ### (2025-03-02)
+> 
+> * Update actions/download-artifact digest to cc20338 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.4
+> ### (2025-03-02)
+> 
+> * Unpack all artifacts for S3 upload [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.31.3
+> ### (2025-02-28)
+> 
+> * Rename build environment to signing environment [Kyle Harding]
+> * Do not allow changing the S3 deploy environment [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.31.2
+> ### (2025-02-27)
+> 
+> * Unset the new environment inputs until they have been deployed [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.31.1
+> ### (2025-02-27)
+> 
+> * Update Pin dependencies [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.0
+> ### (2025-02-27)
+> 
+> * Remove balena API key from yocto build step [Kyle Harding]
+> * Separate build jobs by environments [Kyle Harding]
+> 
+> ## balena-yocto-scripts-1.30.36
+> ### (2025-02-26)
+> 
+> * Update product-os/review-commit-action action to v0.1.12 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.35
+> ### (2025-02-26)
+> 
+> * Update balena-os/leviathan action to v2.31.90 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.30.34
+> ### (2025-02-25)
+> 
+> * Update product-os/review-commit-action action to v0.1.11 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.3.22+rev3
 ## (2025-03-04)
 
