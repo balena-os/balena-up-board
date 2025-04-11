@@ -1,6 +1,46 @@
 Change log
 -----------
 
+# v6.5.1+rev3
+## (2025-04-11)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 4e6f14418996d814bcc2a9043a44887b508dfddd [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.31.73
+> ### (2025-04-10)
+> 
+> * Update aws/aws-cli to v2.26.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.72
+> ### (2025-04-09)
+> 
+> * Update aws/aws-cli to v2.25.14 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.71
+> ### (2025-04-09)
+> 
+> * Update aws/aws-cli to v2.25.13 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.70
+> ### (2025-04-08)
+> 
+> * Update balena-os/leviathan action to v2.31.103 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.69
+> ### (2025-04-08)
+> 
+> * Update aws/aws-cli to v2.25.12 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.31.68
+> ### (2025-04-08)
+> 
+> * build/barys: Fix builds for older Poky variants [Alexandru Costache]
+> 
+
+</details>
+
 # v6.5.1+rev2
 ## (2025-04-08)
 
