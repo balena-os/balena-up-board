@@ -1,4 +1,25 @@
 - commits:
+    - subject: Re-add pinctrl drivers that have been left out after the update to
+        kirkstone
+      hash: 6cfb8dde4917603d3b4d0e6289a6399810786a79
+      body: >
+        After upgrading to kirkstone the pinctrl driver is no longer present in
+        the rootfs.
+
+        See https://github.com/up-division/meta-up-board/issues/9 for details
+      footer:
+        Changelog-entry: Re-add pinctrl drivers that have been left out after the update
+          to kirkstone
+        changelog-entry: Re-add pinctrl drivers that have been left out after the update
+          to kirkstone
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.5.1+rev5
+  title: ""
+  date: 2025-04-15T12:35:52.675Z
+- commits:
     - subject: Update layers/meta-openembedded to
         f8dddbfcbfe502cb71375a7a907e61a92e8d4474
       hash: de1ab7a1cd6ec1e6138656e1a1a87a6345f5ddca

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.5.1+rev5
+## (2025-04-15)
+
+* Re-add pinctrl drivers that have been left out after the update to kirkstone [Florin Sarbu]
+
 # v6.5.1+rev4
 ## (2025-04-11)
 
