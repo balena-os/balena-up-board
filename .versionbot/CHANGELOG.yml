@@ -1,4 +1,54 @@
 - commits:
+    - subject: Update contracts to 34033e690fc5b1c194114c3aab492036db837bd2
+      hash: 2cfd14680df1e506901373b3b34c1766ca8554e0
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 34033e690fc5b1c194114c3aab492036db837bd2
+        changelog-entry: Update contracts to 34033e690fc5b1c194114c3aab492036db837bd2
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add EDATEC Sensing contract and logo
+              hash: 2504d5f5bb1a11056495ce3e44f8f60f297593e4
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ray <rxie@edatec.cn>
+                signed-off-by: Ray <rxie@edatec.cn>
+              author: RayX123456
+          version: contracts-2.0.131
+          title: ""
+          date: 2025-04-03T09:12:05.127Z
+        - commits:
+            - subject: "hw.device-type: Update links to docs for UEFI version checking"
+              hash: cd8fa068d9e3a1a5d8aeda35829973963fc4e204
+              body: |
+                ... also include the L4T minor revision in the UEFI version
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.130
+          title: ""
+          date: 2025-03-28T11:36:03.120Z
+        - commits:
+            - subject: Mark Bookworm as the default version for Debian
+              hash: a8bfdf9a34c4642608db6d3140fd95bbc629f477
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Thodoris Greasidis
+          version: contracts-2.0.129
+          title: ""
+          date: 2025-03-14T13:31:13.451Z
+  version: 6.5.1+rev6
+  title: ""
+  date: 2025-04-16T09:55:19.274Z
+- commits:
     - subject: Re-add pinctrl drivers that have been left out after the update to
         kirkstone
       hash: 6cfb8dde4917603d3b4d0e6289a6399810786a79
