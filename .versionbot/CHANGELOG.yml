@@ -1,4 +1,587 @@
 - commits:
+    - subject: Update layers/meta-balena to 1b1b97518ab3fb4cafd9e0c51ac10622cf037008
+      hash: ba46ed96bd094dd931ea6191928f31964a2cc26a
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 1b1b97518ab3fb4cafd9e0c51ac10622cf037008
+        changelog-entry: Update layers/meta-balena to 1b1b97518ab3fb4cafd9e0c51ac10622cf037008
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "conf: set INIT_MANAGER to disable sysvinit scripts"
+              hash: 3c0070b3455d6d2a4a0e34dc3efa5682bcb7e069
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "openvpn: fix systemd-tmpfiles legacy path warning"
+              hash: 8f8785fde38d8053495073cfc29c7f3192530aa3
+              body: >
+                systemd-tmpfiles reports that /var/run is a legacy path, and
+                updates it
+
+                to just /run
+
+
+                Update this configuration file to use the now preferred path to
+                silence
+
+                this warning.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "common: image_types: backport nanbield+ image output naming"
+              hash: 63457c76b86c4835ea0f7d43b7f986af19312e18
+              body: |
+                Nanbield introduced a minor change [0] that includes IMAGE_NAME_SUFFIX
+                in IMAGE_NAME and IMAGE_LINK_NAME.
+
+                Adapt image output paths to support this change, and backport the new
+                behavior to images built with older Yocto releases.
+
+                [0] https://docs.yoctoproject.org/dev/migration-guides/migration-4.3.html#output-file-naming-changes
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "common: networkmanager: fix postinst script failure"
+              hash: 7aef85193dc0f5d5419497dcd03bf721004181c9
+              body: >
+                The networkmanager-daemon package specifies an initscript that a
+                poky
+
+                postinstall script fails to find for installation, as we didn't
+                copy it
+
+                to meta-balena, and use systemd instead.
+
+
+                Clear the initscript variables in the bbappend.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "common: systemd: fix QA issue"
+              hash: f816442858d10e4074daf1721c48500b82b7df62
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "rust: Replace references to deprecated distutils python module"
+              hash: dc7bb7ea3c0e34e7c0b3733afa0b37a1001adf1c
+              body: >
+                Replace references to deprecated distutils module in Rust
+                toolchain.
+
+
+                Also backport to older Yocto release(s) the new packaging module
+                we
+
+                use to replace distutils.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "meta-balena-rust: add balena_ prefix to classes"
+              hash: 54eaf84c5197e31d0d60212b9d868618dc55b800
+              body: |
+                We have a Rust layer in order to use the same toolchain across all
+                supported compatibility layers.
+
+                Yocto Langdale splits classes by usage context [0], which makes our recipe
+                inherit from the upstream class instead of the one from the same layer.
+
+                Add the balena- prefix to the classes for this layer to ensure we
+                inherit from the appropriate versions.
+
+                [0] https://docs.yoctoproject.org/next/migration-guides/migration-4.1.html#classes-now-split-by-usage-context
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "resin-sanity: get datastore from event"
+              hash: 2afd47018ad2fae5fc86a234cf67ef593f52064f
+              body: >
+                The datastore ('d') variable is no longer accessible in this
+                event. Copy
+
+                upstream behavior and get the datastore from the 'e' variable
+                available
+
+                to the event handler.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "common: bluez: bump from 5.66 to 5.72"
+              hash: 8792a581201d8f3b1817158038def7f55bad7635
+              body: >
+                This fixes an issue with the package not obeying the usrmerge
+                feature.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "scarthgap: enable usrmerge distro feature"
+              hash: a39830ceb84143befaee1083cdf5aceedd724190
+              body: >
+                Yocto scarthgap includes a version of systemd that requires the
+                usrmerge
+
+                distro feature. Enable it.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "common: systemd: prepare for merged usr"
+              hash: e286006a3335cede17bac59c5f36c6f756e4dcdc
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "common: usb-modeswitch-data: prepare for merged usr"
+              hash: 4ac57614b53bb00563759fd1b73fa022f820acc9
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "common: usb-modeswitch: prepare for merged usr"
+              hash: 164b67a8b8c51a412bdd99993977cb4a1f5a99aa
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "common: libnss-ato: prepare for merged usr"
+              hash: bc126e29ff367d39cb1c3dc16aae5f4e2fc18d20
+              body: >
+                Bump to latest revision, which pulls in Makefile fixes for
+                merged usr
+
+                directory.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "common: base-files: prepare for merged usr"
+              hash: 16080a971b92d2122893c362ac7499dbfacb4949
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "common: peak: prepare for merged usr"
+              hash: f928c030d25efa491eb5384e103bac49e7d123bf
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "meta-balena-common: add scarthgap to LAYERSERIES_COMPAT"
+              hash: ba5b35ace951d836de237ebfd5f70b5debacfc5f
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "meta-balena-rust: add scarthgap to LAYERSERIES_COMPAT"
+              hash: 0d445836fc9363b5df091e62a2e6f469b9add35f
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "common: adjust bmaptool name for scarthgap"
+              hash: 2c5771419d20bfec85524216fcb9a42c1f4d74ae
+              body: |
+                bmaptool was renamed and incorporated into the Yocto project in
+                Scarthgap, so adjust the package name.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "scarthgap: busybox: fix QA issue in patch"
+              hash: 2e60c144d08ae165046b2da2b247b61ef353c51f
+              body: >
+                Drop unneeded patch, as it raises a QA issue, and isn't needed
+                anymore
+
+                after enabling usrmerge.
+
+
+                Fixes "QA Issue: Malformed Upstream-Status in patch"
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "os-config: add checksums"
+              hash: 3fa1f1ef78332900b6d5a5543442064efde7bb75
+              body: |
+                As of Yocto Mickledore (4.2), checksums are mandatory for Rust crates.
+
+                https://docs.yoctoproject.org/next/migration-guides/migration-4.2.html#rust-mandatory-checksums-for-crates
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "bindmount: add checksums"
+              hash: 7a0c555e69c3ea49357ed19b76b59a6424489280
+              body: |
+                As of Yocto Mickledore (4.2), checksums are mandatory for Rust crates.
+
+                https://docs.yoctoproject.org/next/migration-guides/migration-4.2.html#rust-mandatory-checksums-for-crates
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "healthdog: add checksums"
+              hash: 3c7073d745770929025f51aae15225c4ed731d8c
+              body: |
+                As of Yocto Mickledore (4.2), checksums are mandatory for Rust crates.
+
+                https://docs.yoctoproject.org/next/migration-guides/migration-4.2.html#rust-mandatory-checksums-for-crates
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "fatrw: add checksums"
+              hash: 92b289b5dde560e169b7dfde8787997d3e02f1ca
+              body: |
+                As of Yocto Mickledore (4.2), checksums are mandatory for Rust crates.
+
+                https://docs.yoctoproject.org/next/migration-guides/migration-4.2.html#rust-mandatory-checksums-for-crates
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+            - subject: "meta-balena-scarthgap: Add integration layer"
+              hash: c10c242c13b14b86a6243b5609a95a9dd55543df
+              body: |
+                This is a 1:1 copy of meta-balena-kirkstone.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-6.5.30
+          title: ""
+          date: 2025-05-09T14:13:39.806Z
+        - commits:
+            - subject: "tests: cloud: Don't disable DUT internet access if secureboot enabled"
+              hash: e4a000782b5cff3f3416950eb5cc62b360a1c359
+              body: >
+                For the preload test, we disable DUT internet access to check
+                the preloaded app starts without API access. For secureboot
+                devices, we dont run the preload test as its not a supported
+                feature yet. So don't disable the internet access for a
+                secureboot device
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: meta-balena-6.5.29
+          title: ""
+          date: 2025-05-08T20:36:21.893Z
+        - commits:
+            - subject: Do not include in the rootfs the test binaries from the nss package
+              hash: 045f1061526a95857b8d27f69b87383ddcba5b51
+              body: |
+                In order to free up space in the rootfs we remove the following binaries:
+                bltest  chktest  crmftest  dbtest  dertimetest  encodeinttest  fbectest  fipstest  pk11ectest  pk11gcmtest  pk11importtest  remtest  sdrtest  secmodtest
+              footer:
+                Changelog-entry: Do not include in the rootfs the test binaries from the nss
+                  package
+                changelog-entry: Do not include in the rootfs the test binaries from the nss
+                  package
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.5.28
+          title: ""
+          date: 2025-05-07T19:45:20.413Z
+        - commits:
+            - subject: Update tests/leviathan digest to 81e581a
+              hash: 8d082e3e727f18c7b58098debdb522dfaf3831fd
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update balena-io/balena-cli to v21.1.10
+                      hash: cd9d6e00b478dde5dc69ac2fbfa1b127a588bb3b
+                      body: |
+                        Update balena-io/balena-cli from 21.1.9 to 21.1.10
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.31.106
+                  title: ""
+                  date: 2025-05-05T18:57:38.638Z
+          version: meta-balena-6.5.27
+          title: ""
+          date: 2025-05-06T15:08:40.140Z
+        - commits:
+            - subject: "tests/os: Add regdb load failure test"
+              hash: 545214b5e3a19bda78254bf1f9e01de34f3c8df1
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.5.26
+          title: ""
+          date: 2025-05-05T18:46:13.539Z
+        - commits:
+            - subject: Update tests/leviathan digest to 769d8e6
+              hash: 3fc4f63b17c401143523698731924a07599a8818
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update core/contracts digest to a1e8b75
+                      hash: 4b8505c58f5cd30541d334077ee2b96f3cfe233c
+                      body: |
+                        Update core/contracts
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.31.105
+                  title: ""
+                  date: 2025-04-30T22:32:41.266Z
+          version: meta-balena-6.5.25
+          title: ""
+          date: 2025-05-04T12:47:31.788Z
+        - commits:
+            - subject: Update actions/setup-python digest to a26af69
+              hash: 0946c15d23411563fae3fd38b2e4bfa5f11f89fb
+              body: >
+                Update actions/setup-python to
+                a26af69be951a213d495a4c3e4e4022e16d87065
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.5.24
+          title: ""
+          date: 2025-04-24T10:53:52.990Z
+        - commits:
+            - subject: Update actions/setup-python digest to 8d9ed9a
+              hash: 50dd1e53238b004511d2854291c81afa6bd9604e
+              body: >
+                Update actions/setup-python to
+                8d9ed9ac5c53483de85588cdf95a591a75ab9f55
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.5.23
+          title: ""
+          date: 2025-04-22T10:52:53.386Z
+        - commits:
+            - subject: Use workflow_call for balena-generic device type tests
+              hash: 685b74e962f6805713118c887e8574fadf4148f3
+              body: >
+                This includes adding secure boot tests to the generic-amd64 test
+                matrix.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-6.5.22
+          title: ""
+          date: 2025-04-21T21:24:03.843Z
+        - commits:
+            - subject: Update tests/leviathan digest to 5ecdcd3
+              hash: 0e98a555c2f4ba4003502b3e01c054828a74c67d
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update balena-os/leviathan-worker to v2.9.59
+                      hash: 3664862394cf24a370ae3679d2fba9517c1bf7de
+                      body: |
+                        Update balena-os/leviathan-worker from 2.9.58 to 2.9.59
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.31.104
+                  title: ""
+                  date: 2025-04-16T11:21:05.396Z
+          version: meta-balena-6.5.21
+          title: ""
+          date: 2025-04-19T11:24:43.032Z
+        - commits:
+            - subject: "kernel-balena: add aufs commit for v6.6.84"
+              hash: 6a63c9f2e9e064be591e4e29d6c50f86393c752f
+              body: >
+                We will continue to update to the stable head of v6.6 until
+                v6.12 is
+
+                officially deployed.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-6.5.20
+          title: ""
+          date: 2025-04-19T06:11:53.850Z
+        - commits:
+            - subject: "os-helpers-tpm2: Always use password protection for TPM NVRAM writes"
+              hash: e91e64315c06327d4592ad4c9d72658ae88c4fba
+              body: >
+                At this moment tpm_nvram_store_passphrase checks whether the
+                expected
+
+                policy is currently met or not, and acts differently in each
+                case.
+
+                If the policy doesn't match, the TPM write is protected by a
+                one-time
+
+                password that is lost when the function exits.
+
+                If the policy matches, it will be used to protect the write
+                directly.
+
+                The latter seems to be broken at least in some scenarios
+                (retrying
+
+                HUP after a rollback).
+
+
+                This patch removes the special-casing and makes
+
+                tpm_nvram_store_passphrase always use the password protection.
+                While
+
+                using the current PCR states directly is a nice optimization,
+                always
+
+                using the password is more universal and makes the code simpler.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-6.5.19
+          title: ""
+          date: 2025-04-17T08:41:50.848Z
+  version: 6.5.30
+  title: ""
+  date: 2025-05-12T13:55:02.245Z
+- commits:
     - subject: Update balena-yocto-scripts to 4ebe790eed9dbde36944496ee1ef14ba6bc4c5be
       hash: 822b98d6c303440f532756072c34ad4de3866878
       body: Update balena-yocto-scripts
