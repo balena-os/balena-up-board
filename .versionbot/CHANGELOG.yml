@@ -1,4 +1,22 @@
 - commits:
+    - subject: Use the autokit worker from the bM instance for the up-board device type
+      hash: af96b7d00eaf53ec8401bf719e7ab9c69451eb1e
+      body: |
+        The bM instance seems to be more stable now so let's move this dt back
+        to where it belongs.
+      footer:
+        Changelog-entry: Use the autokit worker from the bM instance for the up-board
+          device type
+        changelog-entry: Use the autokit worker from the bM instance for the up-board
+          device type
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.5.30+rev4
+  title: ""
+  date: 2025-07-30T16:17:39.905Z
+- commits:
     - subject: Generate SBOM and VEX (cycloneDX)
       hash: 1fc45970958258ec32b4f27582f144703b3ca3d9
       body: >

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.5.30+rev4
+## (2025-07-30)
+
+* Use the autokit worker from the bM instance for the up-board device type [Florin Sarbu]
+
 # v6.5.30+rev3
 ## (2025-07-09)
 
