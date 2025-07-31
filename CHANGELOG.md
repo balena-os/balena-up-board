@@ -1,6 +1,293 @@
 Change log
 -----------
 
+# v6.5.47
+## (2025-07-31)
+
+
+<details>
+<summary> Update layers/meta-balena to 542cca8a05d671b349d4d07be2d9bf086fe3781e [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.5.47
+> ### (2025-07-29)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to b33ddb7 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.35.3
+>> #### (2025-07-28)
+>> 
+>> * Bind mount private contracts in the core service [Kyle Harding]
+>> 
+>> ### leviathan-2.35.2
+>> #### (2025-07-28)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.5.46
+> ### (2025-07-25)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 353d77d [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.35.1
+>> #### (2025-07-24)
+>> 
+>> * Ensure we always pass the BALENA_ARCH worker build arg [Kyle Harding]
+>> 
+>> ### leviathan-2.35.0
+>> #### (2025-07-24)
+>> 
+>> * Core: worker: use polling to track flashing [Ryan Cooke]
+>> 
+>> ### leviathan-2.34.4
+>> #### (2025-07-24)
+>> 
+>> * Update balena-io/balena-cli to v22.1.4 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.34.3
+>> #### (2025-07-24)
+>> 
+>> * tests/e2e: switch to self hosted runners [Ryan Cooke]
+>> 
+>> ### leviathan-2.34.2
+>> #### (2025-07-23)
+>> 
+>> * Update core/contracts digest to fc76558 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.34.1
+>> #### (2025-07-23)
+>> 
+>> * Update balena-os/leviathan-worker to v2.10.0 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.34.0
+>> #### (2025-07-22)
+>> 
+>> * Prefer image pull when running from GitHub Actions [Kyle Harding]
+>> * Publish core and client docker images to ghcr.io [Kyle Harding]
+>> 
+>> ### leviathan-2.33.9
+>> #### (2025-07-22)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.33.8
+>> #### (Invalid date)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.33.7
+>> #### (2025-06-23)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.33.6
+>> #### (2025-06-23)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.33.5
+>> #### (2025-06-19)
+>> 
+>> * Update docker/setup-buildx-action digest to e468171 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.33.4
+>> #### (2025-06-19)
+>> 
+>> * Update balena-io/balena-cli to v22.1.1 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.33.3
+>> #### (2025-06-16)
+>> 
+>> * Update balena-io/balena-cli to v22.1.0 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.33.2
+>> #### (2025-06-16)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.5.45
+> ### (2025-07-23)
+> 
+> * grub-conf: Don't sign non-luks grub.cfg [Michal Toman]
+> 
+> ## meta-balena-6.5.44
+> ### (2025-07-09)
+> 
+> * meta-balena-YOCTO_RELEASE: update bmap-tools branch name [Ryan Cooke]
+> 
+> ## meta-balena-6.5.43
+> ### (2025-07-07)
+> 
+> * meta-balena-esr: fall back to current minor [Ryan Cooke]
+> 
+> ## meta-balena-6.5.42
+> ### (2025-07-03)
+> 
+> * Enable zram zstd compression for 6.12+ kernels [Florin Sarbu]
+> 
+> ## meta-balena-6.5.41
+> ### (2025-07-02)
+> 
+> * Update outdated context of efitools patches [Florin Sarbu]
+> 
+> ## meta-balena-6.5.40
+> ### (2025-06-26)
+> 
+> * busybox: add conv support in dd [Alex Gonzalez]
+> * initrdscripts: cryptsetup-efi-tmp: use common encrypted partition asserts [Alex Gonzalez]
+> * os-helpers-fs: move logic to assert luks encrypted partitions [Alex Gonzalez]
+> * initrdscripts: migrate: use an estimated compressed size for raw image [Alex Gonzalez]
+> * os-helpers-fs: add a function to estimate zram compression sizes [Alex Gonzalez]
+> 
+> ## meta-balena-6.5.39
+> ### (2025-06-20)
+> 
+> * workflows: remove Jetson Xavier AGX [Alex Gonzalez]
+> 
+> ## meta-balena-6.5.38
+> ### (2025-06-12)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 473af4b [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.33.1
+>> #### (2025-06-10)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.33.0
+>> #### (2025-06-10)
+>> 
+>> * minor: Upgrade Typedoc to v0.26.11 [Vipul Gupta (@vipulgupta2048)]
+>> 
+>> ### leviathan-2.32.9
+>> #### (2025-06-09)
+>> 
+>> * Update balena-os/leviathan-worker to v2.9.60 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.32.8
+>> #### (2025-06-09)
+>> 
+>> * Update balena-io/balena-cli to v22.0.6 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.32.7
+>> #### (2025-06-09)
+>> 
+>> * core/lib: Specify partition indexes for Jetson Nano eMMC and JN30B Nano [Alexandru]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.5.37
+> ### (2025-06-09)
+> 
+> * Update tests/leviathan digest to 2c6c6ef [balena-renovate[bot]]
+> * tests: hup: enable specifying image type [Ryan Cooke]
+> 
+> ## meta-balena-6.5.36
+> ### (2025-06-04)
+> 
+> * classes: Make sure we disable debug info for newer kernels [Florin Sarbu]
+> 
+> ## meta-balena-6.5.35
+> ### (2025-06-03)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 17aa86b [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.32.2
+>> #### (2025-05-27)
+>> 
+>> * Update balena-io/balena-cli to v22 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.32.1
+>> #### (2025-05-23)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.32.0
+>> #### (2025-05-23)
+>> 
+>> * Remove custom compose binary installation from Make [Kyle Harding]
+>> 
+>> ### leviathan-2.31.111
+>> #### (2025-05-23)
+>> 
+>> * Update balena-io/balena-cli to v21.1.14 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.110
+>> #### (2025-05-23)
+>> 
+>> * Core: update to node 22 [Ryan Cooke]
+>> 
+>> ### leviathan-2.31.109
+>> #### (2025-05-21)
+>> 
+>> * Update balena-io/balena-cli to v21.1.13 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.108
+>> #### (2025-05-14)
+>> 
+>> * Update core/contracts digest to 417aec2 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.31.107
+>> #### (2025-05-06)
+>> 
+>> * Update balena-io/balena-cli to v21.1.11 [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> * tests: update for node 22 [Ryan Cooke]
+> 
+> ## meta-balena-6.5.34
+> ### (2025-05-23)
+> 
+> * Increases persistent logs size to 128M [Alex Gonzalez]
+> 
+> ## meta-balena-6.5.33
+> ### (2025-05-21)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v17.0.3 [balena-renovate[bot]] </summary>
+> 
+>> ### balena-supervisor-17.0.3
+>> #### (2025-05-13)
+>> 
+>> * Simplify contract validation module [Felipe Lalanne]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.5.32
+> ### (2025-05-17)
+> 
+> * kernel-balena.bbclass: Include 802.1q VLAN driver [Michal Toman]
+> 
+> ## meta-balena-6.5.31
+> ### (2025-05-16)
+> 
+> * .github/workflows: Change meta-balena ref to last commit of the pull request [Florin Sarbu]
+> 
+
+</details>
+
 # v6.5.30+rev4
 ## (2025-07-30)
 
