@@ -5,11 +5,11 @@
 [submodule "layers/poky"]
 	path = layers/poky
 	url = https://github.com/balena-os/poky
-	branch = kirkstone
+	branch = scarthgap
 [submodule "layers/meta-openembedded"]
 	path = layers/meta-openembedded
 	url = https://github.com/openembedded/meta-openembedded.git
-	branch = kirkstone
+	branch = scarthgap
 [submodule "layers/meta-balena"]
 	path = layers/meta-balena
 	url = https://github.com/balena-os/meta-balena.git
@@ -17,12 +17,12 @@
 [submodule "layers/meta-intel"]
 	path = layers/meta-intel
 	url = https://git.yoctoproject.org/git/meta-intel
-	branch = kirkstone
+	branch = scarthgap
 [submodule "layers/meta-up-board"]
 	path = layers/meta-up-board
 	# switch to the new BSP repo as been advised by AAEON
 	url = https://github.com/up-division/meta-up-board.git
-	branch = kirkstone
+	branch = scarthgap
 [submodule "contracts"]
 	path = contracts
 	url = https://github.com/balena-io/contracts.git
@@ -30,4 +30,4 @@
 [submodule "layers/meta-cyclonedx"]
 	path = layers/meta-cyclonedx
 	url = https://github.com/balena-os/meta-cyclonedx
-	branch = kirkstone
+	branch = scarthgap
