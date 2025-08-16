@@ -1,4 +1,31 @@
 - commits:
+    - subject: Update layers/meta-balena to 5a73334fc661f78a2163d3c520b804f80890d480
+      hash: 9d6d08e51be6604f14e10d94499632448d6910e1
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 5a73334fc661f78a2163d3c520b804f80890d480
+        changelog-entry: Update layers/meta-balena to 5a73334fc661f78a2163d3c520b804f80890d480
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Updated contributing-device-support.md Part of
+                https://balena.fibery.io/Work/Project/Update-Device-Support-Docs-1641
+              hash: 9895bf9caa5c5c817c04321e2e6fd9e9ccf2c769
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Hampton (@rhampt) <rhampt@balena.io>
+                signed-off-by: Ryan Hampton (@rhampt) <rhampt@balena.io>
+              author: Ryan
+              nested: []
+          version: meta-balena-6.5.51
+          title: ""
+          date: 2025-08-15T19:55:29.375Z
+  version: 6.5.51
+  title: ""
+  date: 2025-08-16T01:57:20.691Z
+- commits:
     - subject: Update balena-yocto-scripts to 52e5d372d55e8515f171f7b4902ba26cbe684c12
       hash: cdb91a54bff0a26c69e2a27b3f1091b0f80e7ff0
       body: Update balena-yocto-scripts
