@@ -1,4 +1,36 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 8621547e6855b99d63471cb66fce8cc943f64553
+      hash: da824ff6e15d87ab8ac2f1b0f7b412a8f6b0f3a5
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 8621547e6855b99d63471cb66fce8cc943f64553
+        changelog-entry: Update balena-yocto-scripts to 8621547e6855b99d63471cb66fce8cc943f64553
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Split testing artifacts into individual files
+              hash: d682869435a2cc53bad572a8d11075d221c45cdc
+              body: >
+                This allows downstream jobs to only download the files
+
+                they need, and one at a time, avoiding issues with large
+                artifact
+
+                download timeouts.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.38.0
+          title: ""
+          date: 2025-08-18T14:55:33.762Z
+  version: 6.5.53+rev2
+  title: ""
+  date: 2025-08-18T21:48:00.844Z
+- commits:
     - subject: Update balena-yocto-scripts to 4e7e0f646eb42e00ccb540a092b6086e26be5e00
       hash: 1f12824c6635492c3e0563f06140008f68ca62bf
       body: Update balena-yocto-scripts
