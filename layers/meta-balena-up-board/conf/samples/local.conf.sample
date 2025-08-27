@@ -20,7 +20,7 @@
 #BALENA_RAW_IMG_COMPRESSION ?= "xz"
 
 # Parallelism Options
-BB_NUMBER_THREADS ?= "${@oe.utils.cpu_count()}"
+BB_NUMBER_THREADS ?= "${@int(oe.utils.cpu_count() / 2)}"
 PARALLEL_MAKE ?= "-j ${@oe.utils.cpu_count()}"
 
 # Resin specific distros
