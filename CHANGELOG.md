@@ -1,6 +1,41 @@
 Change log
 -----------
 
+# v6.5.55+rev3
+## (2025-09-01)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 3da4e935f3d621e6df55f0499fd6a8fe0af6cdbf [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.38.10
+> ### (Invalid date)
+> 
+> * Update balena-io/balena-cli to v22.3.0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.9
+> ### (Invalid date)
+> 
+> * Update balena-io/upload-balena-release-asset action to v0.1.5 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.8
+> ### (Invalid date)
+> 
+> * Update balena-io-examples/setup-balena-action action to v0.0.31 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.7
+> ### (2025-08-29)
+> 
+> * Update aws/aws-cli to v2.28.21 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.38.6
+> ### (2025-08-26)
+> 
+> * Update aws/aws-cli to v2.28.18 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v6.5.55+rev2
 ## (2025-08-25)
 
