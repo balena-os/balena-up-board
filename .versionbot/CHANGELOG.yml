@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update to Scarthgap
+      hash: 1b55e4ea7bbbf15414036953c9fa4b1583fbf45d
+      body: |
+        Author: Florin Sarbu <florin@balena.io>
+      footer:
+        Changelog-entry: Update to Scarthgap
+        changelog-entry: Update to Scarthgap
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+    - subject: "layers/meta-balena: Update to v6.6.3"
+      hash: 49d2ecd589d9226ed8b3aa60d6fa978e272a8d26
+      body: ""
+      footer:
+        Changelog-entry: "layers/meta-balena: Update to v6.6.3"
+        changelog-entry: "layers/meta-balena: Update to v6.6.3"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 6.6.3
+  title: ""
+  date: 2025-09-13T20:18:12.627Z
+- commits:
     - subject: Update balena-yocto-scripts to 4ea0596b9497846b61bc62f6df87b790128297e7
       hash: ba52481104a687fb1fa948473a06dd9f23140ded
       body: Update balena-yocto-scripts

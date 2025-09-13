@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v6.6.3
+## (2025-09-13)
+
+* Update to Scarthgap [Alexandru Costache]
+* layers/meta-balena: Update to v6.6.3 [Alexandru Costache]
+
 # v6.5.55+rev11
 ## (2025-09-13)
 
