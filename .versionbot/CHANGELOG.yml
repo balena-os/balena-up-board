@@ -1,4 +1,45 @@
 - commits:
+    - subject: Update layers/meta-balena to c5f4f2f4b7f7b9987479a4bc4346277d20b7ff1c
+      hash: fa6d1ad3542ea3b8132ffd620d4044c6d761d117
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to c5f4f2f4b7f7b9987479a4bc4346277d20b7ff1c
+        changelog-entry: Update layers/meta-balena to c5f4f2f4b7f7b9987479a4bc4346277d20b7ff1c
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Fail if IOMMU is disabled on secure boot systems
+              hash: ecedf68132543a21d906b299c365db7be34abe9f
+              body: >
+                At this moment we provision secure boot systems without checking
+
+                whether the IOMMU is enabled. With the IOMMU disabled, all PCIe
+                cards
+
+                have full DMA access and are able to retrieve the encryption
+                keys
+
+                from memory. On some systems this logs an extra event into PCR7.
+
+
+                This patch makes the OS look for the event in the TPM event log
+
+                and refuse to provision or unlock the disks if the IOMMU is
+                disabled.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-6.6.4
+          title: ""
+          date: 2025-09-03T13:27:58.602Z
+  version: 6.6.4
+  title: ""
+  date: 2025-09-14T01:07:23.940Z
+- commits:
     - subject: Update to Scarthgap
       hash: 1b55e4ea7bbbf15414036953c9fa4b1583fbf45d
       body: |
