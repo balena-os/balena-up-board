@@ -1,4 +1,281 @@
 - commits:
+    - subject: Update layers/meta-balena to 74730286dcb409eebcf490061cc37bf1c5b4de83
+      hash: faf789b3c4723a131c4039825c147c95604f2473
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 74730286dcb409eebcf490061cc37bf1c5b4de83
+        changelog-entry: Update layers/meta-balena to 74730286dcb409eebcf490061cc37bf1c5b4de83
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "recipes-support/balena-config-vars: Avoid failure caused by race in
+                cache file creation"
+              hash: 6ec251e48f3eaae6e3fded5b003d11f2fae2d418
+              body: >
+                Services like os-fan-profile or os-power-mode may fail
+
+                at startup due to a race in the creation of the
+                balena-config-vars
+
+                cache:
+
+                    mv: cannot create regular file '/var/cache/balena-config-vars': File exists
+
+                The cache file may bee generated at the same time by another
+
+                instance of the same helper function. To avoid that,
+
+                we now introduce the lock file
+                /var/cache/balena-config-vars.lock
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.6.16
+          title: ""
+          date: 2025-10-29T12:52:25.561Z
+        - commits:
+            - subject: Remove non-autokit DTs from build list
+              hash: 45e7c8c715168f16fea4eb8b52914da71116c7c1
+              body: >
+                These DT's are currently not tested, so are not getting new
+                releases - no value added in having them built as part of
+                meta-balena PRs
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: meta-balena-6.6.15
+          title: ""
+          date: 2025-10-28T15:05:49.954Z
+        - commits:
+            - subject: Update tests/leviathan digest to 19c382d
+              hash: 7049d36cc9302a3bfb2918643d5668ea6fdbb869
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update Lock file maintenance
+                      hash: ffe44154a6f98b06324b18dfe9de24bbe3b39752
+                      body: |
+                        Update 
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.54
+                  title: ""
+                  date: 2025-10-20T01:06:24.485Z
+                - commits:
+                    - subject: Update balena-io/balena-cli to v22.4.14
+                      hash: 7a5ef964fb8ca00e80690144c0ff59c6d55fdd01
+                      body: |
+                        Update balena-io/balena-cli from 22.4.13 to 22.4.14
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.53
+                  title: ""
+                  date: 2025-10-17T18:55:11.552Z
+                - commits:
+                    - subject: Update balena-io/balena-cli to v22.4.13
+                      hash: e41a4514e4851cd3476108072b5930a8b3bb4ea6
+                      body: |
+                        Update balena-io/balena-cli from 22.4.12 to 22.4.13
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.52
+                  title: ""
+                  date: 2025-10-14T15:09:42.204Z
+          version: meta-balena-6.6.14
+          title: ""
+          date: 2025-10-20T07:06:29.629Z
+        - commits:
+            - subject: "kernel-balena.bbclass: Fix zram failure when setting algorithm"
+              hash: ca456a422109f6cd4132d0c74fc012ec12a01f91
+              body: >
+                The initramfs error addressed by this commit is:
+
+                    zramctl: /dev/zram1: failed to set algorithm: Invalid argument
+
+                zstd is the default algorithm currently used by the zram
+                initramfs module,
+
+                which is installed for all device-types. Also, the crypto API
+                provides
+
+                the compression algorithms used by the zram kernel module, so
+                let's make
+
+                this available for all devices as built-in, so it is accessible
+                in the
+
+                initramfs.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru
+              nested: []
+          version: meta-balena-6.6.13
+          title: ""
+          date: 2025-10-16T10:23:25.020Z
+        - commits:
+            - subject: Update tests/leviathan digest to 8a590d2
+              hash: 9cfc0df106db82513ded9985fc56db961917af82
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update balena-io/balena-cli to v22.4.12
+                      hash: 038d5ef3b5b2b4dcee0672ec1f93daac11a633cc
+                      body: |
+                        Update balena-io/balena-cli from 22.4.11 to 22.4.12
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.51
+                  title: ""
+                  date: 2025-10-13T20:35:47.103Z
+                - commits:
+                    - subject: Update balena-os/leviathan-worker to v2.10.10
+                      hash: f3ad3e8de2c0e9c55dd4dddd90d366453293340f
+                      body: |
+                        Update balena-os/leviathan-worker from 2.10.9 to 2.10.10
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.50
+                  title: ""
+                  date: 2025-10-13T04:41:12.472Z
+                - commits:
+                    - subject: Update balena-io/balena-cli to v22.4.11
+                      hash: cba0d208fc9ab6557f3f1841f00cdc2f681ba8f7
+                      body: |
+                        Update balena-io/balena-cli from 22.4.10 to 22.4.11
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.49
+                  title: ""
+                  date: 2025-10-13T03:05:36.610Z
+                - commits:
+                    - subject: Update Lock file maintenance
+                      hash: 439319d3f5971b45851f24781d9aa1dfabe96613
+                      body: |
+                        Update 
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.48
+                  title: ""
+                  date: 2025-10-13T01:02:12.251Z
+          version: meta-balena-6.6.12
+          title: ""
+          date: 2025-10-14T00:41:25.980Z
+        - commits:
+            - subject: Update tests/leviathan digest to 9cb148e
+              hash: 1cd38c8cc6296ead209b4d3a215a593c0f1888e5
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update balena-io/balena-cli to v22.4.10
+                      hash: 155116c8429172f47d5475eebe7777ed8bade111
+                      body: |
+                        Update balena-io/balena-cli from 22.4.9 to 22.4.10
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.47
+                  title: ""
+                  date: 2025-10-09T13:40:23.830Z
+                - commits:
+                    - subject: Update balena-os/leviathan-worker to v2.10.9
+                      hash: 776b59ec65129b498132aeb1cc8916306336a95b
+                      body: |
+                        Update balena-os/leviathan-worker from 2.10.8 to 2.10.9
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.46
+                  title: ""
+                  date: 2025-10-06T03:00:17.569Z
+                - commits:
+                    - subject: Update Lock file maintenance
+                      hash: b8dd132eb9f6143cd054f4171465ff59d999bdb6
+                      body: |
+                        Update 
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.45
+                  title: ""
+                  date: 2025-10-06T01:04:36.611Z
+          version: meta-balena-6.6.11
+          title: ""
+          date: 2025-10-10T18:37:05.908Z
+        - commits:
+            - subject: "meta-balena-common: Consistently prepend spaces when using append"
+              hash: d40e75d6a53dbbeced901bec555f33e10f1c22c8
+              body: >
+                The '+=' operator ensures a space is inserted before appending a
+                value,
+
+                however ':append' does not. So let's prepend a space
+                consistently
+
+                where ':append' is used.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.6.10
+          title: ""
+          date: 2025-10-03T09:17:11.161Z
+  version: 6.6.16
+  title: ""
+  date: 2025-10-30T22:29:48.558Z
+- commits:
     - subject: Update balena-yocto-scripts to 432b10979277c44088638bde6ec744bfc71e826a
       hash: 86cc64f616da052c5226dc3bd4816ed07ea9fe76
       body: Update balena-yocto-scripts

@@ -1,6 +1,119 @@
 Change log
 -----------
 
+# v6.6.16
+## (2025-10-30)
+
+
+<details>
+<summary> Update layers/meta-balena to 74730286dcb409eebcf490061cc37bf1c5b4de83 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-6.6.16
+> ### (2025-10-29)
+> 
+> * recipes-support/balena-config-vars: Avoid failure caused by race in cache file creation [Alexandru Costache]
+> 
+> ## meta-balena-6.6.15
+> ### (2025-10-28)
+> 
+> * Remove non-autokit DTs from build list [Ryan Cooke]
+> 
+> ## meta-balena-6.6.14
+> ### (2025-10-20)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 19c382d [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.36.54
+>> #### (2025-10-20)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.53
+>> #### (2025-10-17)
+>> 
+>> * Update balena-io/balena-cli to v22.4.14 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.52
+>> #### (2025-10-14)
+>> 
+>> * Update balena-io/balena-cli to v22.4.13 [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.6.13
+> ### (2025-10-16)
+> 
+> * kernel-balena.bbclass: Fix zram failure when setting algorithm [Alexandru]
+> 
+> ## meta-balena-6.6.12
+> ### (2025-10-14)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 8a590d2 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.36.51
+>> #### (2025-10-13)
+>> 
+>> * Update balena-io/balena-cli to v22.4.12 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.50
+>> #### (2025-10-13)
+>> 
+>> * Update balena-os/leviathan-worker to v2.10.10 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.49
+>> #### (2025-10-13)
+>> 
+>> * Update balena-io/balena-cli to v22.4.11 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.48
+>> #### (2025-10-13)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.6.11
+> ### (2025-10-10)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 9cb148e [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.36.47
+>> #### (2025-10-09)
+>> 
+>> * Update balena-io/balena-cli to v22.4.10 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.46
+>> #### (2025-10-06)
+>> 
+>> * Update balena-os/leviathan-worker to v2.10.9 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.45
+>> #### (2025-10-06)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.6.10
+> ### (2025-10-03)
+> 
+> * meta-balena-common: Consistently prepend spaces when using append [Alexandru Costache]
+> 
+
+</details>
+
 # v6.6.9+rev1
 ## (2025-10-30)
 
