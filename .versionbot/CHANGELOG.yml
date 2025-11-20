@@ -1,4 +1,55 @@
 - commits:
+    - subject: Update balena-yocto-scripts to dfa25a6c2cf888c6edcf47ecd28ff3ac74a313d2
+      hash: 0da108805d85b2f17a1073a7325df707f2619aa2
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to dfa25a6c2cf888c6edcf47ecd28ff3ac74a313d2
+        changelog-entry: Update balena-yocto-scripts to dfa25a6c2cf888c6edcf47ecd28ff3ac74a313d2
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update aws/aws-cli to v2.31.39
+              hash: 2ed3167a72307b447fb6640d1b3b2d7d7c3ffdf7
+              body: |
+                Update aws/aws-cli from 2.31.38 to 2.31.39
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.91
+          title: ""
+          date: 2025-11-19T21:21:53.882Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v23.1.2
+              hash: 6df666d2241e52c0507affb940ef5873298e5cce
+              body: |
+                Update balena-io/balena-cli from 23.1.1 to 23.1.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.90
+          title: ""
+          date: 2025-11-19T17:24:45.549Z
+        - commits:
+            - subject: Update balena-io/balena-cli to v23.1.1
+              hash: d70a50cd4cb3195ce7d21630a672711b713517eb
+              body: |
+                Update balena-io/balena-cli from 23.0.1 to 23.1.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.38.89
+          title: ""
+          date: 2025-11-18T17:37:29.895Z
+  version: 6.7.7+rev1
+  title: ""
+  date: 2025-11-20T01:56:19.427Z
+- commits:
     - subject: Update layers/meta-balena to 3655901b8a00af49ac09037f45f17227628eefc5
       hash: c63c798ec4abaca2f4589e4ede6169558d813d32
       body: Update layers/meta-balena
