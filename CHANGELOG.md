@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.8.1+rev1
+## (2025-11-27)
+
+* workflows: stop get_inputs job running on both PR and PRT triggers [Ryan Cooke]
+
 # v6.8.1
 ## (2025-11-27)
 
