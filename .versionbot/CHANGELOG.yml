@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add to rootfs GPU firmware required by various Up Boards(s)
+      hash: 04a5eca03b6ada48c38ac27d6d2e871ef9577ae2
+      body: ""
+      footer:
+        Changelog-entry: Add to rootfs GPU firmware required by various Up Boards(s)
+        changelog-entry: Add to rootfs GPU firmware required by various Up Boards(s)
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.8.1+rev2
+  title: ""
+  date: 2025-11-27T14:44:10.532Z
+- commits:
     - subject: "workflows: stop get_inputs job running on both PR and PRT triggers"
       hash: 09edece32f757a67136e646d1ea3fe1d966175ea
       body: >

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.8.1+rev2
+## (2025-11-27)
+
+* Add to rootfs GPU firmware required by various Up Boards(s) [Florin Sarbu]
+
 # v6.8.1+rev1
 ## (2025-11-27)
 
