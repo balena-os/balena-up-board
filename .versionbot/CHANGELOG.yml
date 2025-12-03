@@ -1,4 +1,27 @@
 - commits:
+    - subject: "recipes-core/images/balena-image: Install grub_extraenv in boot
+        partition"
+      hash: 707887726b349ed3e09465b22e3d5bfe8846e35d
+      body: >
+        ... and fix a few warnings.
+
+        grub_extraenv is a grub environment file used for passing extra args to
+        the
+
+        kernel cmdline.
+      footer:
+        Changelog-entry: "recipes-core/images/balena-image: Install grub_extraenv in
+          boot partition"
+        changelog-entry: "recipes-core/images/balena-image: Install grub_extraenv in
+          boot partition"
+        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+        signed-off-by: Alexandru Costache <alexandru@balena.io>
+      author: Alexandru Costache
+      nested: []
+  version: 6.8.1+rev3
+  title: ""
+  date: 2025-12-03T21:31:59.090Z
+- commits:
     - subject: Add to rootfs GPU firmware required by various Up Boards(s)
       hash: 04a5eca03b6ada48c38ac27d6d2e871ef9577ae2
       body: ""

@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.8.1+rev3
+## (2025-12-03)
+
+* recipes-core/images/balena-image: Install grub_extraenv in boot partition [Alexandru Costache]
+
 # v6.8.1+rev2
 ## (2025-11-27)
 
