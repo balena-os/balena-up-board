@@ -13,7 +13,8 @@ BALENA_IMAGE_BOOTLOADER = "grub-efi"
 BALENA_BOOT_PARTITION_FILES = " \
     grub-efi-bootx64.efi:/EFI/BOOT/bootx64.efi \
     grubenv:/EFI/BOOT/grubenv \
+    grub_extraenv:/EFI/BOOT/grub_extraenv \
     "
 
 # add to rootfs the firmware for Ampak AP6214a and AP6355 Wireless/Bluetooth
-IMAGE_INSTALL:append += " ampak-firmware"
+IMAGE_INSTALL:append = " ampak-firmware"
