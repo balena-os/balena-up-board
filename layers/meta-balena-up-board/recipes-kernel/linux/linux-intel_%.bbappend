@@ -40,3 +40,9 @@ BALENA_CONFIGS:append = " optimize-size"
 BALENA_CONFIGS[optimize-size] = " \
     CONFIG_CC_OPTIMIZE_FOR_SIZE=y \
 "
+
+# disable DVB in order to save space (if anybody needs this it can be added from the container)
+BALENA_CONFIGS:append = " disable_dvb"
+BALENA_CONFIGS[disable_dvb] = " \
+    CONFIG_DVB_CORE=n \
+"
