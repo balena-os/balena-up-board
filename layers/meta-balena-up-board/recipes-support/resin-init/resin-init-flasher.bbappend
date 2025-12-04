@@ -1,5 +1,5 @@
 # On the UP board(s), we flash on internal device
-INTERNAL_DEVICE_KERNEL = "mmcblk0"
+INTERNAL_DEVICE_KERNEL = "mmcblk0 nvme0n1 sda sdb"
 
 # the name of the bootloader config file to be written to internal media
 INTERNAL_DEVICE_BOOTLOADER_CONFIG = "grub.cfg_internal"
