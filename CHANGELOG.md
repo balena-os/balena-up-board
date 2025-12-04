@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v6.8.1+rev4
+## (2025-12-04)
+
+* Allow balenaOS to install on either eMMC, NVMe or SATA storage [Florin Sarbu]
+* Install ACPI tables for all supported Up Board(s) [Florin Sarbu]
+
 # v6.8.1+rev3
 ## (2025-12-03)
 

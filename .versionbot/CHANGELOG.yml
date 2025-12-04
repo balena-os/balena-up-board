@@ -1,4 +1,40 @@
 - commits:
+    - subject: Allow balenaOS to install on either eMMC, NVMe or SATA storage
+      hash: aeab783dff8fe2d392634d320d757ac8970ba7ee
+      body: >
+        There are some boards in the vendor's offer that lack eMMC but can be
+        instead equipped
+
+        with either NVMe or SATA storage so balenaOS can be installed on
+        whichever media it is
+
+        able to find first.
+      footer:
+        Changelog-entry: Allow balenaOS to install on either eMMC, NVMe or SATA storage
+        changelog-entry: Allow balenaOS to install on either eMMC, NVMe or SATA storage
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+    - subject: Install ACPI tables for all supported Up Board(s)
+      hash: 2621bd4c093d8fd6c3d62b814f59020fd60f3450
+      body: >
+        For supporting the entire family of Up Board(s) we need to have in the
+        rootfs
+
+        the complete list of ACPI tables for the whole range of supported
+        hardware.
+      footer:
+        Changelog-entry: Install ACPI tables for all supported Up Board(s)
+        changelog-entry: Install ACPI tables for all supported Up Board(s)
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.8.1+rev4
+  title: ""
+  date: 2025-12-04T09:09:13.210Z
+- commits:
     - subject: "recipes-core/images/balena-image: Install grub_extraenv in boot
         partition"
       hash: 707887726b349ed3e09465b22e3d5bfe8846e35d
