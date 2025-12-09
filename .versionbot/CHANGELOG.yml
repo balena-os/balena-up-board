@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add rtl8168h-2.fw.xz to rootfs
+      hash: baf76d21a2e44ff335e4ed30d7b9b9019e2fe8fa
+      body: ""
+      footer:
+        Changelog-entry: Add rtl8168h-2.fw.xz to rootfs
+        changelog-entry: Add rtl8168h-2.fw.xz to rootfs
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.9.3+rev1
+  title: ""
+  date: 2025-12-09T16:19:57.532Z
+- commits:
     - subject: Update layers/meta-balena to 9ccfacb101b2537a5ea9ebb66fa87ce1aa570e3b
       hash: a4300fcc201e46705eb9b61123a746dc878f9c29
       body: Update layers/meta-balena

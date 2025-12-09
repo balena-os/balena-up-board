@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.9.3+rev1
+## (2025-12-09)
+
+* Add rtl8168h-2.fw.xz to rootfs [Florin Sarbu]
+
 # v6.9.3
 ## (2025-12-09)
 
