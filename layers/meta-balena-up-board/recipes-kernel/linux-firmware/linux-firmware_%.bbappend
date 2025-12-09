@@ -1,4 +1,4 @@
-PACKAGES =+ "${PN}-i915-upboards"
+PACKAGES =+ "${PN}-i915-upboards ${PN}-rtl-nic-upboards"
 
 FILES:${PN}-i915-upboards = " \
     ${nonarch_base_libdir}/firmware/i915/adlp_dmc.bin.xz \
@@ -19,4 +19,8 @@ FILES:${PN}-i915-upboards = " \
     ${nonarch_base_libdir}/firmware/i915/tgl_dmc_ver2_12.bin.xz \
     ${nonarch_base_libdir}/firmware/i915/tgl_guc_70.bin.xz \
     ${nonarch_base_libdir}/firmware/i915/tgl_huc.bin.xz \
+"
+
+FILES:${PN}-rtl-nic-upboards = " \
+    ${nonarch_base_libdir}/firmware/rtl_nic/rtl8168h-2.fw.xz \
 "
