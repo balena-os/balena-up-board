@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update layers/meta-balena to 2e6f430bd9727edef17e6a268e461bca3a2bdb0e
+      hash: 06d1383e15dbcacfcaa965d56fc19d5b253beba3
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 2e6f430bd9727edef17e6a268e461bca3a2bdb0e
+        changelog-entry: Update layers/meta-balena to 2e6f430bd9727edef17e6a268e461bca3a2bdb0e
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Update actions/checkout action to v6
+              hash: a9116ae98349e3f2a545f5728f8e803b69344a01
+              body: |
+                Update actions/checkout from v4 to v6
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.9.4
+          title: ""
+          date: 2025-12-10T10:45:18.733Z
+  version: 6.9.4
+  title: ""
+  date: 2025-12-10T18:25:57.452Z
+- commits:
     - subject: Add rtl8168h-2.fw.xz to rootfs
       hash: baf76d21a2e44ff335e4ed30d7b9b9019e2fe8fa
       body: ""
