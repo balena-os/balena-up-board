@@ -1,0 +1,7 @@
+
+kconf hardware wireless.cfg
+kconf hardware ethernet.cfg
+kconf hardware intel-dev.cfg
+kconf hardware usb.cfg
+kconf hardware audio.cfg
+
