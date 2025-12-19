@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.9.6+rev1
+## (2025-12-19)
+
+* Update kernel to version 6.12.27 [Florin Sarbu]
+
 # v6.9.6
 ## (2025-12-12)
 
