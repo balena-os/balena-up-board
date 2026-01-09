@@ -1,4 +1,257 @@
 - commits:
+    - subject: Update layers/meta-balena to 26357df251e2f5212058b3c69bde358d0fe54277
+      hash: 8047de0784f219f5508b135dace32b0c85d53af7
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 26357df251e2f5212058b3c69bde358d0fe54277
+        changelog-entry: Update layers/meta-balena to 26357df251e2f5212058b3c69bde358d0fe54277
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "initrdscripts: Unlock mutex if regenerate_uuid fails in fsuuidsinit"
+              hash: 62657c7ccdb690015405804c8d3df00fa814bd87
+              body: >
+                In commit 3f6a302bf53c6c0a609015c92ff927c7575412d9 we've
+                introduced
+
+                a mutex that prevents a race condition between the fsuuidsinit
+                script
+
+                changing FS UUIDs and udev creating the by-state symlinks. This
+                mutex
+
+                is never unlocked if the FS UUID change fails and leaks out
+
+                from the initrd into the final system, where it blocks
+
+                the 65-resin-update-state udev rule from properly executing. The
+                system
+
+                will usually somewhat come up, but fail in weird ways, e.g.
+                automounts
+
+                not working.
+
+
+                This patch unlocks the mutex on failure.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-6.10.14
+          title: ""
+          date: 2026-01-09T13:35:21.220Z
+        - commits:
+            - subject: "tests/extra-firmware: Skip post-reboot extra-firmware check for a
+                specific device"
+              hash: 7c45dfe5f71004108f8873653ae345a20a9d123e
+              body: >
+                ... on which the cboot bootloader does not have FAT support to
+                access
+
+                the extra_uEnv.txt environment file.
+
+
+                This device-type uses an old version of Jetpack 4.0 which does
+                not
+
+                have uboot / grub / UEFI EDK2 / balena-bootloader support.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.10.13
+          title: ""
+          date: 2026-01-08T19:53:44.644Z
+        - commits:
+            - subject: Reduce the size of the balena bootloader by removing unused
+                functionality
+              hash: e658d4b92cb1622009fc5529d573345a426ff09b
+              body: >
+                Newer meta-balena updates are failing for iot-gate-imx8plus-sb
+                with the error:
+
+                ERROR: balena-image-flasher-1.0-r0
+                do_resin_boot_dirgen_and_deploy: resin-boot: Not enough space
+                for atomic copy operations.
+
+
+                In order to have the size reduction available for all
+                balena-bootloader users we do these changes
+
+                directly here in the balena-bootloader class.
+              footer:
+                Changelog-entry: Reduce the size of the balena bootloader by removing unused
+                  functionality
+                changelog-entry: Reduce the size of the balena bootloader by removing unused
+                  functionality
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.10.12
+          title: ""
+          date: 2026-01-08T09:48:14.494Z
+        - commits:
+            - subject: Update balena-supervisor to v17.4.2
+              hash: 7fb52fa3483857556bababd4b5d8d2b20b13fa41
+              body: |
+                Update balena-supervisor from 17.4.1 to 17.4.2
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Parse multiple child contracts listed under an `or` clause
+                      hash: 5560744c8061bc2e008b4d5a1816fea04b611fd3
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Christina Ying Wang <christina@balena.io>
+                        signed-off-by: Christina Ying Wang <christina@balena.io>
+                      author: Christina Ying Wang
+                      nested: []
+                  version: balena-supervisor-17.4.2
+                  title: ""
+                  date: 2026-01-06T19:34:23.699Z
+          version: meta-balena-6.10.11
+          title: ""
+          date: 2026-01-07T11:00:48.232Z
+        - commits:
+            - subject: Update balena-supervisor to v17.4.1
+              hash: bf6e8af96d18bacb0389a78536fe2d02b8ac25b6
+              body: |
+                Update balena-supervisor from 17.4.0 to 17.4.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: "backends: Enable configurable power modes and fan profiles for all
+                        Jetson Orin devices"
+                      hash: d7521507d10b9a5db1a15b960e2ca6f76bf41e3a
+                      body: >
+                        We do so because all Jetson Orin-based devices have been
+                        updated to
+
+                        Jetpack 6.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                        signed-off-by: Alexandru Costache <alexandru@balena.io>
+                      author: Alexandru Costache
+                      nested: []
+                  version: balena-supervisor-17.4.1
+                  title: ""
+                  date: 2026-01-05T18:32:02.308Z
+          version: meta-balena-6.10.10
+          title: ""
+          date: 2026-01-06T13:36:29.354Z
+        - commits:
+            - subject: "kernel-balena.bbclass: Enable DMA-BUF memory heaps"
+              hash: c3e207d8e8c5fa8f35c6f5e3f4ffc7962e579bd7
+              body: >
+                This is required by some external drivers (e.g. metis).
+
+
+                The configuration matches what Fedora 42 and Debian 13 have
+                enabled.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-6.10.9
+          title: ""
+          date: 2026-01-04T12:08:43.272Z
+        - commits:
+            - subject: Update tests/leviathan digest to c2b518d
+              hash: 31b602609f8ac21d41ca1e5b79774f2549485d0b
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update Lock file maintenance
+                      hash: 0122f154f4e9e54cadfb835ca902d332964ef3f6
+                      body: |
+                        Update 
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.79
+                  title: ""
+                  date: 2025-12-29T01:05:55.390Z
+                - commits:
+                    - subject: Update Lock file maintenance
+                      hash: 353f2dcce89e641799309f5a8a41fc7f189fc2b7
+                      body: |
+                        Update 
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.78
+                  title: ""
+                  date: 2025-12-22T01:30:09.473Z
+          version: meta-balena-6.10.8
+          title: ""
+          date: 2026-01-01T11:32:30.962Z
+        - commits:
+            - subject: add extra firmware tests
+              hash: 3ae3e4c6edf0096423d367952d79e43c6469d9a8
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+                signed-off-by: Yann CARDAILLAC <yann.cardaillac@balena.io>
+              author: Yann CARDAILLAC
+              nested: []
+            - subject: "recipes-support/os-extra-firmware: Extract extra-firmware volume data
+                path"
+              hash: cc8a5cde75867e9842f8d9ca02f84f01af295300
+              body: >
+                The volume data path is currently
+                /var/lib/docker/volumes/extra-firmware/_data,
+
+                and might change in the future, so let's use the engine to
+                extract the
+
+                actual value.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-6.10.7
+          title: ""
+          date: 2025-12-31T13:01:52.916Z
+  version: 6.10.14
+  title: ""
+  date: 2026-01-09T17:54:00.226Z
+- commits:
     - subject: Update balena-yocto-scripts to bf41c3ab59edafcb639f490752f7008d8a2d3c0d
       hash: ec8a5481cf8f87f8f4f2a0a7e4d6053e3de83a61
       body: Update balena-yocto-scripts
