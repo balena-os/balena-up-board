@@ -46,3 +46,10 @@ BALENA_CONFIGS:append = " disable_dvb"
 BALENA_CONFIGS[disable_dvb] = " \
     CONFIG_DVB_CORE=n \
 "
+
+# build i915 as module so that it can load the GPU firmware from the final rootfs
+# (if i915 is built-in then it will try to load it from the initramfs and fail because the GPU firmware is not in the initramfs)
+BALENA_CONFIGS:append = " i915_module"
+BALENA_CONFIGS[i915_module] = " \
+    CONFIG_DRM_I915=m \
+"
