@@ -1,4 +1,28 @@
 - commits:
+    - subject: Build i915 driver as module
+      hash: d750987a0ccd677ba770d6cd19d8f23faeba6fe0
+      body: >
+        If i915 is compiled as built-in it will be loaded very quickly during
+        boot
+
+        (while we are not yet running from the final rootfs but rather from the
+        initramfs)
+
+        and fail to find the required GPU firmware (we don't have firmware in
+        the initramfs
+
+        but only in the final rootfs)
+      footer:
+        Changelog-entry: Build i915 driver as module
+        changelog-entry: Build i915 driver as module
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 6.10.14+rev6
+  title: ""
+  date: 2026-02-19T10:09:34.133Z
+- commits:
     - subject: Update balena-yocto-scripts to ce65d6b439fc7e34c2b8bdf179694f8291bd3012
       hash: 4e7968630183a61efa6e7615f73d30a671a5ebfd
       body: Update balena-yocto-scripts

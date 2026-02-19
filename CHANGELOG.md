@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.10.14+rev6
+## (2026-02-19)
+
+* Build i915 driver as module [Florin Sarbu]
+
 # v6.10.14+rev5
 ## (2026-02-10)
 
