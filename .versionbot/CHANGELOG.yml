@@ -1,4 +1,18 @@
 - commits:
+    - subject: "workflows: move testing to balena cloud from BM"
+      hash: cda8c8b458df40d8ae70582a54e2ff417d54e04c
+      body: ""
+      footer:
+        Changelog-entry: "workflows: move testing to balena cloud from BM"
+        changelog-entry: "workflows: move testing to balena cloud from BM"
+        Signed-off-by: Ryan Cooke <ryan@balena.io>
+        signed-off-by: Ryan Cooke <ryan@balena.io>
+      author: Ryan Cooke
+      nested: []
+  version: 6.11.5+rev1
+  title: ""
+  date: 2026-02-27T16:32:01.452Z
+- commits:
     - subject: "recipes-core/images: Install grub-editenv utility"
       hash: 51d68594d045c37584a890c5d1405c8e040d9fac
       body: |

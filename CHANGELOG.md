@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v6.11.5+rev1
+## (2026-02-27)
+
+* workflows: move testing to balena cloud from BM [Ryan Cooke]
+
 # v6.11.5
 ## (2026-02-26)
 
