@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update balena-os/github-workflows to
+      hash: ae93bf4a62540b05d525b3869ae77cbe51839957
+      body: Update balena-os/github-workflows
+      footer:
+        Changelog-entry: Update balena-os/github-workflows to
+        changelog-entry: Update balena-os/github-workflows to
+      author: balena-renovate[bot]
+      nested: []
+  version: 6.11.13+rev3
+  title: ""
+  date: 2026-04-02T21:38:31.784Z
+- commits:
     - subject: Update balena-yocto-scripts to 22b8b77a848df921c3b96a1bf689f91ee453ccb4
       hash: 5f9c42b457247900a5ed1147e8d702894840bd91
       body: Update balena-yocto-scripts
