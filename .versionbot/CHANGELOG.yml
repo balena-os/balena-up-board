@@ -1,4 +1,449 @@
 - commits:
+    - subject: Update layers/meta-balena to 1dddc5142dd7c41755be8f2ee17bc43014fec9c6
+      hash: 5fe650dbf4e42e1a6913184b31ff0758a5bb2e4e
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 1dddc5142dd7c41755be8f2ee17bc43014fec9c6
+        changelog-entry: Update layers/meta-balena to 1dddc5142dd7c41755be8f2ee17bc43014fec9c6
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "plymouth: start after udev settle"
+              hash: 2c223c726e75bc0ecf0aafbf850bde5907e4107b
+              body: >
+                In commit 72706964b8dd308b6c1772fa22c4e89d1680d205 we have
+                reworked
+
+                the plymouth unit files to use drop-in configs and avoid the
+                need
+
+                to patch the sources.
+
+
+                During this process we have lost the plymouth-start's depenency
+
+                on systemd-udev-settle.service which creates a race condition
+                around
+
+                the GPU initialization. Sometimes plymouth starts too early,
+                displays
+
+                the splash screen on the early boot SW framebuffer, which then
+                gets
+
+                lost when the actual GPU driver takes over.
+
+
+                This patch re-adds the dependency on systemd-udev-settle.service
+
+                which should address the issue.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-7.0.3
+          title: ""
+          date: 2026-05-13T11:48:58.719Z
+        - commits:
+            - subject: "kernel-balena: address CVE-2026-43284"
+              hash: f774fd5ea5dff8e1751c19a62825330fce043425
+              body: >
+                This commit removes the esp4/esp6 and rxrpc modules as they are
+                vulnerable.
+
+
+                Devices will not be able to use IPSEC based VPNs (esp4/esp6).
+                The only
+
+                consumer of rxrpc is the in-kernel AFS (Andrew File System)
+                which is
+
+                experimental anyway.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-7.0.2
+          title: ""
+          date: 2026-05-11T13:58:10.857Z
+        - commits:
+            - subject: "kernel-balena: address CVE-2026-31431"
+              hash: d95ef53e5e65cabc0dcbb87db994463367bd2bad
+              body: |
+                Unconditionally remove CONFIG_CRYPTO_USER_API_AEAD.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-7.0.1
+          title: ""
+          date: 2026-05-08T11:09:20.703Z
+        - commits:
+            - subject: "mobynit: update to v1.0.0"
+              hash: d3c6c79ec6ff747fdcec1534bd704950b163f63b
+              body: >
+                This mobynit version mounts the rootfs as lowerdirs and is
+                intrinsically
+
+                read-only.
+              footer:
+                Change-type: major
+                change-type: major
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-7.0.0
+          title: ""
+          date: 2026-04-24T18:34:48.170Z
+        - commits:
+            - subject: "tests: cloud: Stop waiting for healthy supervisor in cloud suite
+                before preload test"
+              hash: 6afa76bd2f4cd1a342a3dd2339976a380e40b607
+              body: >
+                In the cloud suite we provision the device with no internet - to
+                test that the prloaded app starts on first boot without api
+                access. Supervisor 17.6.26 fixed a supervisor connectivity
+                healthcheck, that causes the supervisor to now correctly report
+                as non healthy if there is no connectivity. This caused a
+                failure in the cloud suite where we were waiting for a healthy
+                supervisor to continue to the preloaded app test, but as the
+                internet is disabled until we complete that test, we were
+                waiting until the test timed out.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: Ryan Cooke
+              nested: []
+          version: meta-balena-6.12.11
+          title: ""
+          date: 2026-04-23T05:56:40.348Z
+        - commits:
+            - subject: "balena-bootloader.bbclass: Add required CONFIG_NLS_ISO8859_1 as
+                built-in"
+              hash: 59ff5ba6b5583e14d7d05548930ccfa4a1f3ef92
+              body: |
+                Without this config the boot fails with:
+
+                FAT-fs (mmcblk0p1): IO charset iso8859-1 not found
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.12.10
+          title: ""
+          date: 2026-04-21T21:38:05.157Z
+        - commits:
+            - subject: Fix modemmanager build on dunfell
+              hash: e945ee3d1610d387a7e29b482b678d9a38d72b9d
+              body: ""
+              footer:
+                Changelog-entry: Fix modemmanager build on dunfell
+                changelog-entry: Fix modemmanager build on dunfell
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.12.9
+          title: ""
+          date: 2026-04-16T17:50:24.850Z
+        - commits:
+            - subject: Update tests/leviathan digest to 2e945b4
+              hash: e5f020562e656d4d554aaef11318855861428624
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Update Lock file maintenance
+                      hash: 6a2a4f57b4c99d957c88c7d3422549fb4575d6cb
+                      body: |
+                        Update 
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.106
+                  title: ""
+                  date: 2026-04-13T01:28:25.145Z
+                - commits:
+                    - subject: Update actions/upload-artifact digest to 043fb46
+                      hash: 62e14d3058fe31d156aff97853942f9dbaea9db5
+                      body: |
+                        Update actions/upload-artifact
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.105
+                  title: ""
+                  date: 2026-04-11T01:39:14.274Z
+                - commits:
+                    - subject: Update balena-os/leviathan-worker to v2.10.30
+                      hash: a8200231aa037f4bf9ddb4e7e6693527558be4ae
+                      body: >
+                        Update balena-os/leviathan-worker from 2.10.29 to 2.10.30
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.104
+                  title: ""
+                  date: 2026-04-10T13:17:58.036Z
+                - commits:
+                    - subject: Update Lock file maintenance
+                      hash: 8194a3c017cd0a86356e4a5e91e46801f02abc97
+                      body: |
+                        Update 
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: leviathan-2.36.103
+                  title: ""
+                  date: 2026-04-10T11:33:28.387Z
+                - commits:
+                    - subject: "core/contracts: Update submodule to v2.0.142"
+                      hash: a950ff11b6676135a00f246e4268123c13d26e22
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                        signed-off-by: Alexandru Costache <alexandru@balena.io>
+                      author: Alexandru Costache
+                      nested: []
+                  version: leviathan-2.36.102
+                  title: ""
+                  date: 2026-04-10T10:18:35.246Z
+          version: meta-balena-6.12.8
+          title: ""
+          date: 2026-04-13T11:49:42.542Z
+        - commits:
+            - subject: Update balena-supervisor to v17.7.1
+              hash: 94842a810c54fc4d8eb1feea8bfa111b658e75c4
+              body: |
+                Update balena-supervisor from 17.6.27 to 17.7.1
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested:
+                - commits:
+                    - subject: Fix bug in single -> multicontainer migration of legacy app.json
+                      hash: dadca5fd2f1651aa7c3cc0c13d197d27cd7bfbae
+                      body: >
+                        The use of `exports.` means that typescript couldn't
+                        spot the bug
+
+                        introduced in
+                        https://github.com/balena-os/balena-supervisor/pull/1765
+
+                        where the function was moved to another file. This
+                        switches to
+
+                        importing the function as expected.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Pagan Gazzard
+                      nested: []
+                  version: balena-supervisor-17.7.1
+                  title: ""
+                  date: 2026-04-08T16:07:56.710Z
+                - commits:
+                    - subject: Return updateStatus in /v2/applications/state
+                      hash: 16df0720d4682bc5004aec97c171bd0e3dc22fde
+                      body: >
+                        This updates the handler for the endpoint to use the
+                        result of
+
+                        application-manager.getState (augmented with data from
+                        the target apps)
+
+                        in order to include the `updateStatus` as part of the
+                        app report. This
+
+                        allows the method to be used by apps to identify when an
+                        app update has
+
+                        finished downloading in order to force an update.
+                      footer:
+                        Change-type: minor
+                        change-type: minor
+                      author: Felipe Lalanne
+                      nested: []
+                    - subject: Ensure all downloading images are reported
+                      hash: 51528674db4747ce1ab938f452a4dbb987249398
+                      body: >
+                        Previously, the report would only include the images
+                        that are in the
+
+                        process of being downloaded, without including images in
+                        the target
+
+                        state that will have to be downloaded eventually. This
+                        could also cause
+
+                        the `update_status` report to fluctuate between `done`
+                        and `downloading`
+
+                        while new image downloads were being queued up.
+
+
+                        The `getState` method in application-manager now checks
+                        the target apps
+
+                        and adds any target images as `Downloading` with
+                        progress `0` that are
+
+                        overrided by the current state. This method also now
+                        reports when an app
+
+                        has been rejected which was previously done in
+                        `getCurrentForReport`.
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Felipe Lalanne
+                      nested: []
+                  version: balena-supervisor-17.7.0
+                  title: ""
+                  date: 2026-04-07T20:44:17.935Z
+                - commits:
+                    - subject: Convert many lodash usages to native equivalents
+                      hash: 6a28bb270f0f1f5d095631e142f23c9fe4d9b46d
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Pagan Gazzard
+                      nested: []
+                  version: balena-supervisor-17.6.32
+                  title: ""
+                  date: 2026-04-07T19:17:34.212Z
+                - commits:
+                    - subject: "Tests: remove unused file"
+                      hash: 6f54477ac9661258e7552d64be54d280113985c3
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Pagan Gazzard
+                      nested: []
+                  version: balena-supervisor-17.6.31
+                  title: ""
+                  date: 2026-04-07T15:59:33.996Z
+                - commits:
+                    - subject: Update to typescript 6.x / es2025
+                      hash: 3cdceb7af6d38b59465fad1be52c10dc82e619b9
+                      body: |
+                        This also makes use of the unlocked es2025 features
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Pagan Gazzard
+                      nested: []
+                    - subject: Remove nodejs 20/22 from the test matrix as we only ship with/truly
+                        support 24.x
+                      hash: a8e652683e7c778730ecd171d7890a94ab8953b8
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Pagan Gazzard
+                      nested: []
+                  version: balena-supervisor-17.6.30
+                  title: ""
+                  date: 2026-04-06T14:30:27.547Z
+                - commits:
+                    - subject: Update lodash to v4.18.1 [SECURITY]
+                      hash: 614d1e001445ebeae314e256411b0628d08f3ddf
+                      body: |
+                        Update lodash from 4.17.23 to 4.18.1
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: balena-renovate[bot]
+                      nested: []
+                  version: balena-supervisor-17.6.29
+                  title: ""
+                  date: 2026-04-03T20:39:05.415Z
+                - commits:
+                    - subject: "config/backends: Allow setting custom dtb on iot-gate-imx8plus"
+                      hash: a0b267d7abc35e20647fd4dc5e42cfe1e1424eb2
+                      body: ""
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                        Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                        signed-off-by: Alexandru Costache <alexandru@balena.io>
+                      author: Alexandru Costache
+                      nested: []
+                  version: balena-supervisor-17.6.28
+                  title: ""
+                  date: 2026-04-03T18:31:16.999Z
+          version: meta-balena-6.12.7
+          title: ""
+          date: 2026-04-11T12:09:48.444Z
+        - commits:
+            - subject: Update actions/checkout digest to de0fac2
+              hash: 71b5d16d84c284c2fdb2d50ec6fce0b5ebe6eb5a
+              body: >
+                Update actions/checkout to
+                de0fac2e4500dabe0009e67214ff5f5447ce83dd
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: meta-balena-6.12.6
+          title: ""
+          date: 2026-04-10T11:35:57.174Z
+        - commits:
+            - subject: ".github/workflows: Remove discontinued machines"
+              hash: 5f2ca2e4adaf3c7ef807e1f82e55c07537540dc2
+              body: |
+                It was decided to remove support for these machines based on
+                hardware being discontinued or lack of customer interest:
+
+                https://docs.balena.io/reference/hardware/versioning#discontinued
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-6.12.5
+          title: ""
+          date: 2026-04-09T01:53:25.209Z
+  version: 7.0.3
+  title: ""
+  date: 2026-05-13T15:55:00.887Z
+- commits:
     - subject: Update product-os/flowzone to 7e10a76d99df42af630a4fcade4bde64f36a151d
       hash: e0f243d2873b3a028ed3bd103a46f033647ae84e
       body: Update product-os/flowzone

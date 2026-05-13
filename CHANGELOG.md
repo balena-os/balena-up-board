@@ -1,6 +1,145 @@
 Change log
 -----------
 
+# v7.0.3
+## (2026-05-13)
+
+
+<details>
+<summary> Update layers/meta-balena to 1dddc5142dd7c41755be8f2ee17bc43014fec9c6 [balena-renovate[bot]] </summary>
+
+> ## meta-balena-7.0.3
+> ### (2026-05-13)
+> 
+> * plymouth: start after udev settle [Michal Toman]
+> 
+> ## meta-balena-7.0.2
+> ### (2026-05-11)
+> 
+> * kernel-balena: address CVE-2026-43284 [Alex Gonzalez]
+> 
+> ## meta-balena-7.0.1
+> ### (2026-05-08)
+> 
+> * kernel-balena: address CVE-2026-31431 [Alex Gonzalez]
+> 
+> ## meta-balena-7.0.0
+> ### (2026-04-24)
+> 
+> * mobynit: update to v1.0.0 [Alex Gonzalez]
+> 
+> ## meta-balena-6.12.11
+> ### (2026-04-23)
+> 
+> * tests: cloud: Stop waiting for healthy supervisor in cloud suite before preload test [Ryan Cooke]
+> 
+> ## meta-balena-6.12.10
+> ### (2026-04-21)
+> 
+> * balena-bootloader.bbclass: Add required CONFIG_NLS_ISO8859_1 as built-in [Florin Sarbu]
+> 
+> ## meta-balena-6.12.9
+> ### (2026-04-16)
+> 
+> * Fix modemmanager build on dunfell [Florin Sarbu]
+> 
+> ## meta-balena-6.12.8
+> ### (2026-04-13)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 2e945b4 [balena-renovate[bot]] </summary>
+> 
+>> ### leviathan-2.36.106
+>> #### (2026-04-13)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.105
+>> #### (2026-04-11)
+>> 
+>> * Update actions/upload-artifact digest to 043fb46 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.104
+>> #### (2026-04-10)
+>> 
+>> * Update balena-os/leviathan-worker to v2.10.30 [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.103
+>> #### (2026-04-10)
+>> 
+>> * Update Lock file maintenance [balena-renovate[bot]]
+>> 
+>> ### leviathan-2.36.102
+>> #### (2026-04-10)
+>> 
+>> * core/contracts: Update submodule to v2.0.142 [Alexandru Costache]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.12.7
+> ### (2026-04-11)
+> 
+> 
+> <details>
+> <summary> Update balena-supervisor to v17.7.1 [balena-renovate[bot]] </summary>
+> 
+>> ### balena-supervisor-17.7.1
+>> #### (2026-04-08)
+>> 
+>> * Fix bug in single -> multicontainer migration of legacy app.json [Pagan Gazzard]
+>> 
+>> ### balena-supervisor-17.7.0
+>> #### (2026-04-07)
+>> 
+>> * Return updateStatus in /v2/applications/state [Felipe Lalanne]
+>> * Ensure all downloading images are reported [Felipe Lalanne]
+>> 
+>> ### balena-supervisor-17.6.32
+>> #### (2026-04-07)
+>> 
+>> * Convert many lodash usages to native equivalents [Pagan Gazzard]
+>> 
+>> ### balena-supervisor-17.6.31
+>> #### (2026-04-07)
+>> 
+>> * Tests: remove unused file [Pagan Gazzard]
+>> 
+>> ### balena-supervisor-17.6.30
+>> #### (2026-04-06)
+>> 
+>> * Update to typescript 6.x / es2025 [Pagan Gazzard]
+>> * Remove nodejs 20/22 from the test matrix as we only ship with/truly support 24.x [Pagan Gazzard]
+>> 
+>> ### balena-supervisor-17.6.29
+>> #### (2026-04-03)
+>> 
+>> * Update lodash to v4.18.1 [SECURITY] [balena-renovate[bot]]
+>> 
+>> ### balena-supervisor-17.6.28
+>> #### (2026-04-03)
+>> 
+>> * config/backends: Allow setting custom dtb on iot-gate-imx8plus [Alexandru Costache]
+>> 
+> 
+> </details>
+> 
+> 
+> ## meta-balena-6.12.6
+> ### (2026-04-10)
+> 
+> * Update actions/checkout digest to de0fac2 [balena-renovate[bot]]
+> 
+> ## meta-balena-6.12.5
+> ### (2026-04-09)
+> 
+> * .github/workflows: Remove discontinued machines [Florin Sarbu]
+> 
+
+</details>
+
 # v6.12.4+rev5
 ## (2026-05-06)
 
