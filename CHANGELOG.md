@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v7.0.3+rev4
+## (2026-06-12)
+
+* unpin flowzone, track @master [Kyle Harding]
+
 # v7.0.3+rev3
 ## (2026-05-20)
 
