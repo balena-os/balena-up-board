@@ -19,6 +19,7 @@ FILES:${PN}-i915-upboards = " \
     ${nonarch_base_libdir}/firmware/i915/tgl_dmc_ver2_12.bin.xz \
     ${nonarch_base_libdir}/firmware/i915/tgl_guc_70.bin.xz \
     ${nonarch_base_libdir}/firmware/i915/tgl_huc.bin.xz \
+    ${nonarch_base_libdir}/firmware/intel/ipu/ipu6epadln_fw.bin.xz \
 "
 
 FILES:${PN}-rtl-nic-upboards = " \
