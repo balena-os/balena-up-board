@@ -16,7 +16,7 @@
 	branch = master
 [submodule "layers/meta-intel"]
 	path = layers/meta-intel
-	url = https://git.yoctoproject.org/git/meta-intel
+	url = https://git.yoctoproject.org/meta-intel
 	branch = scarthgap
 [submodule "layers/meta-up-board"]
 	path = layers/meta-up-board
