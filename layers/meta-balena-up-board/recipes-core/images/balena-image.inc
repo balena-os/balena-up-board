@@ -19,3 +19,7 @@ BALENA_BOOT_PARTITION_FILES = " \
 # grub-editenv is used by the os-extra-firmware service
 # add to rootfs the firmware for Ampak AP6214a and AP6355 Wireless/Bluetooth
 IMAGE_INSTALL:append = " ampak-firmware grub-editenv "
+
+IMAGE_ROOTFS_SIZE:up-board = "327680"
+BALENA_BOOT_SIZE:up-board = "40960"
+BALENA_STATE_SIZE:up-board = "20480"
