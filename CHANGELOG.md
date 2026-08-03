@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v7.5.0+rev2
+## (2026-08-03)
+
+* Build with -Os globally to reduce up-board image size [guille-vega]
+* Set explicit partition size overrides for each machine [guille-vega]
+
 # v7.5.0+rev1
 ## (2026-07-14)
 

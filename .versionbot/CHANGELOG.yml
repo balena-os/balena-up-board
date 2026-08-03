@@ -1,4 +1,32 @@
 - commits:
+    - subject: Build with -Os globally to reduce up-board image size
+      hash: b00adc87ad12dd7c3b9a0b61772fec8d3d5b4350
+      body: |
+        Sets FULL_OPTIMIZATION in local.conf, applying to every package,
+        to help pass the HUP size check.
+      footer:
+        Changelog-entry: Build with -Os globally to reduce up-board image size
+        changelog-entry: Build with -Os globally to reduce up-board image size
+        Signed-off-by: guille-vega <guillermo.vega@balena.io>
+        signed-off-by: guille-vega <guillermo.vega@balena.io>
+      author: guille-vega
+      nested: []
+    - subject: Set explicit partition size overrides for each machine
+      hash: b8f0bcf246990c9d4c8ab542919668e5088b43e3
+      body: |
+        Ensure IMAGE_ROOTFS_SIZE, BALENA_BOOT_SIZE, and BALENA_STATE_SIZE are
+        explicitly defined for every machine target
+      footer:
+        Changelog-entry: Set explicit partition size overrides for each machine
+        changelog-entry: Set explicit partition size overrides for each machine
+        Signed-off-by: guille-vega <guillermo.vega@balena.io>
+        signed-off-by: guille-vega <guillermo.vega@balena.io>
+      author: guille-vega
+      nested: []
+  version: 7.5.0+rev2
+  title: ""
+  date: 2026-08-03T21:11:13.466Z
+- commits:
     - subject: Update balena-yocto-scripts to 7d1760c79d5584f3d6bf9a1c2d0e796b6a5b5d82
       hash: 24e0240211d455cb4108b880380c32ea17794e7f
       body: Update balena-yocto-scripts
