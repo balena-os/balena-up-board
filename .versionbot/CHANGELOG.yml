@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update layers/meta-openembedded to
+        bec755063a8b5da65df626f5749496aadaa4f4bb
+      hash: 0699d5c1f2d61bda1d2cb6f21c0b235a47f8d671
+      body: Update layers/meta-openembedded
+      footer:
+        Changelog-entry: Update layers/meta-openembedded to
+          bec755063a8b5da65df626f5749496aadaa4f4bb
+        changelog-entry: Update layers/meta-openembedded to
+          bec755063a8b5da65df626f5749496aadaa4f4bb
+      author: balena-renovate[bot]
+      nested: []
+  version: 7.5.0+rev3
+  title: ""
+  date: 2026-08-13T18:10:56.345Z
+- commits:
     - subject: Build with -Os globally to reduce up-board image size
       hash: b00adc87ad12dd7c3b9a0b61772fec8d3d5b4350
       body: |
