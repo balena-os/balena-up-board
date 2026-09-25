@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update layers/meta-balena to cb154545ef42d3f53209032a3228d64403ef0b5f
+      hash: 93280559decd6aa818b0683800fbd9fe013f9220
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to cb154545ef42d3f53209032a3228d64403ef0b5f
+        changelog-entry: Update layers/meta-balena to cb154545ef42d3f53209032a3228d64403ef0b5f
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "renovate: Use minor change-type for supervisor major updates"
+              hash: 9e95295bd25cc296dfb33775e777ab84984db01f
+              body: >
+                The supervisor is an OS interface, so a breaking supervisor
+                release
+
+                should bump the OS minor version rather than patch.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-8.0.13
+          title: ""
+          date: 2026-09-25T14:34:45.602Z
+  version: 8.0.13
+  title: ""
+  date: 2026-09-25T20:25:16.083Z
+- commits:
     - subject: Update kernel to version 6.18.33
       hash: 9557adc4852671211340c35b9b9df6a0b63c2995
       body: >
