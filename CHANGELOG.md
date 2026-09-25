@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v8.0.12+rev2
+## (2026-09-25)
+
+* Update kernel to version 6.18.33 [Florin Sarbu]
+
 # v8.0.12+rev1
 ## (2026-09-24)
 

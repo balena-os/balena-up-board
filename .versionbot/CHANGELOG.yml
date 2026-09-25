@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update kernel to version 6.18.33
+      hash: 9557adc4852671211340c35b9b9df6a0b63c2995
+      body: >
+        The linux-intel.inc, linux-intel_6.18.bb and the patches in the
+        "linux-intel" directory
+
+        have been taken from meta-intel wwrynose branch at revision
+        79a9681ce83f6bf36aede3aeb8c1707d29bca329
+
+
+        The linux-intel_6.18.bbappend and the patches in the "files" directory
+
+        have been taken from meta-up-board master branch at revision
+        a31dc9c639a5e641b7fd5ab17a30a52b90651bb6
+
+
+        Update kern-tools-native to be able to compile this newer kernel
+        version.
+      footer:
+        Changelog-entry: Update kernel to version 6.18.33
+        changelog-entry: Update kernel to version 6.18.33
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 8.0.12+rev2
+  title: ""
+  date: 2026-09-25T07:59:22.080Z
+- commits:
     - subject: Update flowzonify to 0.4.12
       hash: 52e9625cdbbde8175573c53b3c508f62570b3a8a
       body: Update flowzonify
