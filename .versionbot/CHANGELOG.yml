@@ -1,4 +1,20 @@
 - commits:
+    - subject: "up-board.yml: Build pull requests to ESR branches"
+      hash: b00cae4fa9bd38d9501fe1dea6ebfb33fa9d658f
+      body: |
+        The ESR branch pattern was commented out under pull_request, so PRs
+        against ESR branches never ran the Yocto build.
+      footer:
+        Changelog-entry: "up-board.yml: Build pull requests to ESR branches"
+        changelog-entry: "up-board.yml: Build pull requests to ESR branches"
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 9.0.3+rev1
+  title: ""
+  date: 2026-10-23T00:06:28.252Z
+- commits:
     - subject: Update layers/meta-balena to 7f1a0e5c983a45cea4a4aad23c56134e3a3cea2f
       hash: c8f7e44decd48ad13266b2b99be225ac0028d805
       body: Update layers/meta-balena

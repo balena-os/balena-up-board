@@ -1,6 +1,11 @@
 Change log
 -----------
 
+# v9.0.3+rev1
+## (2026-10-23)
+
+* up-board.yml: Build pull requests to ESR branches [Kyle Harding]
+
 # v9.0.3
 ## (2026-10-22)
 
