@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update balena-os/github-workflows to
+        75f1aaba4ccc7f4b0370c16a779a7113cc2bc596
+      hash: bba46ff7eb5611b7cb252eedca4d8720895da3a7
+      body: Update balena-os/github-workflows
+      footer:
+        Changelog-entry: Update balena-os/github-workflows to
+          75f1aaba4ccc7f4b0370c16a779a7113cc2bc596
+        changelog-entry: Update balena-os/github-workflows to
+          75f1aaba4ccc7f4b0370c16a779a7113cc2bc596
+      author: balena-renovate[bot]
+      nested: []
+  version: 9.0.3+rev2
+  title: ""
+  date: 2026-10-23T04:12:59.925Z
+- commits:
     - subject: "up-board.yml: Build pull requests to ESR branches"
       hash: b00cae4fa9bd38d9501fe1dea6ebfb33fa9d658f
       body: |
