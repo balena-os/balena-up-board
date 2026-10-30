@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v9.0.4+rev2
+## (2026-10-30)
+
+* Update kernel to version 6.18.56 to fix CVE-2026-98432 [Kyle Harding]
+* Fix aufs mmap patch for linux-intel 6.18.55 and later [Kyle Harding]
+
 # v9.0.4+rev1
 ## (2026-10-29)
 

@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update kernel to version 6.18.56 to fix CVE-2026-98432
+      hash: e67d3c5786300bd5dfc7bdebd012638e54da3305
+      body: |
+        Repin to lts-v6.18.56-linux-261015T032131Z to fix CVE-2026-98432.
+      footer:
+        Changelog-entry: Update kernel to version 6.18.56 to fix CVE-2026-98432
+        changelog-entry: Update kernel to version 6.18.56 to fix CVE-2026-98432
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Fix aufs mmap patch for linux-intel 6.18.55 and later
+      hash: 98ef9f9551f86d98ea3172a5b3543a41509b50b2
+      body: |
+        6.18.55 adds a CONFIG_SECURITY block after backing_file_user_path()
+        in include/linux/fs.h, which is where the aufs6.18 mmap patch anchors
+        its first hunk, so git apply -3 conflicts. Move the hunk anchor below
+        the new block until sfjro/aufs-standalone refreshes aufs6.18.
+      footer:
+        Changelog-entry: Fix aufs mmap patch for linux-intel 6.18.55 and later
+        changelog-entry: Fix aufs mmap patch for linux-intel 6.18.55 and later
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 9.0.4+rev2
+  title: ""
+  date: 2026-10-30T08:48:19.213Z
+- commits:
     - subject: Update contracts to 3b3e3a334e5aa3f67b99ee900b2d738f2fcf8574
       hash: 6986472f5d44db9678bff4acc8e25408411fb2cd
       body: Update contracts
