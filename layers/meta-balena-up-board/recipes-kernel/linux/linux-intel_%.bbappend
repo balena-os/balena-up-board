@@ -36,6 +36,21 @@ BALENA_CONFIGS[acpi_configfs] = " \
 # https://www.flowdock.com/app/rulemotion/resin-devices/threads/K2TQiSUfNDqBT5Ih6cciNI2d9QJ
 BALENA_CONFIGS:append:up-board = " aufs"
 
+# aufs6.18 (f8b3fda) mmap patch anchors its fs.h hunk on backing_file_user_path(),
+# where 6.18.55+ adds a CONFIG_SECURITY block. Move the anchor below that block.
+# Drop this once sfjro/aufs-standalone refreshes aufs6.18.
+apply_aufs_patches:prepend () {
+    aufs_rev=$(git -C ${WORKDIR}/aufs_standalone rev-parse HEAD 2>/dev/null)
+    if [ "$aufs_rev" = "f8b3fda5b60c2163a24d0b35ffc040b83ef92db4" ] && grep -q 'backing_file_set_security' ${S}/include/linux/fs.h; then
+        mmap_patch=$(find ${WORKDIR}/aufs_standalone/ -name 'aufs*-mmap.patch')
+        sed -i '/^diff --git a\/include\/linux\/fs.h/,/^diff --git /{
+            /^index /d
+            s|^ \t\t\t   const struct cred \*cred);$| }|
+            s|^ const struct path \*backing_file_user_path(const struct file \*f);$| #endif /* CONFIG_SECURITY */|
+        }' "$mmap_patch"
+    fi
+}
+
 BALENA_CONFIGS:append = " optimize-size"
 BALENA_CONFIGS[optimize-size] = " \
     CONFIG_CC_OPTIMIZE_FOR_SIZE=y \

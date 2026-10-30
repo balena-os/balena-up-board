@@ -11,8 +11,8 @@ DEPENDS += "elfutils-native openssl-native util-linux-native"
 
 LINUX_VERSION_EXTENSION ??= "-intel-pk-${LINUX_KERNEL_TYPE}"
 
-LINUX_VERSION ?= "6.18.33"
-SRCREV_machine ?= "a9f2f3b43edac043dcca612544d2251ceaba0b8d"
+LINUX_VERSION ?= "6.18.56"
+SRCREV_machine ?= "6f60c9f6344f04a699abb69dd35bc294f6c306d8"
 SRCREV_meta ?= "4101033495af309ba83fc76eb3c0cbd0fb030f8c"
 
 # Functionality flags
