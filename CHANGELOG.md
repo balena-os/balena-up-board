@@ -1,6 +1,26 @@
 Change log
 -----------
 
+# v9.0.4+rev4
+## (2026-11-02)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 436cae1eb39b15b2c74bac1450162eba0855eb0d [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.42.17
+> ### (2026-10-13)
+> 
+> * hostapp-composition(overlays): extend schema to check for runtime [Alex Gonzalez]
+> 
+> ## balena-yocto-scripts-1.42.16
+> ### (2026-10-02)
+> 
+> * Update ubuntu:22.04 Docker digest to b8b6ee6 [balena-renovate[bot]]
+> 
+
+</details>
+
 # v9.0.4+rev3
 ## (2026-11-02)
 

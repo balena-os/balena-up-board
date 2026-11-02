@@ -1,4 +1,47 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 436cae1eb39b15b2c74bac1450162eba0855eb0d
+      hash: 2f166a9d33efdae8de51c56be129ce3ee1d53d61
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 436cae1eb39b15b2c74bac1450162eba0855eb0d
+        changelog-entry: Update balena-yocto-scripts to 436cae1eb39b15b2c74bac1450162eba0855eb0d
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: "hostapp-composition(overlays): extend schema to check for runtime"
+              hash: 29a5adcbec208f1f723d464c5dcce3ae81ac0b75
+              body: >
+                An image declaring io.balena.image.class as overlay needs to
+                define
+
+                what runtime to use.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.42.17
+          title: ""
+          date: 2026-10-13T20:35:35.076Z
+        - commits:
+            - subject: Update ubuntu:22.04 Docker digest to b8b6ee6
+              hash: 13d81e84787dfd8d7f090de65c38faeade4af4f8
+              body: |
+                Update ubuntu
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: balena-renovate[bot]
+              nested: []
+          version: balena-yocto-scripts-1.42.16
+          title: ""
+          date: 2026-10-02T08:34:42.921Z
+  version: 9.0.4+rev4
+  title: ""
+  date: 2026-11-02T15:03:11.435Z
+- commits:
     - subject: Update balena-yocto-scripts to eb75d8880e97fc8e847fa27f329d70a87d182187
       hash: d682d5eb50d1eeca2a8dc02399fb04bdd8c20a8e
       body: Update balena-yocto-scripts
