@@ -2,14 +2,10 @@
 	path = balena-yocto-scripts
 	url = https://github.com/balena-os/balena-yocto-scripts.git
 	branch = master
-[submodule "layers/poky"]
-	path = layers/poky
-	url = https://github.com/balena-os/poky
-	branch = scarthgap
 [submodule "layers/meta-openembedded"]
 	path = layers/meta-openembedded
 	url = https://github.com/openembedded/meta-openembedded.git
-	branch = scarthgap
+	branch = wrynose
 [submodule "layers/meta-balena"]
 	path = layers/meta-balena
 	url = https://github.com/balena-os/meta-balena.git
@@ -17,7 +13,7 @@
 [submodule "layers/meta-intel"]
 	path = layers/meta-intel
 	url = https://git.yoctoproject.org/meta-intel
-	branch = scarthgap
+	branch = wrynose
 [submodule "layers/meta-up-board"]
 	path = layers/meta-up-board
 	# switch to the new BSP repo as been advised by AAEON
@@ -30,4 +26,16 @@
 [submodule "layers/meta-cyclonedx"]
 	path = layers/meta-cyclonedx
 	url = https://github.com/balena-os/meta-cyclonedx
-	branch = scarthgap
+	branch = main
+[submodule "layers/bitbake"]
+	path = layers/bitbake
+	url = https://git.openembedded.org/bitbake
+	branch = 2.18
+[submodule "layers/meta-yocto"]
+	path = layers/meta-yocto
+	url = https://git.yoctoproject.org/meta-yocto
+	branch = wrynose
+[submodule "layers/openembedded-core"]
+	path = layers/openembedded-core
+	url = https://git.openembedded.org/openembedded-core
+	branch = wrynose
