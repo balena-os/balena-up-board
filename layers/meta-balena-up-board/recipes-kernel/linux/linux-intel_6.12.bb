@@ -3,6 +3,7 @@ require linux-intel.inc
 SRC_URI:prepend = "git://github.com/intel/linux-intel-lts.git;protocol=https;name=machine;branch=${KBRANCH}; \
                     "
 SRC_URI:append = " file://0001-6.12-lib-build_OID_registry-fix-reproducibility-issues.patch \
+                  file://0002-ipv4-free-inet_opt-and-ireq_opt-after-an-RCU-grace-.patch \
                   "
 KBRANCH = "6.12/linux"
 KMETA_BRANCH = "yocto-6.12"
