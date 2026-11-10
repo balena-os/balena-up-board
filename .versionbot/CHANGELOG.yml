@@ -1,4 +1,22 @@
 - commits:
+    - subject: "linux-intel: Backport fix for CVE-2026-98432"
+      hash: 6dab8e8353bc85cbfdc5ade2608700d5e1c23a1c
+      body: >
+        Backport the stable 6.12.113 fix "ipv4: free inet_opt and ireq_opt after
+        an RCU grace period" (upstream e3f33b0a1d89, stable 11a03ce3c4a6) to the
+        Intel LTS 6.12.27 kernel. Intel's 6.12 branches stop at 6.12.91, so
+        there is no branch that includes the fix.
+      footer:
+        Changelog-entry: "linux-intel: Backport fix for CVE-2026-98432"
+        changelog-entry: "linux-intel: Backport fix for CVE-2026-98432"
+        Signed-off-by: Ryan Cooke <ryan@balena.io>
+        signed-off-by: Ryan Cooke <ryan@balena.io>
+      author: Ryan Cooke
+      nested: []
+  version: 2026.4.2
+  title: ""
+  date: 2026-11-10T10:10:48.519Z
+- commits:
     - subject: Update layers/meta-balena to 2699378ed65350144dc250607adfe538c5f275ac
       hash: 4025d7f859bdc1e6673f44d785e71d92eaa851b9
       body: |
